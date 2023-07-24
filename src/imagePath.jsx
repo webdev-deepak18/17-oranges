@@ -21,8 +21,9 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 // bulb
 import { FaRegLightbulb } from "react-icons/fa";
 
-// menu icons
 
+
+// menu icons
 import { ReactComponent as Development } from "./assets/images/development.svg";
 
 import { ReactComponent as Consultancy } from "./assets/images/consultancy.svg";
@@ -38,6 +39,12 @@ import { ReactComponent as CaseStudies } from "./assets/images/casestudy.svg";
 import { ReactComponent as Tshirt } from "./assets/images/t-shirt.svg";
 
 import { ReactComponent as LinkedIn } from "./assets/images/linkedin-fill.svg";
+
+// logo
+
+import logo from './assets/images/17-oranges.png'
+import whiteLogo from './assets/images/17-oranges-white.png'
+
 
 // sticky icon
 import womanWithHeadphone from "./assets/images/woman-wearing-headphone.webp";

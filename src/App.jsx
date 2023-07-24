@@ -1,13 +1,13 @@
 /** @format */
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Careers, CaseStudies, Consultancy, Contact, Development, Home, HomeLayout, Leadership, Resourcing, Why17Oranges, ErrorPage } from "./pages/index";
+import { Careers, CaseStudies, Consultancy, Contact, Development, Home, HomeLayout, Leadership, Resourcing, Why17Oranges, ErrorPage,  } from "./pages/index";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout />,
-    errorElement:<ErrorPage/>,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         element: <Resourcing />,
       },
       {
-        path: "about/why17oranges",
+        path: "about/why-17-oranges",
         element: <Why17Oranges />,
       },
       {
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         element: <Leadership />,
       },
       {
-        path: "about/casestudies",
+        path: "about/case-studies",
         element: <CaseStudies />,
       },
       {

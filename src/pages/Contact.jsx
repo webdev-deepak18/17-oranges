@@ -1,9 +1,15 @@
-import React from 'react'
+/** @format */
+
+import React from "react";
+import Submenu from "../components/Submenu";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <>
+      <div>Contact</div>
+      <Submenu />
+    </>
+  );
+};
 
-export default Contact
+export default Contact;
