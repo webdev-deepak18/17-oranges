@@ -117,6 +117,50 @@ const Wrapper = styled.div`
       height: 700px;
     }
   }
+
+  /* tech challenge */
+  .tech-challenge {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .tech-challenge h2 {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  .tech-challenge p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 992px) {
+    .tech-challenge {
+      grid-template-columns: 3fr 2fr;
+    }
+
+    .tech-challenge .info {
+      max-width: 90%
+    }
+
+    .tech-challenge .content {
+      max-width: 400px;
+      margin-left: 9rem;
+      position: relative;
+      margin-top: 3rem;
+    }
+
+    .tech-challenge .content::before {
+      content: "";
+      width: 1px;
+      background: var(--grey-200);
+      height: 100%;      
+      position: absolute;
+      top: 0;
+      left: -1.5rem;;
+      ;
+
+    }
+  }
 `;
 
 export default Wrapper;

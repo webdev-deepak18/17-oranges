@@ -55,7 +55,32 @@ const Home = () => {
       {/* end hero */}
 
       {/* we can help any industry */}
-      <h3>we can help any industry</h3>
+      <div className="section-center tech-challenge">
+        <div className="info">
+          <h2>
+            If You Need a Technology Lifesaver, You’ve Come to the Right Place!
+          </h2>
+          <div className="content">
+            <p>
+              We’ve helped many organisations overcome their technological
+              challenges, whether big or small, and we can do the same for you.
+            </p>
+            <p>
+              We use a simple framework that delivers clarity, confidence, and
+              amazing outcomes.
+            </p>
+            <p>
+              We immerse ourselves with your organisation, so we fully
+              understand your situation and business objectives. Then we
+              determine where things are breaking down, where you need to
+              streamline your processes, and ultimately where your technology
+              needs to go. 
+            </p>
+            <p>Then, using our agile approach, we make sure you get there.</p>
+          </div>
+        </div>
+        <img src={flyingWoman} alt="Flying Futuristic Woman" className="img" />
+      </div>
       {/* end we can help any industry */}
 
       {/* testimonials */}

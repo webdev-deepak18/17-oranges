@@ -278,8 +278,7 @@ ul {
   margin-top: 1rem;
 }
 
-
-svg{
+svg {
   width: 100%;
   height: auto;
 }
@@ -296,16 +295,14 @@ PROJECT CSS
   /* min-height: 80vh; */
 }
 
-
-.section-center{
+.section-center {
   width: var(--view-width);
   max-width: var(--max-width-1);
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 
-
-.orange-bold{
-  color:var(--primary-500);
+.orange-bold {
+  color: var(--primary-500);
   font-weight: 900;
 }
