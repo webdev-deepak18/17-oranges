@@ -57,6 +57,7 @@ html {
   --transition: 0.3s ease-in-out all;
   --max-width-1: 1350px;
   --max-width-2: 1200px;
+  --max-width-3: 1512px;
   --fixed-width: 600px;
   --view-width: 90vw;
   /* box shadow*/
@@ -287,9 +288,10 @@ svg {
 PROJECT CSS
 =============
 */
+
 .page {
-  width: var(--view-width);
-  max-width: var(--max-width-1);
+  /* width: var(--view-width);
+  max-width: var(--max-width-2); */
   margin: 0 auto;
   padding: 2rem 0rem;
   /* min-height: 80vh; */
@@ -297,12 +299,87 @@ PROJECT CSS
 
 .section-center {
   width: var(--view-width);
-  max-width: var(--max-width-1);
+  max-width: var(--max-width-2);
   margin: 0 auto;
   padding: 5rem 0;
+}
+
+@media screen and (min-width: 1512px) {
+  /* .page {
+    max-width: var(--max-width-1);
+  } */
+
+  .section-center {
+    max-width: var(--max-width-1);
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  /* .page {
+    max-width: var(--max-width-3);
+  } */
+
+  .section-center {
+    max-width: -3;
+  }
 }
 
 .orange-bold {
   color: var(--primary-500);
   font-weight: 900;
+}
+
+/* testimonials */
+.testimonials-section {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  /* border: 1px solid red; */
+  /* background: yellow; */
+  /* background: url("./assets/images/happy-girl.webp"); */
+  /* background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  padding-block: 0;
+}
+
+.testimonials-section .title span {
+  font-size: 4rem;
+  display: block;
+}
+.testimonials-section .title {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 90vw;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .testimonials-section .title span {
+    display: inline-block;
+  }
+}
+
+.testimonials-img {
+  height: 10rem;
+  position: absolute;
+  top: 7rem;
+}
+
+@media screen and (min-width: 992px) {
+  .testimonials-img {
+    top: 0;
+    width: 60%;
+    right: 0;
+    height: 35rem;
+    margin-bottom: 0;
+  }
+  .testimonials-section .title {
+    padding-top: 7rem;
+    margin-left: 8rem;
+
+  }
+    .testimonials-section .title span {
+    font-size: 6rem;
+  }
 }

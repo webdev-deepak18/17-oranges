@@ -66,6 +66,10 @@ import happyGirl from "./assets/images/happy-girl.webp";
 
 import futuristicPerson from "./assets/images/futuristic-person.webp";
 
+// testimonials
+
+import siteforum from './assets/images/sitefourm.png'
+
 // ===========
 // Development Page
 // ===========

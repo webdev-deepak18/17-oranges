@@ -6,7 +6,7 @@ export const FooterWrapperMain = styled.footer`
   display: grid;
   padding: 2rem 1.5rem;
   gap: 2rem;
-  max-width: var(--max-width-2);
+  max-width: var(--max-width-1);
   margin: 0 auto;
 
   /* mobile footer */
@@ -84,6 +84,7 @@ export const FooterWrapperMain = styled.footer`
       justify-content: space-between;
       gap: 2rem;
       align-items: center;
+      max-width: var(--max-width-1);
     }
 
     .desktop-footer .menu {
@@ -102,6 +103,7 @@ export const FooterWrapperMain = styled.footer`
 
     .desktop-footer .menu-container {
       align-content: center;
+      margin-right: 2rem;
     }
 
     .desktop-footer .follow-container {

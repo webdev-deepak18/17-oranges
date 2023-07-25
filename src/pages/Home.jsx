@@ -13,6 +13,7 @@ import { ReactComponent as Consultancy } from "../assets/images/consultancy.svg"
 import { ReactComponent as Resources } from "../assets/images/resources.svg";
 
 import Wrapper from "../assets/wrappers/Home";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -99,7 +100,7 @@ const Home = () => {
       {/* end we can help an */}
 
       {/* testimonials */}
-      <h3>Testimonials</h3>
+      <Testimonials />
       {/*end testimonials */}
 
       {/* call to action */}
