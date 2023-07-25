@@ -18,9 +18,9 @@ const Wrapper = styled.div`
     box-shadow: var(--shadow-2);
     transition: var(--transition);
     position: relative;
-    margin-top: 8rem;
+   
     margin: 0 auto;
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
 
   @media (min-width: 992px) {

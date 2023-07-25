@@ -344,7 +344,7 @@ PROJECT CSS
 }
 
 .testimonials-section .title span {
-  font-size: 4rem;
+  font-size: 3rem;
   display: block;
 }
 .testimonials-section .title {
@@ -363,7 +363,7 @@ PROJECT CSS
 .testimonials-img {
   height: 10rem;
   position: absolute;
-  top: 7rem;
+  top: 6rem;
 }
 
 @media screen and (min-width: 992px) {
