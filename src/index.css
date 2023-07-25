@@ -278,6 +278,11 @@ ul {
   margin-top: 1rem;
 }
 
+
+svg{
+  width: 100%;
+  height: auto;
+}
 /* 
 ============= 
 PROJECT CSS
@@ -288,5 +293,5 @@ PROJECT CSS
   max-width: var(--max-width-2);
   margin: 0 auto;
   padding: 5rem 2rem;
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }

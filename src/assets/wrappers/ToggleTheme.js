@@ -129,13 +129,21 @@ export const Container = styled.div`
   color: ${(props) => props.theme.clrGrey500};
   background: ${(props) => props.theme.bgClrGrey50};
 
-  a, button {
+  a,
+  button {
     color: ${(props) => props.theme.clrGrey500};
   }
 
   /* menu */
-  .nav-center .sidebar, .submenu .content {
+  .nav-center .sidebar,
+  .submenu .content {
     color: ${(props) => props.theme.clrGrey500};
     background: ${(props) => props.theme.bgClrGrey50};
+  }
+
+  /* footer */
+  footer {
+    color: ${(props) => props.theme.clrGrey500};
+    background: ${(props) => props.theme.bgClrGrey100};
   }
 `;

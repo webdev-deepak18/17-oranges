@@ -129,12 +129,20 @@ const Wrapper = styled.div`
     display: none;
   }
 
+  .submenu{
+    display: none;
+  }
+
   @media (min-width: 992px) {
     .sidebar {
       display: none;
     }
     .toggle-menu-btn {
       display: none;
+    }
+
+    .submenu{
+      display: block;
     }
 
     .nav-center {

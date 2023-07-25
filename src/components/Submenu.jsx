@@ -8,12 +8,11 @@ const Submenu = () => {
   const { pageId, setPageId, leftZero, leftOne } = useGlobalContext();
   const currentPage = menuLinks.find((item) => item.pageId === pageId);
   const handleMouseLeave = () => {
-    return
+    return;
     setPageId(null);
   };
 
   const leftValueZero = `${pageId === "solutions" && leftZero}px`;
-  console.log(leftValueZero);
 
   let leftValue = 0;
   if (pageId === "solutions") {
@@ -23,7 +22,6 @@ const Submenu = () => {
   if (pageId === "about") {
     leftValue = leftOne;
   }
-  console.log(leftValue);
 
   return (
     <div

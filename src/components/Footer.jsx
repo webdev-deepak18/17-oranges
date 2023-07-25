@@ -1,10 +1,19 @@
-import React from 'react'
+/** @format */
+
+import React from "react";
+import { FooterWrapperMain } from "../assets/wrappers/Footer";
+import MobileFooter from "./MobileFooter";
+import DesktopFooter from "./DesktopFooter";
 
 const Footer = () => {
-  
   return (
-    <div>Footer</div>
-  )
-}
+    <>
+      <FooterWrapperMain>
+        <MobileFooter  />
+        <DesktopFooter/>
+      </FooterWrapperMain>
+    </>
+  );
+};
 
-export default Footer
+export default Footer;
