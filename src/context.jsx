@@ -9,6 +9,8 @@ export const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isShowSubmenu, setIsShowSubmenu] = useState(false);
   const [pageId, setPageId] = useState(null);
+  const [leftZero, setLeftZero] = useState(0)
+  const [leftOne, setLeftOne] = useState(0)
   const greeting = 'hello world'
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
@@ -26,7 +28,11 @@ export const AppProvider = ({ children }) => {
         setIsShowSubmenu,
         pageId,
         setPageId,
-        greeting
+        greeting,
+        leftZero,
+        setLeftZero,
+        leftOne,
+        setLeftOne
       }}
     >
       {children}

@@ -13,7 +13,7 @@ import { nanoid } from "nanoid";
 
 export const menuLinks = [
   {
-    pageId: nanoid(),
+    pageId: 'solutions',
     page: "Solutions",
     links: [
       {
@@ -37,7 +37,7 @@ export const menuLinks = [
     ],
   },
   {
-    pageId: nanoid(),
+    pageId: 'about',
     page: "about",
     links: [
       {

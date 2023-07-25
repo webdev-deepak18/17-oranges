@@ -1,6 +1,7 @@
 /** @format */
 
 import styled from "styled-components";
+import { useGlobalContext } from "../../context";
 
 const Wrapper = styled.div`
   position: relative;
@@ -156,7 +157,7 @@ const Wrapper = styled.div`
       letter-spacing: var(--letterSpacing);
       transition: var(--transition);
       width: 130px;
-      text-transform: capitalize
+      text-transform: capitalize;
     }
 
     .nav-link:hover {
@@ -175,7 +176,7 @@ const Wrapper = styled.div`
       letter-spacing: var(--letterSpacing);
       transition: var(--transition);
       width: 130px;
-      text-transform: capitalize ;
+      text-transform: capitalize;
     }
 
     .nav-link-2:hover {
@@ -183,38 +184,74 @@ const Wrapper = styled.div`
       color: var(--white);
     }
 
-    .active-btn{
-      background:var(--primary-500);
+    .active-btn {
+      background: var(--primary-500);
       color: var(--white);
       font-size: 1rem;
     }
 
-    .active-btn:hover{
-      background: var(--grey-700)
+    .active-btn:hover {
+      background: var(--grey-700);
     }
 
     .submenu {
-      max-width: var(--max-width-2);
-      width: var(--view-width);
       margin: 0 auto;
-      background: var(--grey-100);
       transition: var(--transition);
+      position: relative;
+      top: 1rem;
+
+      /* left: 780px;
+      transform: translateX(-50%); */
+    }
+    .content {
+      background: var(--grey-50);
+      box-shadow: var(--shadow-1);
+      padding: 2rem;
       position: absolute;
-      top: 7rem;
-      left: 50%;
-      transform: translateX(-50%);
+      transition: var(--transition);
+      border-radius: var(--borderRadius);
+      transition: var(--transition);
+    }
+
+    .content:hover {
+      box-shadow: var(--shadow-3);
+    }
+
+    .hide-submenu {
+      display: none;
+    }
+
+    /* .submenu h4 {
+      color: var(--primary-500);
+      margin-bottom: 1.2rem;
+    } */
+
+    .submenu-links {
+      display: grid;
+      gap: 1rem;
     }
 
     .menu-item {
       display: grid;
-      grid-template-columns: 30px 1fr;
+      grid-template-columns: 25px 1fr;
       align-items: center;
       gap: 1rem;
+      font-size: 1rem;
+      text-transform: capitalize;
+      transition: var(--transition);
+      border-bottom: 1px solid var(--grey-100);
+      padding-bottom: 1rem;
+      cursor: pointer;
+    }
+
+    .menu-item:hover {
+      color: var(--primary-500);
     }
 
     .menu-item svg {
       width: 100%;
       height: auto;
+      fill: var(--primary-500);
     }
 
     /* end navlinks */

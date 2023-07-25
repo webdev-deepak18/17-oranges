@@ -134,7 +134,7 @@ export const Container = styled.div`
   }
 
   /* menu */
-  .nav-center .sidebar {
+  .nav-center .sidebar, .submenu .content {
     color: ${(props) => props.theme.clrGrey500};
     background: ${(props) => props.theme.bgClrGrey50};
   }
