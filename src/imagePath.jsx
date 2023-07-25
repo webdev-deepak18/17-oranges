@@ -6,6 +6,9 @@
 // home
 import { GrHomeRounded } from "react-icons/gr";
 
+// moon
+import { BsFillMoonStarsFill } from "react-icons/bs";
+
 // sun
 import { BsSun } from "react-icons/bs";
 

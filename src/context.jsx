@@ -11,6 +11,7 @@ export const AppProvider = ({ children }) => {
   const [pageId, setPageId] = useState(null);
   const [leftZero, setLeftZero] = useState(0)
   const [leftOne, setLeftOne] = useState(0)
+  const [showSmiley, setShowSmiley] = useState(false)
   const greeting = 'hello world'
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
@@ -32,7 +33,9 @@ export const AppProvider = ({ children }) => {
         leftZero,
         setLeftZero,
         leftOne,
-        setLeftOne
+        setLeftOne,
+        showSmiley,
+        setShowSmiley
       }}
     >
       {children}

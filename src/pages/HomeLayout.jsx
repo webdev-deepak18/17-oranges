@@ -12,6 +12,8 @@ import {
   BaseTheme,
   Container,
 } from "../assets/wrappers/ToggleTheme";
+import StickySidebar from "../components/StickySidebar";
+import MayIHelp from "../components/MayIHelp";
 
 const HomeLayout = () => {
   const { toggleTheme, setToggleTheme } = useGlobalContext();
@@ -31,6 +33,8 @@ const HomeLayout = () => {
 
           <Outlet />
         </div>
+        <StickySidebar/>
+        <MayIHelp/>
         <Footer />
       </Container>
     </ThemeProvider>
