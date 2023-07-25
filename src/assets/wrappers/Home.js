@@ -139,7 +139,7 @@ const Wrapper = styled.div`
     }
 
     .tech-challenge .info {
-      max-width: 90%
+      max-width: 90%;
     }
 
     .tech-challenge .content {
@@ -153,12 +153,59 @@ const Wrapper = styled.div`
       content: "";
       width: 1px;
       background: var(--grey-200);
-      height: 100%;      
+      height: 100%;
       position: absolute;
       top: 0;
-      left: -1.5rem;;
-      ;
+      left: -1.5rem;
+    }
+  }
 
+  /* we can help any industry */
+  .we-can-help h2 {
+    font-size: clamp(2rem, 3vw, 7rem);
+    margin-bottom: 2rem;
+    line-height: 1.3;
+  }
+
+  .we-can-help .info {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .we-can-help p {
+    line-height: 1.5;
+    max-width: 400px;
+    position: relative;;
+  }
+
+  @media (min-width: 992px) {
+    .we-can-help .info {
+      grid-template-columns: 3fr 2fr;
+      gap: 4rem;
+    }
+
+    .we-can-help h2{
+      text-align: right;
+      font-size: 6rem;
+      margin-left: auto;
+      margin-right: 7rem;
+      font-weight: 500;
+      max-width: 900px;
+    }
+
+    .we-can-help p::before {
+      content: "";
+      width: 1px;
+      background: var(--grey-200);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -1.5rem;
+    }
+
+    .we-can-help p{
+      font-size: 1.3rem;
     }
   }
 `;

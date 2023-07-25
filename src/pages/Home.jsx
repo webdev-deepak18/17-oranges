@@ -54,7 +54,7 @@ const Home = () => {
       </div>
       {/* end hero */}
 
-      {/* we can help any industry */}
+      {/* technlogy life saver */}
       <div className="section-center tech-challenge">
         <div className="info">
           <h2>
@@ -81,7 +81,22 @@ const Home = () => {
         </div>
         <img src={flyingWoman} alt="Flying Futuristic Woman" className="img" />
       </div>
-      {/* end we can help any industry */}
+      {/* end technlogy life saver */}
+
+      {/* we can help  */}
+
+      <section className="section-center we-can-help">
+        <h2>We Can Help Organisations From Any Industry</h2>
+        <div className="info">
+          <img src={superCar} alt="Futuristici super car" className="img" />
+          <p>
+            After all, technology is a near-universal concern. We do have
+            particularly high levels of experience with organisations in the
+            recruiting and manufacturing industries.
+          </p>
+        </div>
+      </section>
+      {/* end we can help an */}
 
       {/* testimonials */}
       <h3>Testimonials</h3>
