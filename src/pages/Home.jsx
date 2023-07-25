@@ -14,6 +14,7 @@ import { ReactComponent as Resources } from "../assets/images/resources.svg";
 
 import Wrapper from "../assets/wrappers/Home";
 import Testimonials from "../components/Testimonials";
+import Cta from "../components/Cta";
 
 const Home = () => {
   return (
@@ -104,7 +105,7 @@ const Home = () => {
       {/*end testimonials */}
 
       {/* call to action */}
-      <h3>call to action</h3>
+      <Cta/>
       {/* end call to action */}
     </Wrapper>
   );
