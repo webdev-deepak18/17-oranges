@@ -8,7 +8,7 @@ const Submenu = () => {
   const { pageId, setPageId, leftZero, leftOne } = useGlobalContext();
   const currentPage = menuLinks.find((item) => item.pageId === pageId);
   const handleMouseLeave = () => {
-    return;
+    
     setPageId(null);
   };
 

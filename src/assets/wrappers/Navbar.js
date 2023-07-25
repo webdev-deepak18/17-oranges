@@ -6,7 +6,7 @@ import { useGlobalContext } from "../../context";
 const Wrapper = styled.div`
   position: relative;
   .nav-center {
-    max-width: var(--max-width-2);
+    max-width: var(--max-width-1);
     width: var(--view-width);
     margin: 0 auto;
     /* border: 2px solid red; */
@@ -250,6 +250,11 @@ const Wrapper = styled.div`
       border-bottom: 1px solid var(--grey-100);
       padding-bottom: 1rem;
       cursor: pointer;
+    }
+
+    .menu-item:last-child{
+      border: none;
+      padding-bottom:0;
     }
 
     .menu-item:hover {

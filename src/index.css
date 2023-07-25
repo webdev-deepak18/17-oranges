@@ -290,8 +290,22 @@ PROJECT CSS
 */
 .page {
   width: var(--view-width);
-  max-width: var(--max-width-2);
+  max-width: var(--max-width-1);
   margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: 2rem 0rem;
   /* min-height: 80vh; */
+}
+
+
+.section-center{
+  width: var(--view-width);
+  max-width: var(--max-width-1);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+
+.orange-bold{
+  color:var(--primary-500);
+  font-weight: 900;
 }

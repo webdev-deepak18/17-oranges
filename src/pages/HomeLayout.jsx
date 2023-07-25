@@ -22,19 +22,11 @@ const HomeLayout = () => {
     <ThemeProvider theme={toggleTheme ? DarkTheme : BaseTheme}>
       <Container>
         <Navbar />
-        <div className="page">
-          <button
-            className="btn"
-            type="button"
-            onClick={() => setToggleTheme(!toggleTheme)}
-          >
-            Toggle Theme
-          </button>
-
+        <section className="page">
           <Outlet />
-        </div>
-        <StickySidebar/>
-        <MayIHelp/>
+        </section>
+        <StickySidebar />
+        <MayIHelp />
         <Footer />
       </Container>
     </ThemeProvider>
