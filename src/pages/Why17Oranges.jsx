@@ -13,6 +13,8 @@ import { FaQuoteLeft } from "react-icons/fa";
 import Cta from "../components/Cta";
 import thinkBigCardsData from "../utils/thinkBigCardsData";
 
+import { commitCardsData } from "../utils/thinkBigCardsData";
+
 const Why17Oranges = () => {
   return (
     <Wrapper>
@@ -55,7 +57,7 @@ const Why17Oranges = () => {
       {/* end gibson quote */}
 
       {/* think big */}
-      <section className="section-center">
+      <section className="section-center big-section">
         <h3 className="big-title">
           We encourage everyone to{" "}
           <span className="big-one orange-bold"> THINK</span>
@@ -77,8 +79,43 @@ const Why17Oranges = () => {
           })}
         </div>
       </section>
-
       {/* end think big */}
+
+      {/* commitment */}
+      <section className="section-center commitment-section">
+        <h1 className="title">
+          Our Commitment to do the{" "}
+          <span className="orange-bold">RIGHT THING</span>
+        </h1>
+
+        <div className="info-block">
+          <div className="img-block">
+            <h4>
+              We believe in acting responsibly. That’s why we’re committed to
+              integrating sustainability into every part of the business,
+              including with our clients, solutions and the entire supply chain.
+            </h4>
+            <img
+              src={socialResponsibility}
+              alt="social responsibility"
+              className="img commitment-img"
+            />
+          </div>
+
+          <div className="commitment-cards-block">
+            {commitCardsData.map((item) => {
+              const { title, desc } = item;
+              return (
+                <div className="commitment-card" key={nanoid()}>
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      {/* end commitment */}
 
       <Cta img={superCoolMan} />
     </Wrapper>

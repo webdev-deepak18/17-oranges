@@ -3,6 +3,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+
+
   .title {
     margin: 0 auto;
   }
@@ -115,6 +117,10 @@ const Wrapper = styled.div`
   }
 
   /* think big */
+  .big-section {
+    padding-bottom: 0;
+  }
+
   .big-title {
     text-align: center;
   }
@@ -148,7 +154,7 @@ const Wrapper = styled.div`
     line-height: 1.5;
   }
 
-  .card-img{
+  .card-img {
     border-radius: var(--borderRadius);
   }
 
@@ -161,18 +167,16 @@ const Wrapper = styled.div`
   @media (min-width: 992px) {
     .cards-container {
       grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: 1fr auto;
+      /* grid-template-rows: 1fr auto; */
       max-width: 1200px;
       margin: 0 auto;
       margin-top: 3rem;
       gap: 5rem;
- 
     }
 
     .card-img {
-      height:110px;
+      height: 110px;
       width: 110px;
-
     }
 
     .card-info {
@@ -184,12 +188,94 @@ const Wrapper = styled.div`
       padding: 0;
     }
 
-    .card-info h3{
+    .card-info h3 {
       font-size: 2rem;
     }
   }
 
   /* end thik big */
+
+  /* social commitment */
+  .commitment-section{
+    padding-bottom: 0
+  }
+  .info-block {
+    display: grid;
+    gap: 2rem;
+    max-width: var(--max-width-2);
+    margin: 0 auto;
+  }
+
+  .img-block {
+    display: grid;
+    gap: 2rem;
+    align-content: space-between;
+  }
+
+  .img-block h4 {
+    line-height: 1.5;
+  }
+
+  .commitment-cards-block {
+    display: grid;
+    gap: 3rem;
+    align-self: start;
+  }
+
+  .commitment-card {
+    display: grid;  
+    gap: 1rem;
+    width: 95%;
+    justify-self: right;
+    position: relative;
+    align-content: start;
+  }
+
+  .commitment-card::before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background: var(--grey-100);
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    margin-right: 1rem;
+  }
+
+  .commitment-card h3 {
+    line-height: 1.5;
+    color: var(--primary-500);
+  }
+
+  .commitment-card p {
+    line-height: 1.5;
+  }
+
+  @media (min-width: 992px) {
+    .info-block {
+      grid-template-columns: 3fr 2fr;
+      margin-top: 5rem;
+      align-content: space-between;
+    }
+
+    .img-block {
+      width: 85%;
+    }
+
+    .img-block h4 {
+      font-size: 1.5rem;
+    }
+
+    .img-block .img{
+      height: 30rem;
+    }
+
+    .commitment-cards-block{
+      gap: 6rem;
+    }
+  }
+
+  /* end social commitment */
 `;
 
 export default Wrapper;
