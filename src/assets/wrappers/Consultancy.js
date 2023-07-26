@@ -67,7 +67,7 @@ const Wrapper = styled.div`
   }
 
   .card-container {
-    background: lightgrey;
+    /* background: lightgrey; */
     display: grid;
     grid-template-columns: 1fr;
     /* gap: 1rem; */

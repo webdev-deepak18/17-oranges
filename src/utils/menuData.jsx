@@ -32,7 +32,7 @@ export const menuLinks = [
         id: nanoid(),
         label: "resourcing",
         icon: <Resources />,
-        url: "/solutions/development",
+        url: "/solutions/resourcing",
       },
     ],
   },

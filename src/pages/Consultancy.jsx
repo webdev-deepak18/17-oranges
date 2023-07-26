@@ -87,8 +87,8 @@ const Consultancy = () => {
             <h1 className="title">
               We have <span className="orange-bold">ANSWERS</span> for your
               “impossible” questions
-              <h3>(because we’ve heard most of them before)</h3>
             </h1>
+            <h3>(because we’ve heard most of them before)</h3>
           </div>
           <div className="img-container">
             <img src={futuristicWoman} alt="futuristic woman" className="img" />
@@ -96,7 +96,7 @@ const Consultancy = () => {
         </div>
       </section>
 
-      <Cta img={smilingWomanWithHeadset}/>
+      <Cta img={smilingWomanWithHeadset} />
 
       {/* end answers section */}
     </Wrapper>
