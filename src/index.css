@@ -268,7 +268,9 @@ ul {
 /* title */
 
 .title {
-  text-align: center;
+  font-size: clamp(2rem, 10vw, 6rem);
+  line-height: 1.2;
+  max-width: 992px;;
 }
 
 .title-underline {

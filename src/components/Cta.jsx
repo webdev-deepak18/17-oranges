@@ -3,17 +3,13 @@
 import React from "react";
 
 import Wrapper from "../assets/wrappers/Cta";
-import futuristicPerson from "../assets/images/futuristic-person.webp";
+
 import { Link } from "react-router-dom";
 
-const Cta = () => {
+const Cta = ({ img, alt }) => {
   return (
     <Wrapper>
-      <img
-        src={futuristicPerson}
-        alt="futuristic person"
-        className="cta-img img"
-      />
+      <img src={img} alt={alt} className="cta-img img" />
       <div className="nav-center">
         <div className="info">
           <h3>We’re here to help</h3>

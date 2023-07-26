@@ -105,7 +105,7 @@ const Home = () => {
       {/*end testimonials */}
 
       {/* call to action */}
-      <Cta/>
+      <Cta img={futuristicPerson} alt={'futuristic person'}/>
       {/* end call to action */}
     </Wrapper>
   );

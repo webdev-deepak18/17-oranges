@@ -12,7 +12,7 @@ export const AppProvider = ({ children }) => {
   const [leftZero, setLeftZero] = useState(0)
   const [leftOne, setLeftOne] = useState(0)
   const [showSmiley, setShowSmiley] = useState(false)
-  const greeting = 'hello world'
+  const [isHovering, setIsHovering] = useState(false)
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
@@ -29,13 +29,15 @@ export const AppProvider = ({ children }) => {
         setIsShowSubmenu,
         pageId,
         setPageId,
-        greeting,
+        
         leftZero,
         setLeftZero,
         leftOne,
         setLeftOne,
         showSmiley,
-        setShowSmiley
+        setShowSmiley,
+        isHovering,
+        setIsHovering
       }}
     >
       {children}
