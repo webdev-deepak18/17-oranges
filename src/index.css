@@ -322,7 +322,7 @@ PROJECT CSS
   } */
 
   .section-center {
-    max-width: -3;
+    max-width: var(--max-width-3);
   }
 }
 
@@ -385,3 +385,5 @@ PROJECT CSS
     font-size: 6rem;
   }
 }
+
+
