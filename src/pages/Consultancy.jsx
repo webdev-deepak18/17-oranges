@@ -5,7 +5,6 @@ import React from "react";
 import Wrapper from "../assets/wrappers/Consultancy";
 import consultancyCardsData from "../utils/consultancyCardsData";
 
-import Cta from '../components/Cta'
 
 import audits from "../assets/images/audits.webp";
 import roadmaps from "../assets/images/roadmaps.webp";
@@ -13,8 +12,9 @@ import processes from "../assets/images/processes.webp";
 import futuristicWoman from "../assets/images/futuristic-woman.webp";
 import smilingWomanWithHeadset from "../assets/images/smiling-woman-with-headset.webp";
 
-import { nanoid } from "nanoid";
+import Cta from '../components/Cta'
 import CardVertical from "../components/CardVertical";
+import { nanoid } from "nanoid";
 
 const cardDataOne = {
   title: "Audits",

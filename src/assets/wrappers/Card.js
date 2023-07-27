@@ -15,13 +15,18 @@ display: grid;;
     position: relative;
     color: var(--white);
     transition: all 0.3s;
-    height: 650px;
+    /* height: 650px; */
     width: 100%;
-    max-width: 450px;
+    /* max-width: 450px; */
     cursor: pointer;
   }
 
   @media (min-width: 992px) {
+
+    
+    .card{
+      min-height: 600px;
+    }
     .card-horizontal {
       max-width: 100%;
       height: 100%;

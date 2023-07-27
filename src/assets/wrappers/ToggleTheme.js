@@ -29,6 +29,14 @@ const black = "#222";
 const white = "#fff";
 
 export const BaseTheme = {
+  //base colors black and white
+  clrWhite: white,
+  clrBlack: black,
+
+  // base background colors black and white
+  bgClrWhite: white,
+  bgClrBlack: black,
+
   // Base colors primary
   clrPrimary100: primary100,
   clrPrimary200: primary200,
@@ -77,6 +85,14 @@ export const BaseTheme = {
 };
 
 export const DarkTheme = {
+  //base colors black and white
+  clrWhite: black,
+  clrBlack: white,
+
+  // base background colors black and white
+  bgClrWhite: black,
+  bgClrBlack: white,
+
   // DarkTheme colors primary
 
   clrPrimary100: primary900,
@@ -95,7 +111,7 @@ export const DarkTheme = {
   clrGrey200: grey800,
   clrGrey300: grey700,
   clrGrey400: grey600,
-  clrGrey500: grey100,
+  clrGrey500: white,
   clrGrey600: grey100,
   clrGrey700: grey100,
   clrGrey800: grey100,
@@ -127,7 +143,7 @@ export const DarkTheme = {
 
 export const Container = styled.div`
   color: ${(props) => props.theme.clrGrey500};
-  background: ${(props) => props.theme.bgClrGrey50};
+  background: ${(props) => props.theme.bgClrWhite};
 
   a,
   button {

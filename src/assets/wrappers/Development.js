@@ -54,20 +54,52 @@ const Wrapper = styled.section`
     }
   }
 
-  .card-container {
+  /* cards */
+  .cards-container {
     display: grid;
-    grid-template-columns:1fr;
-    gap: 1rem;
-    width: var(--view-width);
-    max-width: var(--max-width-2);
-    margin: 0 auto;
+    gap: 2rem;
   }
 
-  @media (min-width: 992px) {
-    .card-container {
-      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  @media (min-width: 768px) {
+    .cards-container {
+      grid-template-columns: 1fr 1fr;
     }
   }
+
+  @media (min-width: 1200px) {
+    .cards-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "one ."
+        "one two"
+        "one two"
+        "one two"
+        "three two"
+        "three four"
+        "three four"
+        "three four"
+        ". four";
+      max-width: 900px;
+      justify-content: right;
+      margin-left: auto;
+      margin-right: 5rem;
+    }
+
+    .card-one {
+      grid-area: one;
+    }
+    .card-two {
+      grid-area: two;
+    }
+    .card-three {
+      grid-area: three;
+    }
+    .card-four {
+      grid-area: four;
+    }
+  }
+
+  /* end cards */
 `;
 
 export default Wrapper;

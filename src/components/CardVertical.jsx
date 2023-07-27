@@ -12,9 +12,9 @@ const CardVertical = ({ id, title, desc, img, cardClass }) => {
   const handleMouseLeave = () => setIsHovering(!isHovering);
 
   return (
-    <Wrapper>
+    <Wrapper className={cardClass}>
       <div
-        className={`card ${cardClass}`}
+        className={`card `}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

@@ -73,12 +73,14 @@ const Development = () => {
         </div>
       </div>
 
-      <div className="card-container">
-        <CardVertical {...dataOne} />
-        <CardHorizontal {...dataTwo} />
-        <CardHorizontal {...dataThree} />
-        <CardVertical {...dataFour} />
-      </div>
+      <section className="section-center">
+        <div className="cards-container">
+          <CardVertical {...dataOne} />
+          <CardVertical {...dataTwo} />
+          <CardVertical {...dataThree} />
+          <CardVertical {...dataFour} />
+        </div>
+      </section>
 
       <ToolsSlider />
 
