@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.article`
-display: grid;;
+  display: grid;
   .card {
     display: grid;
     grid-template-columns: 1fr;
@@ -22,9 +22,7 @@ display: grid;;
   }
 
   @media (min-width: 992px) {
-
-    
-    .card{
+    .card {
       min-height: 600px;
     }
     .card-horizontal {
@@ -33,11 +31,17 @@ display: grid;;
       max-height: 350px;
     }
 
-    .card-one{
+    .card-one {
       justify-self: right;
     }
-    .card-two{
+    .card-two {
       align-self: end;
+    }
+  }
+
+  @media (min-width: 1550px) {
+    .card {
+      min-height: 800px;
     }
   }
 
@@ -115,6 +119,5 @@ display: grid;;
   .card-btn:hover {
     color: var(--primary-300);
   }
-  
 `;
 export default Wrapper;

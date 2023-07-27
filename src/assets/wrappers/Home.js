@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     grid-template-columns: 15px auto;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
   }
 

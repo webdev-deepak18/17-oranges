@@ -20,8 +20,8 @@ const Home = () => {
   return (
     <Wrapper>
       {/* hero */}
-      <div className="section-center hero-section-center">
-        <div className="hero">
+      <section className="section">
+        <div className="section-center hero">
           <div className="info">
             <h1>
               We Make Great Technology Happen,
@@ -53,7 +53,7 @@ const Home = () => {
             <h3>Maybe you know what you need to do. Maybe you don’t.</h3>
           </div>
         </div>
-      </div>
+      </section>
       {/* end hero */}
 
       {/* technlogy life saver */}

@@ -3,46 +3,54 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  .title {
-    margin: 0 auto;
-  }
-
+  /* info section */
   .info-section {
-    display: grid;
-    width: 100vw;
-    margin: 0 auto;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  .info-section .img {
-    max-height: 450px;
+    position: relative;
   }
 
   .info-section h4 {
-    width: 90%;
-    margin: 0 auto;
-    justify-self: center;
-    line-height: 1.3;
+    margin-bottom: 2rem;
+    grid-area: text;
   }
 
   @media (min-width: 768px) {
-    .info-section {
-      grid-template-columns: 1fr 1fr;
-    }
-    .info-section h4 {
-      max-width: 20rem;
+    .info-img {
+      width: 60%;
+      margin: 0 auto;
     }
   }
 
   @media (min-width: 992px) {
     .info-section {
-      grid-template-columns: 3fr 4fr;
+      min-height: 300px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-content: center;
     }
     .info-section h4 {
-      max-width: 25rem;
+      margin-bottom: 0;
+    }
+
+    .info-img {
+      width: 50%;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .info-section h4 {
+      width: 45%;
     }
   }
+
+  @media (min-width: 1200px) {
+    .info-section {
+      min-height: 450px;
+    }
+  }
+  /* end info section */
 
   .card-container {
     /* background: lightgrey; */
@@ -59,10 +67,18 @@ const Wrapper = styled.div`
 
   @media (min-width: 728px) {
     .card-container {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
 
+  @media (min-width: 992px) {
+    .card-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  /* end cards */
+
+  /* start answers */
   .answers {
     display: grid;
     gap: 2rem;
@@ -70,11 +86,19 @@ const Wrapper = styled.div`
 
   .answers h3 {
     margin-top: 2rem;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 768px) {
+    .answers {
+      grid-template-columns: 3fr 2fr;
+      gap: 5rem;
+    }
   }
 
   @media (min-width: 992px) {
     .answers {
-      grid-template-columns: 4fr 1fr;
+      grid-template-columns: 7fr 3fr;
       gap: 5rem;
     }
 

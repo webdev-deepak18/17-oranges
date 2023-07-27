@@ -50,11 +50,14 @@ const ToolsSlider = () => {
     ],
   };
   return (
-    <Wrapper>
+    <Wrapper className="section">
       <div className="section-center">
-        <h2 className="section-title">
-          Some of the invaluable tools that deliver results for you
-        </h2>
+        <div className="section-title">
+          <h2>
+            Some of the <span className="orange-bold">INVALUABLE TOOLS </span><br/>
+             that deliver results for you
+          </h2>
+        </div>
 
         <div className="slider-container">
           <Slider {...settings}>

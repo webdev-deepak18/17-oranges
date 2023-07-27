@@ -9,25 +9,27 @@ const Wrapper = styled.div`
     margin: 0 auto;
     margin-bottom: 2rem;
   }
-  h4 {
-    line-height: 1.3;
-    max-width: 992px;
-    margin: 0 auto;
-  }
+
+  /* icon cards */
 
   .icons-cards-container {
     display: grid;
     gap: 5rem 3rem;
-    width: var(--view-width);
     margin: 0 auto;
     justify-items: center;
-    max-width: 992px;
+    /* max-width: 992px; */
     margin: 0 auto;
   }
 
-  @media (min-width: 550px) {
+  @media (min-width: 728px) {
     .icons-cards-container {
       grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .icons-cards-container {
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
@@ -66,6 +68,8 @@ const Wrapper = styled.div`
     color: var(--white);
   }
 
+  /* end icon cards */
+
   .card-container {
     /* background: lightgrey; */
     display: grid;
@@ -75,32 +79,47 @@ const Wrapper = styled.div`
     max-width: var(--max-width-3);
     margin: 5rem auto;
   }
-  .card{
-    max-width: 100% !important
+  .card {
+    max-width: 100% !important;
   }
 
   @media (min-width: 728px) {
+    .card-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 992px) {
     .card-container {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
-  .answers{
+  /* end cards */
+
+  .answers {
     display: grid;
     gap: 2rem;
   }
 
-  .answers h3{
+  .answers h3 {
     margin-top: 2rem;
   }
 
+  @media (min-width: 768px) {
+    .answers {
+      grid-template-columns: 3fr 2fr;
+      gap: 5rem;
+    }
+  }
+
   @media (min-width: 992px) {
-    .answers{
+    .answers {
       grid-template-columns: 4fr 1fr;
       gap: 5rem;
     }
 
-    .answers .img-container img{
+    .answers .img-container img {
       height: 100%;
     }
   }

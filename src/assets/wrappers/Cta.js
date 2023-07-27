@@ -2,18 +2,23 @@
 
 import styled from "styled-components";
 
+
+
 const Wrapper = styled.section`
-  margin-top: 5rem;
+
   position: relative;
   margin-bottom: 3rem;
 
+  h2{
+    font-size: clamp(2rem, 5vw, 6rem);
+  }
   .cta-img {
     height: 10rem;
   }
 
-  .nav-center {
+  .info-container {
     width: 90vw;
-    background: var(--primary-500);
+    background: var(--grey-800);
     max-width: var(--max-width-1);
     margin: 0 auto;
     position: relative;
@@ -28,6 +33,7 @@ const Wrapper = styled.section`
     gap: 1rem;
     color: var(--white);
     justify-items: center;
+    text-align: center;
   }
 
   .cta-btn {
@@ -37,11 +43,15 @@ const Wrapper = styled.section`
   }
 
   .cta-btn:hover {
-    color: var(--primary-600);
-    background: var(--white);
+    /* color: var(--primary-600); */
+    background: var(--primary-600);
   }
 
   @media (min-width: 768px) {
+    margin-top: 2rem;
+    .info{
+      text-align: left;
+    }
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: end;
@@ -49,16 +59,16 @@ const Wrapper = styled.section`
 
     .cta-img {
       width: 130%;
-      height: 75%;
+      height: 100%;
     }
 
-    .nav-center {
+    .info-container {
       background: rgba(235, 235, 235, .8);
       margin-top: 0;
       opacity: 1;
       width: 100%;
       align-items: top;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
 
     }
     .info {
@@ -66,13 +76,34 @@ const Wrapper = styled.section`
       color: var(--grey);
     }
 
-    .info h3 {
-      font-size: clamp(3rem, 10vw, 5rem);
-    }
-
     .cta-btn{
       font-size: clamp(1rem, 2vw, 1.5rem);
       padding: 1.2rem 3rem;
+    }
+  }
+
+  @media (min-width: 992px){
+    margin-bottom: 5rem;
+    margin-top: -5rem;
+    grid-template-columns: 3fr 4fr;
+    .cta-img{
+      height: 80%
+    }
+
+    .cta-img{
+      width: 150%;
+    }
+    .info-container{
+      margin-bottom: 3rem;
+    }
+    
+  }
+
+  @media (min-width: 1200px){
+    grid-template-columns: 1fr 1fr;
+    
+    .cta-img{
+      width: 130%
     }
   }
 `;

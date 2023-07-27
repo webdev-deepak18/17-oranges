@@ -5,14 +5,13 @@ import React from "react";
 import Wrapper from "../assets/wrappers/Consultancy";
 import consultancyCardsData from "../utils/consultancyCardsData";
 
-
 import audits from "../assets/images/audits.webp";
 import roadmaps from "../assets/images/roadmaps.webp";
 import processes from "../assets/images/processes.webp";
 import futuristicWoman from "../assets/images/futuristic-woman.webp";
 import smilingWomanWithHeadset from "../assets/images/smiling-woman-with-headset.webp";
 
-import Cta from '../components/Cta'
+import Cta from "../components/Cta";
 import CardVertical from "../components/CardVertical";
 import { nanoid } from "nanoid";
 
@@ -42,34 +41,41 @@ const cardDataThree = {
 const Consultancy = () => {
   return (
     <Wrapper>
-      <section className="section-center">
-        <div className="hero">
-          <h1 className="title">
-            Technology Strategy <span className="orange-bold">DONE RIGHT </span>
-            &<span className="orange-bold">MADE SIMPLE</span>
-          </h1>
-          <h4>
-            We guide you as you grow rapidly yet organically. We help you truly
-            see the future of your technology. All using an easy-to-understand
-            framework.
-          </h4>
+      <section className="section">
+        <div className="section-center">
+          <div className="section-title">
+            <h1 className="">
+              Technology Strategy{" "}
+              <span className="orange-bold">DONE RIGHT </span>&
+              <span className="orange-bold">MADE SIMPLE</span>
+            </h1>
+            <h4>
+              We guide you as you grow rapidly yet organically. We help you
+              truly see the future of your technology. All using an
+              easy-to-understand framework.
+            </h4>
+          </div>
         </div>
       </section>
 
-      <div className="icons-cards-container">
-        {consultancyCardsData.map((item) => {
-          const { icon, title, desc } = item;
-          return (
-            <article className="strategy-card" key={nanoid()}>
-              <div className="icon">
-                <span>{icon}</span>
-              </div>
-              <h3>{title}</h3>
-              <p>{desc}</p>
-            </article>
-          );
-        })}
-      </div>
+      <section className="section">
+        <div className="section-center">
+          <div className="icons-cards-container">
+            {consultancyCardsData.map((item) => {
+              const { icon, title, desc } = item;
+              return (
+                <article className="strategy-card" key={nanoid()}>
+                  <div className="icon">
+                    <span>{icon}</span>
+                  </div>
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
       {/* cards */}
       <div className="card-container">
@@ -81,17 +87,23 @@ const Consultancy = () => {
 
       {/* answers section */}
 
-      <section className="section-center">
-        <div className="answers">
-          <div className="info">
-            <h1 className="title">
-              We have <span className="orange-bold">ANSWERS</span> for your
-              “impossible” questions
-            </h1>
-            <h3>(because we’ve heard most of them before)</h3>
-          </div>
-          <div className="img-container">
-            <img src={futuristicWoman} alt="futuristic woman" className="img" />
+      <section className="section">
+        <div className="section-center">
+          <div className="answers">
+            <div className="info">
+              <h1 className="title">
+                We have <span className="orange-bold">ANSWERS</span> for your
+                “impossible” questions
+              </h1>
+              <h3>(because we’ve heard most of them before)</h3>
+            </div>
+            <div className="img-container">
+              <img
+                src={futuristicWoman}
+                alt="futuristic woman"
+                className="img"
+              />
+            </div>
           </div>
         </div>
       </section>

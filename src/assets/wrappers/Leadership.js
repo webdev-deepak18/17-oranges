@@ -3,33 +3,70 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  .title {
-    margin: 0 auto;
-  }
-  .hero-section {
-    padding-bottom: 0;
+  .section-title {
+    width: 100%;
   }
 
-  @media (min-width: 992px) {
-    .hero-section .title {
-      font-size: 5rem;
-      max-width: 1200px;
+  .section-title h1 {
+    font-size: clamp(3rem, 5vw, 6rem);
+  }
+
+  @media (min-width: 768px) {
+    .section-title {
+      width: 100%;
+      /* background: red; */
+      margin: 0 auto;
+    }
+    .section-title h1 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      text-align: center;
+      margin: 0 auto;
     }
   }
 
+  @media (min-width: 992px) {
+    .section-title {
+      /* margin: 0; */
+    }
+    .section-title h1 {
+      font-size: clamp(3rem, 5vw, 6rem);
+      text-align: center;
+    }
+    .small-heading {
+      font-size: clamp(3rem, 3vw, 6rem);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .section-title h1 {
+      font-size: clamp(3rem, 5vw, 8rem);
+    }
+  }
+
+  @media (min-width: 1550px) {
+    .section-title h1 {
+      font-size: clamp(3rem, 5vw, 7rem);
+    }
+  }
+
+  /* end section title */
   .letter-section {
+    padding: 0 0 5rem 0;
+  }
+
+  .letter-section .section-center {
     max-width: 750px;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    background: var(--white);
+    background: var(--grey-50);
     padding: 1rem;
     border-radius: var(--borderRadius);
     box-shadow: var(--shadow-2);
     transition: var(--transition);
   }
 
-  .letter-section:hover {
+  .letter-section .section-center:hover {
     box-shadow: var(--shadow-4);
   }
 
@@ -40,7 +77,8 @@ const Wrapper = styled.div`
   }
 
   .letter-info p {
-    line-height: 1.5;
+    line-height: 1.8;
+    font-size: clamp(1rem, 3vw, 1.2rem);
   }
 
   .author-container {
@@ -49,6 +87,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: start;
     gap: 2rem;
+    margin: 0 auto;
   }
 
   .author-info {
@@ -64,14 +103,16 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 992px) {
-    .letter-section {
+    .letter-section .section-center {
       padding: 5rem;
-      margin-top: 5rem;
+      /* margin-top: 5rem; */
     }
     .author-container {
       gap: 3rem;
     }
   }
+
+  /* end letter section */
 
   /* creative team */
 
@@ -82,14 +123,24 @@ const Wrapper = styled.div`
     min-width: 100%;
   }
 
+  .cards-container {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
   @media (min-width: 992px) {
-    .creative-section .title{
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    }
+    .creative-section .title {
       grid-template-columns: 4fr 2fr;
       align-items: center;
       gap: 1rem;
     }
 
-    .creative-section h4{
+    .creative-section h4 {
       font-size: 1.5rem;
     }
   }
@@ -101,9 +152,12 @@ const Wrapper = styled.div`
 
   .cards-container {
     margin-top: 5rem;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  @media (min-width: 1550px) {
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
   }
 `;
 

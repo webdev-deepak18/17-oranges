@@ -10,9 +10,9 @@ const Cta = ({ img, alt }) => {
   return (
     <Wrapper>
       <img src={img} alt={alt} className="cta-img img" />
-      <div className="nav-center">
+      <div className="info-container">
         <div className="info">
-          <h3>We’re here to help</h3>
+          <h2>We’re here to help</h2>
           <h4>Let’s start by discussing your challenge.</h4>
           <Link to="/contact" className="cta-btn btn">
             Get Started

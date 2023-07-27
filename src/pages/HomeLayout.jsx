@@ -22,7 +22,7 @@ const HomeLayout = () => {
     <ThemeProvider theme={toggleTheme ? DarkTheme : BaseTheme}>
       <Container>
         <Navbar />
-        <section className="page">
+        <section >
           <Outlet />
         </section>
         <StickySidebar />

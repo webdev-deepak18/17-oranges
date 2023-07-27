@@ -49,17 +49,20 @@ const dataFour = {
 const Development = () => {
   return (
     <Wrapper>
-      <div className="section-center">
-        <div className="hero">
-          <h1 className="title">
-            Real-World Solutions, Out-of-This
-            <span className="orange-bold"> World IMPACT</span>
-          </h1>
+      <section className="section">
+        <div className="section-center hero">
+          <div className="section-title">
+            <h1 className="title">
+              Real-World Solutions, Out-of-This
+              <span className="orange-bold"> World IMPACT</span>
+            </h1>
+          </div>
+
           <div className="info">
-            <h3>
+            <h4>
               We turn days into hours and hours into seconds.We can do the same
               for you.
-            </h3>
+            </h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -71,14 +74,16 @@ const Development = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section className="section-center">
-        <div className="cards-container">
-          <CardVertical {...dataOne} />
-          <CardVertical {...dataTwo} />
-          <CardVertical {...dataThree} />
-          <CardVertical {...dataFour} />
+      <section className="section">
+        <div className="section-center">
+          <div className="cards-container">
+            <CardVertical {...dataOne} />
+            <CardVertical {...dataTwo} />
+            <CardVertical {...dataThree} />
+            <CardVertical {...dataFour} />
+          </div>
         </div>
       </section>
 

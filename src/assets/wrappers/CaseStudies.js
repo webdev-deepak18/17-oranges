@@ -3,10 +3,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  .hero-title {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  .section-title h1 {
+    margin-bottom: 2rem;
   }
 
   /* cards */
@@ -40,11 +38,11 @@ const Wrapper = styled.div`
       margin-right: 5rem;
     }
 
-    @media (min-width: 1400px){
-      .cards-container{
+    @media (min-width: 1550px) {
+      .cards-container {
         max-width: 1170px;
-        margin-right: 2rem;
-        gap:2rem;
+        margin-right: 5rem;
+        gap: 2rem;
       }
     }
 

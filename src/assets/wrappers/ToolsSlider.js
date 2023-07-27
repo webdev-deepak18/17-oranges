@@ -3,10 +3,14 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
+.section-title{
+  max-width: 100%
+}
 
   h2 {
     text-align: center;
     line-height: 1.3;
+    margin: 0 auto;
   }
 
   /* .tool-container {
@@ -19,7 +23,7 @@ const Wrapper = styled.section`
     gap: 1rem;
   } */
   .slider-container{
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
     margin-top: 3rem;
   }

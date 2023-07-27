@@ -30,7 +30,7 @@ transition: var(--transition);
 }
 
 .divider-line{
-  background-color: var(--white);
+  background-color: var(--white) !important;
   width: 30% !important;
   margin-bottom: 0;
 }

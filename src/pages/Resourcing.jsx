@@ -39,20 +39,26 @@ const cardDataThree = {
 const Resources = () => {
   return (
     <Wrapper>
-      <section className="hero section-center">
-        <h1 className="title">
-          Welcome to Your Very Own{" "}
-          <span className="orange-bold"> IT STAFF RESOURCING HUB</span>
-        </h1>
+      <section className="section">
+        <div className="section-center">
+          <div className="section-title">
+            <h1>
+              Welcome to Your Very Own{" "}
+              <span className="orange-bold"> IT STAFF RESOURCING HUB</span>
+            </h1>
+          </div>
+        </div>
       </section>
 
-      <section className="info-section">
-        <h4>
-          Need tech expert guidance or help filling in skills gaps. We can
-          create and/or manage your IT team as needed. So you can focus on
-          growing your business.
-        </h4>
-        <img src={afroAmerican} alt="arfo american" className="img" />
+      <section className="section info-section">
+        <div className="section-center">
+          <h4>
+            Need tech expert guidance or help filling in skills gaps. We can
+            create and/or manage your IT team as needed. So you can focus on
+            growing your business.
+          </h4>
+        </div>
+        <img src={afroAmerican} alt="arfo american" className="img info-img" />
       </section>
 
       {/* cards */}
@@ -65,16 +71,23 @@ const Resources = () => {
 
       {/* answers section */}
 
-      <section className="section-center">
-        <div className="answers">
-          <div className="info">
-            <h1 className="title">
-              Flexible <span className="orange-bold">RESOURCING</span> for Seamless Operations
-            </h1>
-            <h3>(because we’ve heard most of them before)</h3>
-          </div>
-          <div className="img-container">
-            <img src={coolMan} alt="futuristic woman" className="img" />
+      <section className="section">
+        <div className="section-center">
+          <div className="answers">
+            <div className="info">
+              <h1 className="title">
+                Flexible <span className="orange-bold">RESOURCING</span> for
+                Seamless Operations
+              </h1>
+              <h3>
+                We can support your IT staffing needs indefinitely. If you ever
+                need to transition your team in-house, we have a process to
+                seamlessly transfer staffing operations.
+              </h3>
+            </div>
+            <div className="img-container">
+              <img src={coolMan} alt="Cool Man" className="img" />
+            </div>
           </div>
         </div>
       </section>

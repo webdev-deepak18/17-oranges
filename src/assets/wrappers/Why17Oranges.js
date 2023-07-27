@@ -3,48 +3,54 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-
-
-  .title {
-    margin: 0 auto;
-  }
-
+  /* info section */
   .info-section {
-    display: grid;
-    width: 100vw;
-    margin: 0 auto;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  .info-section .img {
-    max-height: 450px;
+    position: relative;
   }
 
   .info-section h4 {
-    width: 90%;
-    margin: 0 auto;
-    justify-self: center;
-    line-height: 1.3;
+    margin-bottom: 2rem;
+    grid-area: text;
   }
 
   @media (min-width: 768px) {
-    .info-section {
-      grid-template-columns: 1fr 1fr;
-    }
-    .info-section h4 {
-      max-width: 20rem;
+    .info-img {
+      width: 60%;
+      margin: 0 auto;
     }
   }
 
   @media (min-width: 992px) {
     .info-section {
-      grid-template-columns: 3fr 4fr;
+      min-height: 300px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-content: center;
     }
     .info-section h4 {
-      max-width: 25rem;
+      margin-bottom: 0;
+    }
+
+    .info-img {
+      width: 50%;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .info-section h4 {
+      width: 45%;
     }
   }
+
+  @media (min-width: 1200px) {
+    .info-section {
+      min-height: 450px;
+    }
+  }
+  /* end info section */
 
   /* gibson quote */
   .gibson-quote {
@@ -54,6 +60,7 @@ const Wrapper = styled.div`
     gap: 3rem;
     justify-items: center;
     align-items: center;
+
   }
 
   .gibson-img {
@@ -61,9 +68,9 @@ const Wrapper = styled.div`
   }
 
   .quote-block {
-    /* background: red; */
     position: relative;
     display: grid;
+
   }
   .quote-icon {
     width: 50px;
@@ -94,32 +101,43 @@ const Wrapper = styled.div`
     width: 40%;
   }
 
-  @media (min-width: 500px) {
-    .quote-info {
-      width: 85%;
-      max-width: 400px;
+  @media (min-width: 768px) {
+    .gibson-quote {
+      max-width: 450px;
     }
+
+    .quote-info{
+      width: 85%;
+    }
+   
   }
 
   @media (min-width: 992px) {
     .gibson-quote {
-      grid-template-columns: 2fr 4fr;
-      gap: 5rem;
+      grid-template-columns: 2fr 6fr;
+      gap: 2rem;
       margin-top: 5rem;
+      max-width: 850px;
+
     }
     .gibson-img {
+      width: 100%;
       max-width: 100%;
+      justify-self: center;
+    
     }
 
     .quote-info {
       max-width: 100%;
+
+    }
+
+    .quote-icon{
+      left: 2rem;
     }
   }
 
   /* think big */
-  .big-section {
-    padding-bottom: 0;
-  }
 
   .big-title {
     text-align: center;
@@ -132,6 +150,7 @@ const Wrapper = styled.div`
     margin-left: -1rem;
   }
 
+ 
   .cards-container {
     margin-top: 3rem;
     display: grid;
@@ -160,11 +179,26 @@ const Wrapper = styled.div`
 
   @media (min-width: 768px) {
     .cards-container {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .big-title{
+      font-size: 2rem;
     }
   }
 
   @media (min-width: 992px) {
+    .cards-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .big-title{
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .big-title{
+      text-align: center;
+    }
     .cards-container {
       grid-template-columns: repeat(5, 1fr);
       /* grid-template-rows: 1fr auto; */
@@ -196,9 +230,14 @@ const Wrapper = styled.div`
   /* end thik big */
 
   /* social commitment */
-  .commitment-section{
-    padding-bottom: 0
+  .social-section{
+    margin-bottom: 3rem;
   }
+
+  .social-section h1{
+    margin-bottom: 2rem;
+  }
+
   .info-block {
     display: grid;
     gap: 2rem;
@@ -223,7 +262,7 @@ const Wrapper = styled.div`
   }
 
   .commitment-card {
-    display: grid;  
+    display: grid;
     gap: 1rem;
     width: 95%;
     justify-self: right;
@@ -266,11 +305,11 @@ const Wrapper = styled.div`
       font-size: 1.5rem;
     }
 
-    .img-block .img{
+    .img-block .img {
       height: 30rem;
     }
 
-    .commitment-cards-block{
+    .commitment-cards-block {
       gap: 6rem;
     }
   }

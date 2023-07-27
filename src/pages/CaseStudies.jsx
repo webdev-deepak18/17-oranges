@@ -14,7 +14,6 @@ import Wrapper from "../assets/wrappers/CaseStudies";
 import Cta from "../components/Cta";
 import CardVertical from "../components/CardVertical";
 
-
 const cardDataOne = {
   title: "Factoring: Time is Money",
   desc: "Global factoring business using a new portal to replace forms and faxes! What once took hours, now takes seconds. Happier client, happier colleagues.",
@@ -49,29 +48,34 @@ const cardDataFour = {
 const CaseStudies = () => {
   return (
     <Wrapper>
-      <section className="section-center hero-section">
-        <div className="hero-title">
-          <h1>
-            Discover Our Transformative Work Through 
-            <span className="orange-bold"> CASE STUDIES</span>
-          </h1>
-          <h4>
-            Dive into real-world examples showcasing how our innovative
-            technology solutions have revolutionized businesses and empowered
-            our clients to thrive.
-          </h4>
+      <section className="section">
+        <div className="section-center">
+          <div className="section-title">
+            <h1>
+              Discover Our Transformative Work Through
+              <span className="orange-bold"> CASE STUDIES</span>
+            </h1>
+            <h4>
+              Dive into real-world examples showcasing how our innovative
+              technology solutions have revolutionized businesses and empowered
+              our clients to thrive.
+            </h4>
+          </div>
         </div>
       </section>
 
-      <section className="section-center">
-        <div className="cards-container">
-          <CardVertical {...cardDataOne}/>
-          <CardVertical {...cardDataTwo}/>
-          <CardVertical {...cardDataThree}/>
-          <CardVertical {...cardDataFour}/>
+      <section className="section">
+        <div className="section-center">
+          <div className="cards-container">
+            <CardVertical {...cardDataOne} />
+            <CardVertical {...cardDataTwo} />
+            <CardVertical {...cardDataThree} />
+            <CardVertical {...cardDataFour} />
+          </div>
         </div>
       </section>
 
+      <Cta img={fashionYoungGirl} alt="Happy Asian Woman" />
     </Wrapper>
   );
 };

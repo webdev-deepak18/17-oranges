@@ -6,8 +6,6 @@ import professionalWoman from "../assets/images/professional-woman-smiling.webp"
 import { nanoid } from "nanoid";
 import TeamCard from "../components/TeamCard";
 
-
-
 const letterContent = [
   `Often the second question people ask me about 17 Oranges is, “What makes us different from other companies that offer technology consulting and solutions?”`,
   `(You can probably guess the first question. The answer to that is the name is impactful, memorable, and different — which is what we strive to be. But I digress …)`,
@@ -17,52 +15,59 @@ const letterContent = [
 ];
 
 const Leadership = () => {
-  
   return (
     <Wrapper>
-      <section className="section-center hero-section">
-        <h1 className="title">
-          What Makes Us
-          <br /> Exceptional? <br />
-          <span className="orange-bold">FIRST-HAND EXPERIENCE</span>
-        </h1>
-      </section>
-
-      <section className="section-center letter-section">
-        <div className="letter-info">
-          {letterContent.map((para) => {
-            return <p key={nanoid()}>{para}</p>;
-          })}
-        </div>
-        <div className="author-container">
-          <div className="author-info">
-            <div className="divider-line"></div>
-            <h5>
-              CEO <span className="orange-bold">Adam Gibson</span>
-            </h5>
+      <section className="section">
+        <div className="section-center">
+          <div className="section-title">
+            <h1>
+              <span className="small-heading">What Makes Us Exceptional?</span>{" "}
+              <br />
+              <span className="orange-bold">FIRST-HAND EXPERIENCE</span>
+            </h1>
           </div>
-          <img src={adamGibson} alt="adam gibson" className="img" />
         </div>
       </section>
 
-      <section className="section-center creative-section">
-        <div className="title">
-          <h1 >
-            Our <span className="orange-bold">CREATIVE</span> Team
-          </h1>
-
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in
-            quidem voluptates ratione amet tempora velit quis laborum,
-            voluptatibus et.
-          </h4>
+      <section className="section letter-section ">
+        <div className="section-center">
+          <div className="letter-info">
+            {letterContent.map((para) => {
+              return <p key={nanoid()}>{para}</p>;
+            })}
+          </div>
+          <div className="author-container">
+            <div className="author-info">
+              <div className="divider-line"></div>
+              <h5>
+                CEO <span className="orange-bold">Adam Gibson</span>
+              </h5>
+            </div>
+            <img src={adamGibson} alt="adam gibson" className="img" />
+          </div>
         </div>
+      </section>
 
-        <div className="cards-container">
-          <TeamCard img={professionalWoman} />
-          <TeamCard img={professionalWoman} />
-          <TeamCard img={professionalWoman} />
-          <TeamCard img={professionalWoman} />
+      <section className="section ">
+        <div className="section-center creative-section">
+          <div className="title">
+            <h1>
+              Our <span className="orange-bold">CREATIVE</span> Team
+            </h1>
+
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in
+              quidem voluptates ratione amet tempora velit quis laborum,
+              voluptatibus et.
+            </h4>
+          </div>
+
+          <div className="cards-container">
+            <TeamCard img={professionalWoman} />
+            <TeamCard img={professionalWoman} />
+            <TeamCard img={professionalWoman} />
+            <TeamCard img={professionalWoman} />
+          </div>
         </div>
       </section>
     </Wrapper>
