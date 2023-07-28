@@ -103,15 +103,22 @@ const Home = () => {
 
       {/* we can help  */}
 
-      <section className="section-center we-can-help">
-        <h2>We Can Help Organisations From Any Industry</h2>
-        <div className="info">
-          <img src={superCar} alt="Futuristici super car" className="img" />
-          <p>
-            After all, technology is a near-universal concern. We do have
-            particularly high levels of experience with organisations in the
-            recruiting and manufacturing industries.
-          </p>
+      <section className="section">
+        <div className="section-center we-can-help">
+          <div className="section-title">
+            <h1>
+              We Can Help Organisations From{" "}
+              <span className="orange-bold"> ANY INDUSTRY</span>
+              </h1>
+          </div>
+          <div className="info">
+            <img src={superCar} alt="Futuristici super car" className="img" />
+            <p>
+              After all, technology is a near-universal concern. We do have
+              particularly high levels of experience with organisations in the
+              recruiting and manufacturing industries.
+            </p>
+          </div>
         </div>
       </section>
       {/* end we can help an */}

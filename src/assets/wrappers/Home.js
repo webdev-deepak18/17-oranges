@@ -177,8 +177,8 @@ const Wrapper = styled.div`
     padding-left: 1rem;
   }
 
-  .tech-info .content::before{
-    content: '';
+  .tech-info .content::before {
+    content: "";
     position: absolute;
     width: 1px;
     height: 100%;
@@ -207,7 +207,7 @@ const Wrapper = styled.div`
       justify-self: stretch;
       max-width: 100%;
     }
-    .tech-info .content{
+    .tech-info .content {
       margin-left: 5rem;
       margin-right: 2rem;
     }
@@ -229,22 +229,45 @@ const Wrapper = styled.div`
   /* end tech challenge */
 
   /* we can help any industry */
+
+  .we-can-help {
+    display: grid;
+    gap: 2rem;
+  }
+
   .we-can-help h2 {
     font-size: clamp(2rem, 3vw, 7rem);
     margin-bottom: 2rem;
     line-height: 1.3;
   }
 
-  .we-can-help .info {
-    display: grid;
-    gap: 2rem;
-    align-items: center;
+  .we-can-help p{
+    padding-left: 1rem;
   }
 
-  .we-can-help p {
-    line-height: 1.5;
-    max-width: 400px;
-    position: relative;
+  .we-can-help p::before {
+    content: "";
+    width: 1px;
+    background: var(--grey-200);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: 768px) {
+    .we-can-help .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .we-can-help p {
+      line-height: 1.5;
+      max-width: 400px;
+      position: relative;
+    }
   }
 
   @media (min-width: 992px) {
@@ -260,16 +283,6 @@ const Wrapper = styled.div`
       margin-right: 7rem;
       font-weight: 500;
       max-width: 900px;
-    }
-
-    .we-can-help p::before {
-      content: "";
-      width: 1px;
-      background: var(--grey-200);
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: -1.5rem;
     }
 
     .we-can-help p {

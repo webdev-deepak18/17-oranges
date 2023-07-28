@@ -288,7 +288,7 @@ SECTION AND TITLES
 .section {
   margin: 0 auto;
   padding: 2rem 0;
-  max-width: 1750px;
+  max-width: 1920px;
 }
 
 .section-center {
@@ -372,19 +372,19 @@ svg {
 
 /* testimonials temp needs refactor */
 /* testimonials */
-.testimonials-section {
+/* .testimonials-section {
   position: relative;
   width: 100%;
-  max-width: 100%;
+  max-width: 100%; */
   /* border: 1px solid red; */
   /* background: yellow; */
   /* background: url("./assets/images/happy-girl.webp"); */
   /* background-position: top right;
   background-size: cover;
   background-repeat: no-repeat; */
-  padding-block: 0;
-}
-
+  /* padding-block: 0;
+} */
+/* 
 .testimonials-section .title span {
   font-size: 3rem;
   display: block;
@@ -424,5 +424,5 @@ svg {
     .testimonials-section .title span {
     font-size: 6rem;
   }
-}
+} */
 /* testimonials temp */

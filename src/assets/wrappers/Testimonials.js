@@ -2,130 +2,77 @@
 
 import styled from "styled-components";
 
-const Wrapper = styled.div`
-  max-width: var(--max-width-1);
-  /* border: 1px solid lightblue; */
-
-  .slider-container {
-    margin-bottom: 2rem;
-    /* border: 2px solid red; */
-    min-height: 300px;
-    background: var(--white);
-    color: var(--grey-700);
-    width: var(--view-width);
-    max-width: 920px;
-    border-radius: var(--borderRadius);
-    box-shadow: var(--shadow-2);
-    transition: var(--transition);
+const Wrapper = styled.section`
+  /* sliders */
+  .sliders-container {
+    background: red;
     position: relative;
-   
-    margin: 0 auto;
-    margin-top: 6rem;
   }
 
-  @media (min-width: 992px) {
-    .slider-container{
-      margin-top: -2rem;
-      margin-left: 2rem
-    }
-}
+  .mobile-img {
+    position: absolute;
+    top: 0;
+    height: 200px;
+  }
 
-  .slider-container:hover {
+  .sliders {
+    padding-top: 8rem;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* single slider css */
+  .single-slider {
+    background: var(--white);
+    padding: 1rem;
+    display: grid;
+    justify-items: center;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: var(--shadow-2);
+  }
+
+  .single-slider:hover{
     box-shadow: var(--shadow-4);
   }
 
-  .item {
-    padding: 2rem;
+  .quote-text-container {
+    /* min-height: 300px; */
+    margin-bottom: 2rem
   }
 
-  .item .icon {
-    width: 60px;
+  .quote-icon {
+    width: 50px;
     display: block;
-    margin: 0 auto;
     color: var(--primary-400);
-    margin-bottom: 2rem;
-  }
-
-  .quote {
-    line-height: 1.5;
+    margin: 0 auto;
     margin-bottom: 1rem;
   }
 
-  .divider-line {
-    height: 2px;
-    background: var(--grey-200);
-    width: 30%;
-    /* margin-bottom: 1rem; */
-  }
-
-  .author-info {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: space-between;
+  .quote-text {
+    line-height: 1.8;
+    font-size: clamp(1rem, 3vw, 1.3rem);
     margin-bottom: 1rem;
   }
 
   .author {
     color: var(--primary-500);
-    line-height: 1.5;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
   }
 
-  .author span {
+  .author-title {
     display: block;
-    color: var(--grey-500);
-    font-size: var(--small-text);
+    color: var(--grey-400);
+    font-size: clamp(0.8rem, 3vw, 1rem);
   }
 
-  .logo {
-    width: 90px;
+  .logo-container {
+    max-width: 120px;
+    margin: 0 auto;
   }
-
-  /* react slick buttons */
-
-  .slick-prev,
-  .slick-next {
-    display: none !important;
-  }
-  .slick-dots li button:before {
-    font-size: 16px;
-  }
-
-  .slick-dots li.slick-active button:before {
-    color: var(--primary-500);
-  }
-
-  .slick-dots li button:before:hover {
-    color: var(--primary-500) !important;
-  }
-
-  .slick-dots {
-    bottom: 1rem;
-  }
-
-  @media (min-width: 992px) {
-    .slider-container {
-      padding: 2rem;
-    }
-    .quote {
-      font-size: 1.2rem;
-      line-height: 1.8;
-    }
-    .logo {
-      width: 180px;
-    }
-    .author-info {
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
-    .author-info span {
-      font-size: 1rem;
-    }
-
-    margin-left: 6rem;
-    margin-top: 5rem;
-  }
+  /* end single slider css */
+  /* end sliders */
 `;
 
 export default Wrapper;
