@@ -5,8 +5,17 @@ import { useGlobalContext } from "../../context";
 
 const Wrapper = styled.div`
   position: relative;
+  /* background: var(--white);; */
+  box-shadow: var(--shadow-2);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  padding-bottom: 1rem;
+ 
+  width: 100%;
+
   .nav-center {
-    max-width: var(--max-width-1);
+    /* max-width: var(--max-width-1); */
     width: var(--view-width);
     margin: 0 auto;
     /* border: 2px solid red; */

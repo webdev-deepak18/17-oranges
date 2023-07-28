@@ -302,7 +302,10 @@ SECTION AND TITLES
   line-height: 1.3;
 }
 
-.section-title h2, h3, h4, h5{
+.section-title h2,
+h3,
+h4,
+h5 {
   line-height: 1.5;
 }
 
@@ -333,8 +336,7 @@ SECTION AND TITLES
 }
 
 @media screen and (min-width: 1200px) {
-
-  .section{
+  .section {
     padding: 5rem 0;
   }
   .section-center {
@@ -350,15 +352,13 @@ SECTION AND TITLES
 
 /*=================
 ===================
-HEADINGS, SUBHEADINGS, TEXT
-===================
-=================== */
-
-/*=================
-===================
 MISCALLANEOUS
 ===================
 =================== */
+
+.page {
+  padding-top: 5rem;
+}
 
 .orange-bold {
   color: var(--primary-500);
@@ -369,60 +369,3 @@ svg {
   width: 100%;
   height: auto;
 }
-
-/* testimonials temp needs refactor */
-/* testimonials */
-/* .testimonials-section {
-  position: relative;
-  width: 100%;
-  max-width: 100%; */
-  /* border: 1px solid red; */
-  /* background: yellow; */
-  /* background: url("./assets/images/happy-girl.webp"); */
-  /* background-position: top right;
-  background-size: cover;
-  background-repeat: no-repeat; */
-  /* padding-block: 0;
-} */
-/* 
-.testimonials-section .title span {
-  font-size: 3rem;
-  display: block;
-}
-.testimonials-section .title {
-  text-align: left;
-  margin: 0 auto;
-  max-width: 90vw;
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  .testimonials-section .title span {
-    display: inline-block;
-  }
-}
-
-.testimonials-img {
-  height: 10rem;
-  position: absolute;
-  top: 6rem;
-}
-
-@media screen and (min-width: 992px) {
-  .testimonials-img {
-    top: 0;
-    width: 60%;
-    right: 0;
-    height: 35rem;
-    margin-bottom: 0;
-  }
-  .testimonials-section .title {
-    padding-top: 7rem;
-    margin-left: 8rem;
-
-  }
-    .testimonials-section .title span {
-    font-size: 6rem;
-  }
-} */
-/* testimonials temp */

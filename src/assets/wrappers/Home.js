@@ -235,6 +235,10 @@ const Wrapper = styled.div`
     gap: 2rem;
   }
 
+  .we-can-help h1{
+    text-align: right;
+  }
+
   .we-can-help h2 {
     font-size: clamp(2rem, 3vw, 7rem);
     margin-bottom: 2rem;

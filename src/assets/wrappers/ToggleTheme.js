@@ -130,7 +130,7 @@ export const DarkTheme = {
 
   // DarkTheme background colors grey
   bgClrGrey50: grey900,
-  bgClrGrey100: grey900,
+  bgClrGrey100: black,
   bgClrGrey200: grey800,
   bgClrGrey300: grey700,
   bgClrGrey400: grey600,
@@ -152,9 +152,10 @@ export const Container = styled.div`
 
   /* menu */
   .nav-center .sidebar,
-  .submenu .content {
+  .submenu .content,
+  .navbar-container {
     color: ${(props) => props.theme.clrGrey500};
-    background: ${(props) => props.theme.bgClrGrey50};
+    background: ${(props) => props.theme.bgClrWhite};
   }
 
   /* footer */

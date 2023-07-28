@@ -45,7 +45,7 @@ const handleMouseOver = (e) => {
 }
 
   return (
-    <Wrapper>
+    <Wrapper className="navbar-container">
       <div className="nav-center" onMouseOver = {handleMouseOver}>
         <header>
           <img

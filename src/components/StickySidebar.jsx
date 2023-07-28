@@ -37,14 +37,14 @@ const Sidebar = () => {
       >
         {showSmiley ? <GoSmiley /> : <RiHome2Line />}
       </Link>
-      <Link
+      <div
         className="sticy-icon"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={() => setToggleTheme(!toggleTheme)}
       >
         {toggleTheme ? <BsMoonStarsFill /> : <BsSun />}
-      </Link>
+      </div>
       <Link
         className="sticy-icon"
         onMouseEnter={handleMouseEnter}

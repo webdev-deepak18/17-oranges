@@ -79,6 +79,7 @@ const Wrapper = styled.div`
   .letter-info p {
     line-height: 1.8;
     font-size: clamp(1rem, 3vw, 1.2rem);
+    color: var(--grey-500)
   }
 
   .author-container {

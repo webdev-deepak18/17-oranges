@@ -3,9 +3,15 @@
 import { useState, useContext, createContext } from "react";
 
 const AppContext = createContext();
+const getInitialDarkMode = () => {
+  const storedDarkMode = localStorage.getItem('themeMode') === 'true'
+  return storedDarkMode || false
+}
+
+
 
 export const AppProvider = ({ children }) => {
-  const [toggleTheme, setToggleTheme] = useState(false);
+  const [toggleTheme, setToggleTheme] = useState(getInitialDarkMode());
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isShowSubmenu, setIsShowSubmenu] = useState(false);
   const [pageId, setPageId] = useState(null);
@@ -13,10 +19,10 @@ export const AppProvider = ({ children }) => {
   const [leftOne, setLeftOne] = useState(0)
   const [showSmiley, setShowSmiley] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
+  const localThemeMode = localStorage.setItem('themeMode', toggleTheme);
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
-
-  const toggleSubmenu = () => setIsShowSubmenu(!isShowSubmenu);
+  
 
   return (
     <AppContext.Provider

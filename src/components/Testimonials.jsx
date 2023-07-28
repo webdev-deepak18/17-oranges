@@ -14,7 +14,7 @@ import { nanoid } from "nanoid";
 const Testimonials = () => {
   const settings = {
     dots: true,
-    infinite: true,    
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -47,17 +47,21 @@ const Testimonials = () => {
                       </span>
                       <div className="quote-text-container">
                         <p className="quote-text">{quote}</p>
-                        <h5 className="author">
-                          {author},{" "}
-                          <span className="author-title">{authorTitle}</span>
-                        </h5>
                       </div>
-                      <div className="logo-container">
-                        <img
-                          src={companyLogo}
-                          alt="Logo"
-                          className="img logo-img"
-                        />
+                      <div className="author-logo-container">
+                        <div className="author-container">
+                          <h5 className="author">
+                            {author},{" "}
+                            <span className="author-title">{authorTitle}</span>
+                          </h5>
+                        </div>
+                        <div className="logo-container">
+                          <img
+                            src={companyLogo}
+                            alt="Logo"
+                            className="img logo-img"
+                          />
+                        </div>
                       </div>
                     </div>
                   );

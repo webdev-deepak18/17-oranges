@@ -22,9 +22,9 @@ const HomeLayout = () => {
     <ThemeProvider theme={toggleTheme ? DarkTheme : BaseTheme}>
       <Container>
         <Navbar />
-        <section >
+        <div className="page">
           <Outlet />
-        </section>
+        </div>
         <StickySidebar />
         <MayIHelp />
         <Footer />

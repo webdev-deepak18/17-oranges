@@ -5,7 +5,8 @@ import styled from "styled-components";
 
 
 const Wrapper = styled.section`
-
+  max-width: 1920px;
+  margin: 0 auto;
   position: relative;
   margin-bottom: 3rem;
 
@@ -73,7 +74,7 @@ const Wrapper = styled.section`
     }
     .info {
       justify-items: left;
-      color: var(--grey);
+      color: var(--grey-500);
     }
 
     .cta-btn{
