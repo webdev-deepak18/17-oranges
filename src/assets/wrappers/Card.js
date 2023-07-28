@@ -96,6 +96,7 @@ const Wrapper = styled.article`
     transition: all 0.3s;
     opacity: 0;
     line-height: 1.5;
+    font-size: clamp(1rem, 4vw, 1.3rem)
   }
 
   .show-desc {

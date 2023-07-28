@@ -22,8 +22,8 @@ const Why17Oranges = () => {
         <div className="section-center">
           <div className="section-title">
             <h1>
-              We help customers,
-              <span className="orange-bold"> YOU CAN BE NEXT.</span>
+              We Help Clients<br/>
+              <span className="orange-bold"> FULL STOP.</span>
             </h1>
           </div>
         </div>
@@ -103,7 +103,7 @@ const Why17Oranges = () => {
       <section className="section social-section">
         <div className="section-center">
           <div className="section-title">
-            <h1 >
+            <h1>
               Our Commitment to do the{" "}
               <span className="orange-bold">RIGHT THING</span>
             </h1>

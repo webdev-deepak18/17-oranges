@@ -24,7 +24,7 @@ const Home = () => {
         <div className="section-center hero-section-center">
           <div className="section-title">
             <h1>
-              We Make Great Technology Happen,
+              We Make Great Technology Happen
               <span className="orange-bold"> BEAUTIFULLY</span>
             </h1>
           </div>
@@ -48,8 +48,8 @@ const Home = () => {
       <section className="section hero-section-two">
         <div className="section-title hero-info">
           <h3>
-            Is your technology getting in the way of your organisation’s
-            success?
+            If You Need a Digital Transformation Partner, You’ve Come to the
+            Right Place!
           </h3>
           <h5>
             Maybe you know what you need to do.
@@ -109,7 +109,7 @@ const Home = () => {
             <h1>
               We Can Help Organisations From{" "}
               <span className="orange-bold"> ANY INDUSTRY</span>
-              </h1>
+            </h1>
           </div>
           <div className="info">
             <img src={superCar} alt="Futuristici super car" className="img" />

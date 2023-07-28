@@ -22,7 +22,7 @@ const cardDataOne = {
 };
 const cardDataTwo = {
   title: "Build Your Team",
-  desc: "We build or fill out your IT team by bringing in professionals with the skill sets you need to achieve your technology goals.",
+  desc: "We build or fill out your development team by bringing in professionals with the skill sets you need to achieve your technology goals.",
   img: austronautTwo,
   cardClass: "",
   id: nanoid(),
@@ -30,7 +30,7 @@ const cardDataTwo = {
 
 const cardDataThree = {
   title: "Get Operations Support",
-  desc: "We operate your IT team using our agile approach. We manage each team member and grow the team as needed.",
+  desc: "We operate within your technology team using our agile approach. We manage each team member and grow the team as needed.",
   cardClass: "",
   img: austronautThree,
   id: nanoid(),
@@ -44,7 +44,7 @@ const Resources = () => {
           <div className="section-title">
             <h1>
               Welcome to Your Very Own{" "}
-              <span className="orange-bold"> IT STAFF RESOURCING HUB</span>
+              <span className="orange-bold"> TECH RESOURCING HUB</span>
             </h1>
           </div>
         </div>
@@ -54,8 +54,8 @@ const Resources = () => {
         <div className="section-center">
           <h4>
             Need tech expert guidance or help filling in skills gaps. We can
-            create and/or manage your IT team as needed. So you can focus on
-            growing your business.
+            create and/or manage your development team as needed. So you can
+            focus on growing your business.
           </h4>
         </div>
         <img src={afroAmerican} alt="arfo american" className="img info-img" />
@@ -80,9 +80,9 @@ const Resources = () => {
                 Seamless Operations
               </h1>
               <h3>
-                We can support your IT staffing needs indefinitely. If you ever
-                need to transition your team in-house, we have a process to
-                seamlessly transfer staffing operations.
+                We can support your technology needs indefinitely. If
+                you ever need to transition your team in-house, we have a
+                process to seamlessly transfer staffing operations.
               </h3>
             </div>
             <div className="img-container">
