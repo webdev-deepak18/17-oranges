@@ -14,22 +14,27 @@ import { nanoid } from "nanoid";
 const Testimonials = () => {
   const settings = {
     dots: true,
-    infinite: true,
-    speed: 500,
+    infinite: true,    
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 300,
+    autoplaySpeed: 4000,
+    adaptiveHeight: 1,
+    cssEase: "linear",
   };
   return (
     <Wrapper className="section">
       <div className="testimonials-container">
+        <img src={happyGirl} alt="happy girl" className="img desktop-img" />
         <div className="section-center">
           <div className="section-title">
             <h2>
-              <span>Why Clients Love</span> 17 Oranges
+              Why Clients Love <span className="orange-bold">17 Oranges</span>
             </h2>
           </div>
           <div className="sliders-container">
-             <img src={happyGirl} alt="happy girl" className="img mobile-img" />
+            <img src={happyGirl} alt="happy girl" className="img mobile-img" />
             <div className="sliders">
               <Slider {...settings}>
                 {TestimonialsData.map((item) => {
@@ -59,7 +64,6 @@ const Testimonials = () => {
                 })}
               </Slider>
             </div>
-           
           </div>
         </div>
       </div>
