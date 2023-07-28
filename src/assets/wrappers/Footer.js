@@ -84,7 +84,7 @@ export const FooterWrapperMain = styled.footer`
       justify-content: space-between;
       gap: 2rem;
       align-items: center;
-      max-width: var(--max-width-2);
+      max-width:1920px;
       width: var(--view-width);
       margin: 0 auto;
     }
