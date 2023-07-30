@@ -16,7 +16,13 @@ const DesktopFooter = () => {
   return (
     <div className="desktop-footer">
       <div className="logo-container">
-        <img src={toggleTheme ? whiteLogo : logo} alt="logo" className="logo" />
+        <Link to="/">
+          <img
+            src={toggleTheme ? whiteLogo : logo}
+            alt="logo"
+            className="logo"
+          />
+        </Link>
 
         <div>
           <div className="follow-container">
@@ -31,7 +37,7 @@ const DesktopFooter = () => {
           </div>
 
           <small className="copyright">
-            17 Oranges Limited © ${year.getFullYear()}
+            17 Oranges Limited © {year.getFullYear()}
           </small>
         </div>
       </div>
@@ -44,10 +50,10 @@ const DesktopFooter = () => {
                 Development
               </NavLink>
               <NavLink className="link" to="/solutions/consultancy">
-                consultancy
+                Consultancy
               </NavLink>
               <NavLink className="link" to="/solutions/resourcing">
-                resourcing
+                Resourcing
               </NavLink>
             </div>
           </div>

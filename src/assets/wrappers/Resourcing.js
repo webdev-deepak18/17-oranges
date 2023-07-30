@@ -8,9 +8,11 @@ const Wrapper = styled.div`
     position: relative;
   }
 
-  .info-section h4 {
+  .info-section .info {
     margin-bottom: 2rem;
     grid-area: text;
+    display: grid;
+    gap: 2rem;
   }
 
   @media (min-width: 768px) {
@@ -21,6 +23,9 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 992px) {
+    .section-title {
+      max-width: 100%;
+    }
     .info-section {
       min-height: 300px;
       overflow: hidden;
@@ -40,7 +45,7 @@ const Wrapper = styled.div`
       top: 0;
     }
 
-    .info-section h4 {
+    .info-section .info {
       width: 45%;
     }
   }
@@ -82,6 +87,11 @@ const Wrapper = styled.div`
   .answers {
     display: grid;
     gap: 2rem;
+  }
+
+  .answers h1 {
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    line-height: 1.3;
   }
 
   .answers h3 {

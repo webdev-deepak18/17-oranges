@@ -67,6 +67,9 @@ const Wrapper = styled.section`
     .cards-container {
       grid-template-columns: 1fr 1fr;
     }
+    .section-title {
+      max-width: 100%;
+    }
   }
 
   @media (min-width: 1200px) {

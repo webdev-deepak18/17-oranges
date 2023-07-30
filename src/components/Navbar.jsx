@@ -27,8 +27,8 @@ const Navbar = () => {
     isShowSubmenu,
     setIsShowSubmenu,
     toggleSubmenu,
-    pageId, 
-    setPageId
+    pageId,
+    setPageId,
   } = useGlobalContext();
 
   const mouseEnter = (e) => {
@@ -38,21 +38,23 @@ const Navbar = () => {
   const mouseleave = (e) => {
     console.log(e.currentTarget);
   };
-const handleMouseOver = (e) => {
-  if(!e.target.classList.contains('nav-link')){
-    setPageId(null)
-  }
-}
+  const handleMouseOver = (e) => {
+    if (!e.target.classList.contains("nav-link")) {
+      setPageId(null);
+    }
+  };
 
   return (
     <Wrapper className="navbar-container">
-      <div className="nav-center" onMouseOver = {handleMouseOver}>
+      <div className="nav-center" onMouseOver={handleMouseOver}>
         <header>
-          <img
-            src={toggleTheme ? whiteLogo : logo}
-            alt="logo"
-            className="logo"
-          />
+          <Link to="/">
+            <img
+              src={toggleTheme ? whiteLogo : logo}
+              alt="logo"
+              className="logo"
+            />
+          </Link>
           <div className="toggle-menu-btn" onClick={toggleSidebar}>
             <FaBars />
           </div>
@@ -157,7 +159,7 @@ const handleMouseOver = (e) => {
         <Menu />
         {/* end desktop links */}
       </div>
-      <Submenu/>
+      <Submenu />
     </Wrapper>
   );
 };

@@ -54,7 +54,7 @@ export const menuLinks = [
       },
       {
         id: nanoid(),
-        label: "resourcing",
+        label: "Case Studies",
         icon: <CaseStudies />,
         url: "/about/case-studies",
       },

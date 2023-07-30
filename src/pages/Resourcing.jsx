@@ -52,11 +52,13 @@ const Resources = () => {
 
       <section className="section info-section">
         <div className="section-center">
-          <h4>
-            Need tech expert guidance or help filling in skills gaps. We can
-            create and/or manage your development team as needed. So you can
-            focus on growing your business.
-          </h4>
+          <div className="info">
+            <h4>Need tech expert guidance or help filling in skills gaps?</h4>
+            <h5>
+              We can create and/or manage your development team as needed. So
+              you can focus on growing your business.
+            </h5>
+          </div>
         </div>
         <img src={afroAmerican} alt="arfo american" className="img info-img" />
       </section>
@@ -80,9 +82,9 @@ const Resources = () => {
                 Seamless Operations
               </h1>
               <h3>
-                We can support your technology needs indefinitely. If
-                you ever need to transition your team in-house, we have a
-                process to seamlessly transfer staffing operations.
+                We can support your technology needs indefinitely. If you ever
+                need to transition your team in-house, we have a process to
+                seamlessly transfer staffing operations.
               </h3>
             </div>
             <div className="img-container">

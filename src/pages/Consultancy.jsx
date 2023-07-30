@@ -31,7 +31,7 @@ const cardDataTwo = {
 };
 
 const cardDataThree = {
-  title: "Proecesses",
+  title: "Processes",
   desc: "We can manage your technology projects, so you’ll know they’re in expert hands. We can define scope and deliver results accordingly.",
   cardClass: "",
   img: processes,
@@ -46,8 +46,8 @@ const Consultancy = () => {
           <div className="section-title">
             <h1 className="">
               Technology Strategy{" "}
-              <span className="orange-bold">DONE RIGHT </span>&
-              <span className="orange-bold">MADE SIMPLE</span>
+              <span className="orange-bold">DONE RIGHT</span> &
+              <span className="orange-bold"> MADE SIMPLE</span>
             </h1>
             <h4>
               We guide you as you grow rapidly yet organically. We help you

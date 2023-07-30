@@ -36,7 +36,8 @@ const Submenu = () => {
               const { id, url, label, icon } = item;
               return (
                 <a href={url} key={id} className="menu-item">
-                  {icon} {label}
+                  <i> {icon} </i>
+                  {label}
                 </a>
               );
             })}

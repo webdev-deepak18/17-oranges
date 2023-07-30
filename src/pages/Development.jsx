@@ -60,7 +60,7 @@ const Development = () => {
 
           <div className="info">
             <h4>
-              We turn days into hours and hours into seconds.We can do the same
+              We turn days into hours and hours into seconds. We can do the same
               for you.
             </h4>
             <p>

@@ -94,7 +94,7 @@ const Wrapper = styled.div`
   }
 
   .link {
-    display: flex;
+    display: grid;
     align-items: center;
     gap: 1rem;
     letter-spacing: var(--letterSpacing);

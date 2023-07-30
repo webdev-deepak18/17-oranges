@@ -93,13 +93,24 @@ const Wrapper = styled.div`
     .card-container {
       grid-template-columns: 1fr 1fr 1fr;
     }
+    .section-title{
+      max-width: 100%;
+    }
   }
 
   /* end cards */
 
+  /* answers */
+
+
   .answers {
     display: grid;
     gap: 2rem;
+  }
+
+  .answers h1{
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    line-height: 1.4;
   }
 
   .answers h3 {

@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import { ThemeProvider } from "styled-components";
 
 import { useGlobalContext } from "../context";
+import ScrollToTop from '../components/ScrollToTop'
 
 import {
   DarkTheme,
@@ -21,6 +22,7 @@ const HomeLayout = () => {
   return (
     <ThemeProvider theme={toggleTheme ? DarkTheme : BaseTheme}>
       <Container>
+        <ScrollToTop/>
         <Navbar />
         <div className="page">
           <Outlet />
