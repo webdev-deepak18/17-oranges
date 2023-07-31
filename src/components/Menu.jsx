@@ -38,12 +38,12 @@ const Menu = () => {
           </button>
         );
       })}
-      <button type="button" className="nav-link-2">
+      <a type="button" className="nav-link-2">
         sign in
-      </button>
-      <button type="button" className="nav-link-2 active-btn">
+      </a>
+      <a type="button" href="/contact" className="nav-link-2 active-btn">
         get started
-      </button>
+      </a>
     </div>
   );
 };

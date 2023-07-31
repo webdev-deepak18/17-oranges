@@ -195,12 +195,18 @@ const Wrapper = styled.div`
       transition: var(--transition);
       width: 130px;
       text-transform: capitalize;
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;;
+      padding: 1.5rem 1rem;
     }
 
     .nav-link-2:hover {
       background: var(--primary-500);
       color: var(--white);
     }
+
+
 
     .active-btn {
       background: var(--primary-500);

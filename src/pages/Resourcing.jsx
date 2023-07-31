@@ -9,6 +9,7 @@ import austronautTwo from "../assets/images/austronaut-two.webp";
 import austronautThree from "../assets/images/austronaut-three.webp";
 import coolMan from "../assets/images/coolman-using-smartphone.webp";
 import coolWoman from "../assets/images/cool-woman-wearing-specs.webp";
+import happyTeam from "../assets/images/happy-team.webp";
 import CardVertical from "../components/CardVertical";
 
 import Cta from "../components/Cta";
@@ -88,7 +89,7 @@ const Resources = () => {
               </h3>
             </div>
             <div className="img-container">
-              <img src={coolMan} alt="Cool Man" className="img" />
+              <img src={happyTeam} alt="HappyTeam" className="img" />
             </div>
           </div>
         </div>

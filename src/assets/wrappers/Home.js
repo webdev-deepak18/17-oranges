@@ -153,7 +153,7 @@ const Wrapper = styled.div`
   }
 
   .we-can-help h1 {
-    text-align: right;
+    text-align: left;
   }
 
   .we-can-help h2 {
@@ -195,6 +195,10 @@ const Wrapper = styled.div`
     .we-can-help .info {
       grid-template-columns: 3fr 2fr;
       gap: 4rem;
+    }
+
+    .we-can-help .section-title{
+      max-width: 100%
     }
 
     .we-can-help h2 {
