@@ -71,6 +71,18 @@ const DesktopFooter = () => {
               </NavLink>
             </div>
           </div>
+          <div className="menu">
+            <h5></h5>
+            <div className="links">
+              <NavLink className="link" to="/contact">
+                Contact
+              </NavLink>
+              <NavLink className="link" to="/careers">
+                Careers
+              </NavLink>
+              
+            </div>
+          </div>
         </div>
       </div>
     </div>

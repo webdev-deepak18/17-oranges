@@ -21,7 +21,7 @@ export const FooterWrapperMain = styled.footer`
 
   .menu-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 70vw;
     gap: 2rem;
     max-width: 400px;
@@ -91,6 +91,7 @@ export const FooterWrapperMain = styled.footer`
 
     .desktop-footer .menu {
       justify-self: right;
+      align-self: end;
     }
 
     .desktop-footer .logo {

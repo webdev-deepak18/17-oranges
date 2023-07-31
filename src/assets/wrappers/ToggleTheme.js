@@ -29,7 +29,7 @@ const black = "#222";
 const white = "#fff";
 
 const transparentBgWhite = "rgba(255,255,255,.8)";
-const transparentBgBlack = "rgba(41, 41, 41,.8)";
+const transparentBgBlack = "rgba(34, 34, 34,.8)";
 
 export const BaseTheme = {
   //base colors black and white

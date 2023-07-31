@@ -53,7 +53,7 @@ const Development = () => {
         <div className="section-center hero">
           <div className="section-title">
             <h1 className="title">
-              Real-World Solutions,<br/> Out-of-This World
+              Real-World Solutions,<br/> Out-of-This-World
               <span className="orange-bold">  IMPACT</span>
             </h1>
           </div>
