@@ -14,6 +14,7 @@ import Cta from "../components/Cta";
 import thinkBigCardsData from "../utils/thinkBigCardsData";
 
 import { commitCardsData } from "../utils/thinkBigCardsData";
+import Testimonials from "../components/Testimonials";
 
 const Why17Oranges = () => {
   return (
@@ -98,7 +99,7 @@ const Why17Oranges = () => {
         </div>
       </section>
       {/* end think big */}
-
+      <Testimonials img={happyGirl}/>
       {/* commitment */}
       <section className="section social-section">
         <div className="section-center">

@@ -96,10 +96,11 @@ const Wrapper = styled.div`
   .link {
     display: grid;
     align-items: center;
-    gap: 1rem;
+    gap: .75rem;
     letter-spacing: var(--letterSpacing);
     cursor: pointer;
     text-transform: capitalize;
+    grid-template-columns: 20px 1fr;
   }
 
   .link:hover {

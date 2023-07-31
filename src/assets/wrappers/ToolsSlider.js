@@ -48,6 +48,7 @@ const Wrapper = styled.section`
     padding-block: 1rem;
     font-size: 1.1rem;
     font-weight: 600;
+    color: var(--grey-500)
   }
 
   /* slick slider */

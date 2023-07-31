@@ -11,7 +11,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 import TestimonialsData from "../utils/TestimonialsData";
 import { nanoid } from "nanoid";
 
-const Testimonials = () => {
+const Testimonials = ({img}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -26,7 +26,7 @@ const Testimonials = () => {
   return (
     <Wrapper className="section">
       <div className="testimonials-container">
-        <img src={happyGirl} alt="happy girl" className="img desktop-img" />
+        <img src={img} alt="happy girl" className="img desktop-img" />
         <div className="section-center">
           <div className="section-title">
             <h2>
@@ -34,7 +34,7 @@ const Testimonials = () => {
             </h2>
           </div>
           <div className="sliders-container">
-            <img src={happyGirl} alt="happy girl" className="img mobile-img" />
+            <img src={img} alt="happy girl" className="img mobile-img" />
             <div className="sliders">
               <Slider {...settings}>
                 {TestimonialsData.map((item) => {

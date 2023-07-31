@@ -23,12 +23,10 @@ const Wrapper = styled.section`
 
   .section-title {
     margin-bottom: 2rem;
-    background: rgba(255, 255, 255, 0.8);
     padding: 1rem 0 1rem 1rem;
     border-radius: var(--borderRadius);
   }
-  .section-title h2 {
-    color: var(--grey-600);
+  .section-title h2 {  
     font-size: 1.5rem;
   }
   .section-title h2 span {
@@ -114,11 +112,7 @@ const Wrapper = styled.section`
     .section-title {
       max-width: 650px;
     }
-    .sliders {
-      padding-top: 0;
-      max-width: 800px;
-      margin: 0 auto 0 0;
-    }
+
 
     .author-logo-container {
       grid-template-columns: 1fr 1fr;
@@ -134,8 +128,11 @@ const Wrapper = styled.section`
 
   @media (min-width: 992px) {
     .sliders {
+      padding-top: 0;
       max-width: 850px;
+      margin: 0 auto 0 0;
     }
+  
     .mobile-img {
       display: none;
     }

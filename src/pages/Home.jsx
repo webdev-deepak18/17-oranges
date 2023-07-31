@@ -19,58 +19,60 @@ import Cta from "../components/Cta";
 const Home = () => {
   return (
     <Wrapper>
-      {/* hero */}
       <section className="section">
-        <div className="section-center hero-section-center">
-          <div className="section-title">
+        <div className="section-center hero-center">
+          <div className="section-title hero-info-container">
             <h1>
-              We Make Great Technology Happen
-              <span className="orange-bold"> BEAUTIFULLY</span>
+              We Make Great Technology Happen,{" "}
+              <span className="orange-bold">BEAUTIFULLY</span>
             </h1>
+            <div className="tags">
+              <div className="tag">
+                <span>
+                  <Development />
+                </span>
+                <p>Development</p>
+              </div>
+              <div className="tag">
+                <span>
+                  <Consultancy />
+                </span>
+                <p>Consultancy</p>
+              </div>
+              <div className="tag">
+                <span>
+                  <Resources />
+                </span>
+                <p>Resourcing</p>
+              </div>
+            </div>
           </div>
-          <div className="tags">
-            <span>
-              <Development />
-              Development
-            </span>
-            <span>
-              <Consultancy />
-              Consultancy
-            </span>
-            <span>
-              <Resources />
-              Resourcing
-            </span>
+          <div className="hero-img">
+            <img src={youngMan} alt="futuristic person" className="img" />
           </div>
         </div>
       </section>
 
-      <section className="section hero-section-two">
-        <div className="section-title hero-info">
-          <h3>
-            If You Need a Digital Transformation Partner, You’ve Come to the
-            Right Place!
-          </h3>
-          <h5>
-            Maybe you know what you need to do.
-            <br /> Maybe you don’t.
-          </h5>
-        </div>
-        <div className="hero-img">
-          <img src={youngMan} alt="young futuristic man" className="img" />
-        </div>
-      </section>
-      {/* end hero */}
-
-      {/* technlogy life saver */}
-      <section className="section tech-challenge-section">
-        <div className="section-center tech-container ">
-          <div className="tech-info">
-            <h2>
-              If You Need a Technology Lifesaver, You’ve Come to the Right
-              Place!
-            </h2>
-            <div className="content">
+      <section className="section ">
+        <div className="section-center intro-center">
+          <div className="intro-img">
+            <img
+              src={flyingWoman}
+              alt="futuristic flying woman"
+              className="img"
+            />
+          </div>
+          <div className="intro-content">
+            <h3>
+              If You Need a Digital Transformation Partner, You’ve Come to the
+              Right Place!
+            </h3>
+            <div className="intro-desc">
+              <p>
+                We understand how frustrating technology challenges can be, and
+                how damaging they can be to growth, efficiency, and just about
+                everything, really.
+              </p>
               <p>
                 We’ve helped many organisations overcome their technological
                 challenges, whether big or small, and we can do the same for
@@ -85,27 +87,19 @@ const Home = () => {
                 understand your situation and business objectives. Then we
                 determine where things are breaking down, where you need to
                 streamline your processes, and ultimately where your technology
-                needs to go. 
+                needs to go.
               </p>
               <p>Then, using our agile approach, we make sure you get there.</p>
             </div>
           </div>
-          <div className="tech-img">
-            <img
-              src={flyingWoman}
-              alt="Flying Futuristic Woman"
-              className="img"
-            />
-          </div>
         </div>
       </section>
-      {/* end technlogy life saver */}
 
       {/* we can help  */}
 
       <section className="section">
         <div className="section-center we-can-help">
-          <div className="section-title">
+          <div className="section-title ">
             <h1>
               We Can Help Organisations From{" "}
               <span className="orange-bold"> ANY INDUSTRY</span>
@@ -124,7 +118,7 @@ const Home = () => {
       {/* end we can help an */}
 
       {/* testimonials */}
-      <Testimonials />
+      <Testimonials img={happyGirl} />
       {/*end testimonials */}
 
       {/* call to action */}

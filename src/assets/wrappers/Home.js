@@ -3,230 +3,147 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  /* hero section */
-
-  .hero-section-center {
+  /*Digital Transportation */
+  .hero-center {
     display: grid;
-    gap: 1rem;
-  }
-
-  /* tags */
-  .tags {
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .tags span {
-    display: grid;
-    grid-template-columns: 15px auto;
-    gap: 0.25rem;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: clamp(0.8rem, 3vw, 1.1rem);
-  }
-
-  .tags span svg {
-    fill: var(--primary-500);
-  }
-
-  @media (min-width: 992px) {
-    .hero-section-center {
-      gap: 2rem;
-    }
-    .tags {
-      gap: 1rem;
-    }
-    .tags span {
-      grid-template-columns: 25px auto;
-      font-size: clamp(0.8rem, 4vw, 1.5rem);
-      gap: 0.75rem;
-    }
-  }
-  /* end tags */
-
-  /* hero section two */
-  .hero-section-two {
-    display: grid;
-    grid-template-areas: "hero-img" "hero-info";
-    width: 90vw;
+    grid-template-columns: 1fr;
     gap: 2rem;
-    justify-items: stretch;
-    position: relative;
+    align-items: stretch;
   }
 
-  .hero-info {
-    grid-area: hero-info;
+  .hero-info-container {
     display: grid;
     gap: 1rem;
-    /* background: yellow; */
-    text-align: center;
+    align-content: center;
+    max-width: 100%;
   }
 
-  .hero-info > * {
-    line-height: 1.3;
+  @media (max-width: 500px) {
+    .hero-info-container h1 {
+      font-size: 2.2rem;
+    }
+
+    .hero-img{
+      height: 400px
+    }
   }
 
   .hero-img {
-    grid-area: hero-img;
-    height: 400px;
+    align-self: stretch;
+    border-radius: 15px;
   }
 
   .hero-img img {
     height: 100%;
-    border-radius: 0.5rem;
+    border-radius: var(--borderRadius);
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .tag {
+    display: grid;
+    grid-template-columns: 15px auto;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .tag span {
+    fill: var(--primary-500);
+    display: block;
+  }
+
+  .tag p {
+    font-size: clamp(0.6rem, 3vw, 1.2rem);
+    text-transform: uppercase;
   }
 
   @media (min-width: 768px) {
-    .hero-section-two {
-      grid-template-areas: ". hero-info hero-img";
-      grid-template-columns: 3rem 1fr 20rem;
-      align-items: center;
-      margin-top: -4rem;
-      gap: 1rem;
-    }
-    .hero-info {
-      text-align: right;
-      justify-self: end;
-    }
-
-    .hero-img {
-      height: 350px;
+    .hero-center {
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
     }
   }
 
   @media (min-width: 992px) {
-    .hero-section-two {
-      grid-template-columns: 2rem 1fr 25rem;
-      align-items: end;
-    }
-    .hero-img {
-      height: 400px;
-      /* justify-self: start; */
-    }
+    .hero-center {
+      grid-template-columns: 4fr 2fr;
+      gap: 2rem;
 
-    .hero-info {
-      margin-bottom: 4rem;
+      .tags {
+        gap: 2rem;
+      }
+
+      .tag {
+        grid-template-columns: 20px auto;
+        gap: 1rem;
+      }
     }
   }
 
-  @media (min-width: 1200px) {
-    .hero-section-two {
-      grid-template-areas: ". hero-info . hero-img";
-      grid-template-columns: 3rem 1fr 3rem 25rem;
-      align-items: end;
-      margin-top: -12rem;
-    }
-    .hero-img {
-      height: 500px;
-    }
+  /* end digital transportation */
 
-    .hero-info {
-      margin-bottom: 4rem;
-    }
-  }
-
-  @media (min-width: 1360px) {
-    .hero-section-two {
-      grid-template-areas: ". hero-info . hero-img";
-      grid-template-columns: 2rem 1fr 3rem 30rem;
-      justify-content: center;
-      margin-top: -17rem;
-      max-width: var(--max-width-2);
-      /* background: red; */
-    }
-    .hero-img {
-      height: 600px;
-    }
-
-    .hero-info {
-      margin-bottom: 2rem;
-    }
-  }
-  /* end hero section two */
-
-  /* end hero section */
-
-  /* tech challenge */
-  .tech-challenge-section {
-  }
-
-  .tech-container {
+  /* intro section */
+  .intro-center{
     display: grid;
-    grid-template-areas: "tech-img" "tech-info";
     gap: 2rem;
+    align-items: center;
   }
 
-  .tech-info {
-    grid-area: tech-info;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  .intro-img{
+    display: none;
   }
 
-  .tech-info h2 {
-    line-height: 1.3;
-  }
-
-  .tech-info .content {
-    display: flex;
-    flex-direction: column;
+  .intro-content{
+    display: grid;
     gap: 1rem;
-    line-height: 1.5;
-    position: relative;
-    padding-left: 1rem;
   }
 
-  .tech-info .content::before {
-    content: "";
-    position: absolute;
+  .intro-desc{
+    display: grid;
+    gap: 1rem;
+    position: relative;
+  }
+
+  .intro-desc::before{
+    content: '';
     width: 1px;
     height: 100%;
     background: var(--grey-100);
+    position: absolute;
+    top: 0;
     left: 0;
+
   }
 
-  .tech-img {
-    grid-area: tech-img;
+  .intro-desc p{
+    line-height: 1.5;
+    padding-left: 1rem;
+    font-size: clamp(1rem, 3vw, 1.1rem)
   }
 
-  @media (min-width: 768px) {
-    .tech-img {
+  @media (min-width: 992px){
+    .intro-img{
+      display: block;
+    }
+
+    .intro-center{
+      grid-template-columns: 2fr 3fr;
+      gap: 3rem;
+    }
+
+    .intro-content{
+      max-width: 80%;
       justify-self: center;
-      max-width: 25rem;
-    }
-  }
-  @media (min-width: 992px) {
-    .tech-container {
-      grid-template-areas: "tech-info . tech-img .";
-      grid-template-columns: 3fr 2rem 2fr 2rem;
-      align-items: start;
       gap: 3rem;
     }
-    .tech-img {
-      justify-self: stretch;
-      max-width: 100%;
-    }
-    .tech-info .content {
-      margin-left: 5rem;
-      margin-right: 2rem;
-    }
-  }
 
-  @media (min-width: 1200px) {
-    .tech-container {
-      grid-template-areas: ". tech-info . tech-img .";
-      grid-template-columns: 1rem 3fr 1rem 3fr 1rem;
-      align-items: start;
-      gap: 3rem;
-    }
-    .tech-img {
-      justify-self: stretch;
-      max-width: 100%;
-    }
-  }
 
-  /* end tech challenge */
+  }
+  /* end intro section */
 
   /* we can help any industry */
 
@@ -235,7 +152,7 @@ const Wrapper = styled.div`
     gap: 2rem;
   }
 
-  .we-can-help h1{
+  .we-can-help h1 {
     text-align: right;
   }
 
@@ -245,8 +162,9 @@ const Wrapper = styled.div`
     line-height: 1.3;
   }
 
-  .we-can-help p{
+  .we-can-help p {
     padding-left: 1rem;
+    line-height: 1.5;
   }
 
   .we-can-help p::before {
@@ -268,7 +186,6 @@ const Wrapper = styled.div`
     }
 
     .we-can-help p {
-      line-height: 1.5;
       max-width: 400px;
       position: relative;
     }

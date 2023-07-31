@@ -28,6 +28,9 @@ const grey900 = "#0f172a";
 const black = "#222";
 const white = "#fff";
 
+const transparentBgWhite = "rgba(255,255,255,.8)";
+const transparentBgBlack = "rgba(41, 41, 41,.8)";
+
 export const BaseTheme = {
   //base colors black and white
   clrWhite: white,
@@ -82,6 +85,7 @@ export const BaseTheme = {
   bgClrGrey700: grey700,
   bgClrGrey800: grey800,
   bgClrGrey900: grey900,
+  bgClrTransparent: transparentBgWhite,
 };
 
 export const DarkTheme = {
@@ -139,6 +143,7 @@ export const DarkTheme = {
   bgClrGrey700: grey100,
   bgClrGrey800: grey100,
   bgClrGrey900: grey100,
+  bgClrTransparent: transparentBgBlack,
 };
 
 export const Container = styled.div`
@@ -163,4 +168,15 @@ export const Container = styled.div`
     color: ${(props) => props.theme.clrGrey500};
     background: ${(props) => props.theme.bgClrGrey100};
   }
+
+  /* testimonials */
+  .testimonials-container .section-title {
+    background: ${(props) => props.theme.bgClrTransparent};
+  }
+  .testimonials-container .section-title h2 {
+    color: ${(props) => props.theme.clrGrey500};
+  }
+
+  /* tools slider */
+
 `;

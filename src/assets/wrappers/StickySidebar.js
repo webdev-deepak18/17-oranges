@@ -20,6 +20,7 @@ const Wrapper = styled.div`
     width: 15px;
     display: inline-block;
     color: var(--white);
+    cursor: pointer;
   }
 
   .sticky-icon a{

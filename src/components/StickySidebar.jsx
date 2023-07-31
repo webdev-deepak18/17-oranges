@@ -11,7 +11,6 @@ import { FiShare2 } from "react-icons/fi";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FaRegLightbulb } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useGlobalContext } from "../context";
 
 const Sidebar = () => {
