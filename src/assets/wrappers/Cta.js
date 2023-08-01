@@ -85,7 +85,7 @@ const Wrapper = styled.section`
 
   @media (min-width: 992px){
     margin-bottom: 5rem;
-    margin-top: -5rem;
+    /* margin-top: -5rem; */
     grid-template-columns: 3fr 4fr;
     .cta-img{
       height: 80%
