@@ -26,6 +26,8 @@ const Animate = ({ children }) => {
         transition={{ duration: 0.5, delay: 0.25 }}
         initial="hidden"
         animate={mainControls}
+
+        style={{position: 'relative'}}
       >
         {children}
       </motion.div>

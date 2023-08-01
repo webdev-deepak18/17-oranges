@@ -53,6 +53,7 @@ const CaseStudies = () => {
         <div className="section-center">
           <div className="section-title">
             <Animate>
+              <span className="wiggle-lg"></span>
               <h1>
                 Discover Our Transformative Work Through
                 <span className="orange-bold"> CASE STUDIES</span>

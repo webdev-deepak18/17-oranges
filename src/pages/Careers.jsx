@@ -29,7 +29,8 @@ const Careers = () => {
         <div className="hero-center">
           <div className="hero-info">
             <Animate>
-              <h1>
+              <span className="wiggle-lg"></span>
+              <h1 className="pos-rel">
                 Love Your <span className="orange-bold">Job</span>
                 <br />
                 Love Your <span className="orange-bold">Team</span>

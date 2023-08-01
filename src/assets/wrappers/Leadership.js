@@ -5,21 +5,23 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   .section-title {
     width: 100%;
+    max-width: 100%
   }
 
   .section-title h1 {
     font-size: clamp(3rem, 5vw, 6rem);
+    text-align: left;
   }
 
   @media (min-width: 768px) {
     .section-title {
       width: 100%;
       /* background: red; */
-      margin: 0 auto;
+      /* margin: 0 auto; */
     }
     .section-title h1 {
       font-size: clamp(2rem, 5vw, 4rem);
-      text-align: center;
+
       margin: 0 auto;
     }
   }
@@ -30,7 +32,7 @@ const Wrapper = styled.div`
     }
     .section-title h1 {
       font-size: clamp(3rem, 5vw, 6rem);
-      text-align: center;
+      /* text-align: center; */
     }
     .small-heading {
       font-size: clamp(3rem, 3vw, 6rem);
@@ -79,7 +81,7 @@ const Wrapper = styled.div`
   .letter-info p {
     line-height: 1.8;
     font-size: clamp(1rem, 3vw, 1.2rem);
-    color: var(--grey-500)
+    color: var(--grey-500);
   }
 
   .author-container {

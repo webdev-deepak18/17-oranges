@@ -25,6 +25,7 @@ const Why17Oranges = () => {
         <div className="section-center">
           <div className="section-title">
             <Animate>
+              <span className="wiggle-lg"></span>
               <h1>
                 We Help Clients
                 <br />
@@ -127,6 +128,7 @@ const Why17Oranges = () => {
         <div className="section-center">
           <div className="section-title">
             <Animate>
+              <span className="wiggle-lg"></span>
               <h1>
                 Our Commitment to do the{" "}
                 <span className="orange-bold">RIGHT THING</span>

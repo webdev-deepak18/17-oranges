@@ -24,10 +24,12 @@ const Home = () => {
         <div className="section-center hero-center">
           <Animate>
             <div className="section-title hero-info-container">
+              <span className="wiggle-lg"></span>
               <h1>
-                We Make Great Technology Happen,{" "}
+                We Make Great Technology Happen{" "}
                 <span className="orange-bold">BEAUTIFULLY</span>
               </h1>
+
               <div className="tags">
                 <div className="tag">
                   <span>
@@ -118,6 +120,7 @@ const Home = () => {
         <div className="section-center we-can-help">
           <div className="section-title ">
             <Animate>
+              <span className="wiggle-lg"></span>
               <h1>
                 We Can Help Organisations From{" "}
                 <span className="orange-bold"> ANY INDUSTRY</span>
@@ -137,6 +140,7 @@ const Home = () => {
         </div>
       </section>
       {/* end we can help an */}
+     
 
       {/* testimonials */}
       <Testimonials img={happyGirl} />

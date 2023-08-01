@@ -18,13 +18,18 @@ const Wrapper = styled.div`
     max-width: 100%;
   }
 
+  .hero-info-container h1 {
+    position: relative;
+  }
+
+
   @media (max-width: 500px) {
     .hero-info-container h1 {
       font-size: 2.2rem;
     }
 
-    .hero-img{
-      height: 400px
+    .hero-img {
+      height: 400px;
     }
   }
 
@@ -87,61 +92,58 @@ const Wrapper = styled.div`
   /* end digital transportation */
 
   /* intro section */
-  .intro-center{
+  .intro-center {
     display: grid;
     gap: 2rem;
     align-items: center;
   }
 
-  .intro-img{
+  .intro-img {
     display: none;
   }
 
-  .intro-content{
+  .intro-content {
     display: grid;
     gap: 1rem;
   }
 
-  .intro-desc{
+  .intro-desc {
     display: grid;
     gap: 1rem;
     position: relative;
   }
 
-  .intro-desc::before{
-    content: '';
+  .intro-desc::before {
+    content: "";
     width: 1px;
     height: 100%;
     background: var(--grey-100);
     position: absolute;
     top: 0;
     left: 0;
-
   }
 
-  .intro-desc p{
+  .intro-desc p {
     line-height: 1.5;
     padding-left: 1rem;
-    font-size: clamp(1rem, 3vw, 1.1rem)
+    font-size: clamp(1rem, 3vw, 1.1rem);
   }
 
-  @media (min-width: 992px){
-    .intro-img{
+  @media (min-width: 992px) {
+    .intro-img {
       display: block;
     }
 
-    .intro-center{
+    .intro-center {
       grid-template-columns: 2fr 3fr;
       gap: 3rem;
     }
 
-    .intro-content{
+    .intro-content {
       max-width: 80%;
       justify-self: center;
       gap: 3rem;
     }
-
-
   }
   /* end intro section */
 
@@ -197,8 +199,8 @@ const Wrapper = styled.div`
       gap: 4rem;
     }
 
-    .we-can-help .section-title{
-      max-width: 100%
+    .we-can-help .section-title {
+      max-width: 100%;
     }
 
     .we-can-help h2 {
@@ -214,6 +216,8 @@ const Wrapper = styled.div`
       font-size: 1.3rem;
     }
   }
+
+
 `;
 
 export default Wrapper;

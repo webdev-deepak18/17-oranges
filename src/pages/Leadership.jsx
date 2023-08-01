@@ -22,8 +22,9 @@ const Leadership = () => {
         <div className="section-center">
           <div className="section-title">
             <Animate>
+              <span className="wiggle-lg"></span>
               <h1>
-                <span className="small-heading">
+                <span className="">
                   What Makes Us Exceptional?
                 </span>{" "}
                 <br />
@@ -65,7 +66,8 @@ const Leadership = () => {
         <div className="section-center creative-section">
           <div className="title">
             <Animate>
-              <h1>
+              <span className="wiggle-lg"></span>
+              <h1 className="pos-rel">
                 Our <span className="orange-bold">CREATIVE</span> Team
               </h1>
             </Animate>

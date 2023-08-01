@@ -46,6 +46,7 @@ const Consultancy = () => {
         <div className="section-center">
           <div className="section-title">
             <Animate>
+              <span className="wiggle-lg"></span>
               <h1 className="">
                 Technology Strategy{" "}
                 <span className="orange-bold">DONE RIGHT</span> &
@@ -101,7 +102,8 @@ const Consultancy = () => {
           <div className="answers">
             <div className="info">
               <Animate>
-                <h1 className="title">
+                <span className="wiggle-lg"></span>
+                <h1 className="title pos-rel">
                   We have <span className="orange-bold">ANSWERS</span> for your
                   “impossible” questions
                 </h1>

@@ -54,6 +54,7 @@ const Wrapper = styled.div`
     .info-section {
       min-height: 450px;
     }
+
   }
   /* end info section */
 
@@ -114,6 +115,10 @@ const Wrapper = styled.div`
 
     .answers .img-container img {
       height: 100%;
+    }
+
+    .answers .wiggle-lg:before{
+      top: -1rem;
     }
   }
 `;

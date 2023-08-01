@@ -47,7 +47,8 @@ const Resources = () => {
         <div className="section-center">
           <div className="section-title">
             <Animate>
-              <h1>
+            <span className="wiggle-lg"></span>
+              <h1 >
                 Welcome to Your Very Own{" "}
                 <span className="orange-bold"> TECH RESOURCING HUB</span>
               </h1>
@@ -78,7 +79,7 @@ const Resources = () => {
           }}
           transition={{ duration: 0.5, delay: 0.25 }}
           initial="hidden"
-          animate='visible'
+          animate="visible"
           src={afroAmerican}
           alt="arfo american"
           className="img info-img"
@@ -100,7 +101,8 @@ const Resources = () => {
           <div className="answers">
             <div className="info">
               <Animate>
-                <h1 className="title">
+              <span className="wiggle-lg"></span>
+                <h1 className="title pos-rel">
                   Flexible <span className="orange-bold">RESOURCING</span> for
                   Seamless Operations
                 </h1>

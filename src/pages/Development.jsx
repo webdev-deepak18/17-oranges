@@ -54,7 +54,8 @@ const Development = () => {
         <div className="section-center hero">
           <div className="section-title">
             <Animate>
-              <h1 className="title">
+            <span className="wiggle-lg"></span>
+              <h1 className="title pos-rel">
                 Real-World Solutions,
                 <br /> Out-of-This-World
                 <span className="orange-bold"> IMPACT</span>

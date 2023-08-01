@@ -53,7 +53,7 @@ html {
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-500);
   --borderRadius: 0.25rem;
-  --letterSpacing: .25px;
+  --letterSpacing: 0.25px;
   --transition: 0.3s ease-in-out all;
   --max-width-1: 1024px;
   --max-width-2: 1216px;
@@ -264,6 +264,11 @@ ul {
   animation: spinner 0.6s linear infinite;
 }
 
+/* position */
+.pos-rel{
+  position: relative;
+}
+
 /* title */
 
 @media screen and (min-width: 992px) {
@@ -298,8 +303,12 @@ SECTION AND TITLES
 }
 
 /* titles */
+.section-title{
+  position: relative;
+}
 .section-title h1 {
   line-height: 1.3;
+  position: relative;
 }
 
 .section-title h2,
@@ -369,3 +378,88 @@ svg {
   width: 100%;
   height: auto;
 }
+
+/* wiggle */
+.wiggle-lg {
+  display: block;
+  position: relative;
+  animation: shake 1.5s ease infinite;
+  /* transform-origin: bottom; */
+ 
+}
+
+.wiggle-lg:before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 0.5rem;
+  left: -0.5rem;
+  border-radius: 50%;
+  background: var(--primary-500);
+}
+
+@media screen and (min-width: 768px) {
+  .wiggle-lg:before {
+    width: 4rem;
+    height: 4rem;
+    left: -1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .wiggle-lg:before {
+    width: 5rem;
+    height: 5rem;
+    left: -1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wiggle-lg:before {
+    width: 7rem;
+    height: 7rem;
+    left: -1.5rem;
+    /* top: -0.5rem; */
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .wiggle-lg:before {
+    width: 8rem;
+    height: 8rem;
+    left: -2rem;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(2px);
+  }
+  25% {
+    transform: rotate(-0.3deg);
+  }
+  30% {
+    transform: translatey(1px);
+  }
+  40% {
+    transform: translate(-1px);
+  }
+  50% {
+    transform: rotate(0.5deg);
+  }
+  60% {
+    transform: translate(0px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* end wiggle */
