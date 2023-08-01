@@ -12,6 +12,7 @@ import enhancementsAndIntegrations from "../assets/images/enhancements-and-integ
 import bespokeProductDesignAndBuild from "../assets/images/bespoke-product-design-and-build.webp";
 import dataManagement from "../assets/images/data-management.webp";
 import CardHorizontal from "../components/CardHorizontal";
+import Animate from "../components/Animate";
 
 import ToolsSlider from "../components/ToolsSlider";
 
@@ -52,27 +53,32 @@ const Development = () => {
       <section className="section">
         <div className="section-center hero">
           <div className="section-title">
-            <h1 className="title">
-              Real-World Solutions,<br/> Out-of-This-World
-              <span className="orange-bold">  IMPACT</span>
-            </h1>
+            <Animate>
+              <h1 className="title">
+                Real-World Solutions,
+                <br /> Out-of-This-World
+                <span className="orange-bold"> IMPACT</span>
+              </h1>
+            </Animate>
           </div>
 
-          <div className="info">
-            <h4>
-              We turn days into hours and hours into seconds. We can do the same
-              for you.
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+          <Animate>
+            <div className="info">
+              <h4>
+                We turn days into hours and hours into seconds. We can do the
+                same for you.
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </Animate>
         </div>
       </section>
 
@@ -86,8 +92,9 @@ const Development = () => {
           </div>
         </div>
       </section>
-
-      <ToolsSlider />
+      <Animate>
+        <ToolsSlider />
+      </Animate>
 
       <Cta img={happyAsianWoman} alt="Happy Asian Woman" />
     </Wrapper>

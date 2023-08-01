@@ -12,6 +12,7 @@
     "@tanstack/react-query": "^4.29.7",
     "@tanstack/react-query-devtools": "^4.29.7",
     "axios": "^1.4.0",
+    "framer-motion": "^10.15.0",
     "icons": "^1.0.0",
     "nanoid": "^4.0.2",
     "react": "^18.2.0",

@@ -13,6 +13,9 @@ import happyTeam from "../assets/images/happy-team.webp";
 import CardVertical from "../components/CardVertical";
 
 import Cta from "../components/Cta";
+import Animate from "../components/Animate";
+import { motion } from "framer-motion";
+
 
 const cardDataOne = {
   title: "Use Our Experts",
@@ -43,10 +46,12 @@ const Resources = () => {
       <section className="section">
         <div className="section-center">
           <div className="section-title">
-            <h1>
-              Welcome to Your Very Own{" "}
-              <span className="orange-bold"> TECH RESOURCING HUB</span>
-            </h1>
+            <Animate>
+              <h1>
+                Welcome to Your Very Own{" "}
+                <span className="orange-bold"> TECH RESOURCING HUB</span>
+              </h1>
+            </Animate>
           </div>
         </div>
       </section>
@@ -54,14 +59,30 @@ const Resources = () => {
       <section className="section info-section">
         <div className="section-center">
           <div className="info">
-            <h4>Need tech expert guidance or help filling in skills gaps?</h4>
-            <h5>
-              We can create and/or manage your development team as needed. So
-              you can focus on growing your business.
-            </h5>
+            <Animate>
+              <h4>Need tech expert guidance or help filling in skills gaps?</h4>
+            </Animate>
+            <Animate>
+              <h5>
+                We can create and/or manage your development team as needed. So
+                you can focus on growing your business.
+              </h5>
+            </Animate>
           </div>
         </div>
-        <img src={afroAmerican} alt="arfo american" className="img info-img" />
+
+        <motion.img
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+          initial="hidden"
+          animate='visible'
+          src={afroAmerican}
+          alt="arfo american"
+          className="img info-img"
+        />
       </section>
 
       {/* cards */}
@@ -78,15 +99,19 @@ const Resources = () => {
         <div className="section-center">
           <div className="answers">
             <div className="info">
-              <h1 className="title">
-                Flexible <span className="orange-bold">RESOURCING</span> for
-                Seamless Operations
-              </h1>
-              <h3>
-                We can support your technology needs indefinitely. If you ever
-                need to transition your team in-house, we have a process to
-                seamlessly transfer staffing operations.
-              </h3>
+              <Animate>
+                <h1 className="title">
+                  Flexible <span className="orange-bold">RESOURCING</span> for
+                  Seamless Operations
+                </h1>
+              </Animate>
+              <Animate>
+                <h3>
+                  We can support your technology needs indefinitely. If you ever
+                  need to transition your team in-house, we have a process to
+                  seamlessly transfer staffing operations.
+                </h3>
+              </Animate>
             </div>
             <div className="img-container">
               <img src={happyTeam} alt="HappyTeam" className="img" />

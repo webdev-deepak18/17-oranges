@@ -10,6 +10,7 @@ import roadmaps from "../assets/images/roadmaps.webp";
 import processes from "../assets/images/processes.webp";
 import futuristicWoman from "../assets/images/futuristic-woman.webp";
 import smilingWomanWithHeadset from "../assets/images/smiling-woman-with-headset.webp";
+import Animate from "../components/Animate";
 
 import Cta from "../components/Cta";
 import CardVertical from "../components/CardVertical";
@@ -44,16 +45,20 @@ const Consultancy = () => {
       <section className="section">
         <div className="section-center">
           <div className="section-title">
-            <h1 className="">
-              Technology Strategy{" "}
-              <span className="orange-bold">DONE RIGHT</span> &
-              <span className="orange-bold"> MADE SIMPLE</span>
-            </h1>
-            <h4>
-              We guide you as you grow rapidly yet organically. We help you
-              truly see the future of your technology. All using an
-              easy-to-understand framework.
-            </h4>
+            <Animate>
+              <h1 className="">
+                Technology Strategy{" "}
+                <span className="orange-bold">DONE RIGHT</span> &
+                <span className="orange-bold"> MADE SIMPLE</span>
+              </h1>
+            </Animate>
+            <Animate>
+              <h4>
+                We guide you as you grow rapidly yet organically. We help you
+                truly see the future of your technology. All using an
+                easy-to-understand framework.
+              </h4>
+            </Animate>
           </div>
         </div>
       </section>
@@ -64,13 +69,15 @@ const Consultancy = () => {
             {consultancyCardsData.map((item) => {
               const { icon, title, desc } = item;
               return (
-                <article className="strategy-card" key={nanoid()}>
-                  <div className="icon">
-                    <span>{icon}</span>
-                  </div>
-                  <h3>{title}</h3>
-                  <p>{desc}</p>
-                </article>
+                <Animate key={nanoid()}>
+                  <article className="strategy-card">
+                    <div className="icon">
+                      <span>{icon}</span>
+                    </div>
+                    <h3>{title}</h3>
+                    <p>{desc}</p>
+                  </article>
+                </Animate>
               );
             })}
           </div>
@@ -78,11 +85,13 @@ const Consultancy = () => {
       </section>
 
       {/* cards */}
-      <div className="card-container">
-        <CardVertical {...cardDataOne} />
-        <CardVertical {...cardDataTwo} />
-        <CardVertical {...cardDataThree} />
-      </div>
+      <Animate>
+        <div className="card-container">
+          <CardVertical {...cardDataOne} />
+          <CardVertical {...cardDataTwo} />
+          <CardVertical {...cardDataThree} />
+        </div>
+      </Animate>
       {/* end cards */}
 
       {/* answers section */}
@@ -91,11 +100,15 @@ const Consultancy = () => {
         <div className="section-center">
           <div className="answers">
             <div className="info">
-              <h1 className="title">
-                We have <span className="orange-bold">ANSWERS</span> for your
-                “impossible” questions
-              </h1>
-              <h3>(because we’ve heard most of them before)</h3>
+              <Animate>
+                <h1 className="title">
+                  We have <span className="orange-bold">ANSWERS</span> for your
+                  “impossible” questions
+                </h1>
+              </Animate>
+              <Animate>
+                <h3>(because we’ve heard most of them before)</h3>
+              </Animate>
             </div>
             <div className="img-container">
               <img

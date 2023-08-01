@@ -13,6 +13,7 @@ import Wrapper from "../assets/wrappers/CaseStudies";
 
 import Cta from "../components/Cta";
 import CardVertical from "../components/CardVertical";
+import Animate from "../components/Animate";
 
 const cardDataOne = {
   title: "Factoring: Time is Money",
@@ -51,15 +52,19 @@ const CaseStudies = () => {
       <section className="section">
         <div className="section-center">
           <div className="section-title">
-            <h1>
-              Discover Our Transformative Work Through
-              <span className="orange-bold"> CASE STUDIES</span>
-            </h1>
-            <h4>
-              Dive into real-world examples showcasing how our innovative
-              technology solutions have revolutionized businesses and empowered
-              our clients to thrive.
-            </h4>
+            <Animate>
+              <h1>
+                Discover Our Transformative Work Through
+                <span className="orange-bold"> CASE STUDIES</span>
+              </h1>
+            </Animate>
+            <Animate>
+              <h4>
+                Dive into real-world examples showcasing how our innovative
+                technology solutions have revolutionized businesses and
+                empowered our clients to thrive.
+              </h4>
+            </Animate>
           </div>
         </div>
       </section>
