@@ -212,6 +212,7 @@ const Wrapper = styled.div`
       background: var(--primary-500);
       color: var(--white);
       font-size: 1rem;
+      width: 160px;
     }
 
     .active-btn:hover {

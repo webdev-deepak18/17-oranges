@@ -28,7 +28,7 @@ const Home = () => {
               <div className="heading-one">
                 We Make Great Technology Happen{" "}
                 <span className="orange-bold">BEAUTIFULLY</span>
-                <h1 className="heading-two">
+                <h1 className="heading-one-small">
                   Digital Transformation Solutions
                 </h1>
               </div>

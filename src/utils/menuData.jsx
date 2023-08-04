@@ -7,13 +7,14 @@ import { ReactComponent as Resources } from "../assets/images/resources.svg";
 import { ReactComponent as Why17Oranges } from "../assets/images/badge.svg";
 import { ReactComponent as Leadership } from "../assets/images/leadership.svg";
 import { ReactComponent as CaseStudies } from "../assets/images/casestudy.svg";
+import { LiaBlogSolid } from "react-icons/lia";
 
 
 import { nanoid } from "nanoid";
 
 export const menuLinks = [
   {
-    pageId: 'solutions',
+    pageId: "solutions",
     page: "Solutions",
     links: [
       {
@@ -37,7 +38,7 @@ export const menuLinks = [
     ],
   },
   {
-    pageId: 'about',
+    pageId: "about",
     page: "about",
     links: [
       {
@@ -57,6 +58,12 @@ export const menuLinks = [
         label: "Case Studies",
         icon: <CaseStudies />,
         url: "/about/case-studies",
+      },
+      {
+        id: nanoid(),
+        label: "Blog",
+        icon: <LiaBlogSolid />,
+        url: "/about/blog",
       },
     ],
   },

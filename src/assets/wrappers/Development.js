@@ -44,7 +44,7 @@ const Wrapper = styled.section`
 
     .hero .info {
       gap: 5rem;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr ;
     }
 
     .hero .info h3 {

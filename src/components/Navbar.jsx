@@ -14,6 +14,7 @@ import { ReactComponent as Resources } from "../assets/images/resources.svg";
 import { ReactComponent as Why17Oranges } from "../assets/images/badge.svg";
 import { ReactComponent as Leadership } from "../assets/images/leadership.svg";
 import { ReactComponent as CaseStudies } from "../assets/images/casestudy.svg";
+import { LiaBlogSolid } from "react-icons/lia";
 
 import Menu from "./Menu";
 import Submenu from "./Submenu";
@@ -134,6 +135,16 @@ const Navbar = () => {
                   <CaseStudies />
                 </span>
                 Case Studies
+              </NavLink>
+              <NavLink
+                className="link"
+                to="about/blog"
+                onClick={toggleSidebar}
+              >
+                <span>
+                  <LiaBlogSolid />
+                </span>
+                Blog
               </NavLink>
             </div>
           </div>

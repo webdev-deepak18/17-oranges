@@ -42,7 +42,7 @@ const Menu = () => {
         sign in
       </a>
       <a type="button" href="/contact" className="nav-link-2 active-btn">
-        get started
+        Chat with us
       </a>
     </div>
   );

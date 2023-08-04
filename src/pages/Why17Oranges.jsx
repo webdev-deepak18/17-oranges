@@ -4,10 +4,9 @@ import Wrapper from "../assets/wrappers/Why17Oranges";
 import { nanoid } from "nanoid";
 
 import superCoolWoman from "../assets/images/super-cool-woman.webp";
-import adamGibson from "../assets/images/adam-gibson.webp";
 
-import happyGirl from "../assets/images/happy-girl.webp";
-import socialResponsibility from "../assets/images/social-responsibility.webp";
+import butterfly from "../assets/images/futuristic-butterfly.webp";
+
 import superCoolMan from "../assets/images/man-posing-with-headphones.webp";
 import { FaQuoteLeft } from "react-icons/fa";
 import Cta from "../components/Cta";
@@ -17,6 +16,7 @@ import { commitCardsData } from "../utils/thinkBigCardsData";
 import Testimonials from "../components/Testimonials";
 import { motion } from "framer-motion";
 import Animate from "../components/Animate";
+import { keyframes } from "styled-components";
 
 const Why17Oranges = () => {
   return (
@@ -60,39 +60,6 @@ const Why17Oranges = () => {
         />
       </section>
 
-      {/* gibson quote */}
-      <section className="section">
-        <div className="section-center">
-          <div className="gibson-quote">
-            <Animate>
-              <img
-                src={adamGibson}
-                alt="Adam Gibson"
-                className="img gibson-img"
-              />
-            </Animate>
-            <Animate>
-              <div className="quote-block">
-                <span className="quote-icon">
-                  <FaQuoteLeft />
-                </span>
-                <div className="quote-info">
-                  <h3>
-                    Life’s too short not to do great things and have a little
-                    fun along the way.”
-                  </h3>
-                  <div className="divider-line"></div>
-                  <h4 className="author">
-                    Adam Gibson, <span>Our CEO</span>
-                  </h4>
-                </div>
-              </div>
-            </Animate>
-          </div>
-        </div>
-      </section>
-      {/* end gibson quote */}
-
       {/* think big */}
       <section className="section">
         <div className="section-center">
@@ -123,8 +90,9 @@ const Why17Oranges = () => {
         </div>
       </section>
       {/* end think big */}
-      <Testimonials img={happyGirl} />
+
       {/* commitment */}
+
       <section className="section social-section">
         <div className="section-center">
           <div className="section-title">
@@ -134,46 +102,34 @@ const Why17Oranges = () => {
                 Our Commitment to do the{" "}
                 <span className="orange-bold">RIGHT THING</span>
               </div>
+              <h3 className="heading-one-small">
+                We believe in acting responsibly as a company. We also believe
+                in actively giving back not just to our local community, but to
+                people wherever they live.
+              </h3>
             </Animate>
-          </div>
-
-          <div className="info-block">
-            <div className="img-block">
-              <Animate>
-                <h4>
-                  We believe in acting responsibly. That’s why we’re committed
-                  to integrating sustainability into every part of the business,
-                  including with our clients, solutions and the entire supply
-                  chain.
-                </h4>
-              </Animate>
-              <Animate>
-                <img
-                  src={socialResponsibility}
-                  alt="social responsibility"
-                  className="img commitment-img"
-                />
-              </Animate>
-            </div>
-
-            <div className="commitment-cards-block">
-              {commitCardsData.map((item) => {
-                const { title, desc } = item;
-                return (
-                  <Animate key={nanoid()}>
-                    <div className="commitment-card">
-                      <h3>{title}</h3>
-                      <p>{desc}</p>
-                    </div>
-                  </Animate>
-                );
-              })}
-            </div>
+          </div>         
+        </div>
+        <div className="section-center">
+          <div className="commit-cards">
+            {commitCardsData.map((item)=>{
+              const {title, desc, img} = item 
+             return <div className="commit-card" key={nanoid()}>
+              <img src={img} alt={title} className="commit-img img" />
+              <div className="commit-info">
+                <h3>{title}</h3>
+                <p>{desc}</p>
+              </div>
+             </div>
+            })}
           </div>
         </div>
       </section>
-      {/* end commitment */}
 
+      {/* end commitment */}
+      <div className="testimonials-small-container">
+        <Testimonials img={butterfly} />
+      </div>
       <Cta img={superCoolMan} />
     </Wrapper>
   );

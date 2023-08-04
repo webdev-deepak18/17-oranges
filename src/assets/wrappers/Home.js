@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 500px) {
     .hero-info-container h1 {
-      font-size: 2.2rem;
+      /* font-size: 2.2rem; */
     }
 
     .hero-img {

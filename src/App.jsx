@@ -2,6 +2,7 @@
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Careers, CaseStudies, Consultancy, Contact, Development, Home, HomeLayout, Leadership, Resourcing, Why17Oranges, ErrorPage,  } from "./pages/index";
+import Blog from "./pages/Blog";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         element: <CaseStudies />,
       },
       {
+        path: "about/blog",
+        element: <Blog />,
+      },
+      {
         path: "/careers",
         element: <Careers />,
       },
@@ -45,7 +50,6 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
-     
     ],
   },
 ]);

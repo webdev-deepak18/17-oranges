@@ -60,7 +60,6 @@ const Wrapper = styled.div`
     gap: 3rem;
     justify-items: center;
     align-items: center;
-
   }
 
   .gibson-img {
@@ -70,7 +69,6 @@ const Wrapper = styled.div`
   .quote-block {
     position: relative;
     display: grid;
-
   }
   .quote-icon {
     width: 50px;
@@ -106,10 +104,9 @@ const Wrapper = styled.div`
       max-width: 450px;
     }
 
-    .quote-info{
+    .quote-info {
       width: 85%;
     }
-   
   }
 
   @media (min-width: 992px) {
@@ -118,21 +115,18 @@ const Wrapper = styled.div`
       gap: 2rem;
       margin-top: 5rem;
       max-width: 850px;
-
     }
     .gibson-img {
       width: 100%;
       max-width: 100%;
       justify-self: center;
-    
     }
 
     .quote-info {
       max-width: 100%;
-
     }
 
-    .quote-icon{
+    .quote-icon {
       left: 2rem;
     }
   }
@@ -150,7 +144,6 @@ const Wrapper = styled.div`
     margin-left: -1rem;
   }
 
- 
   .cards-container {
     margin-top: 3rem;
     display: grid;
@@ -181,7 +174,7 @@ const Wrapper = styled.div`
     .cards-container {
       grid-template-columns: repeat(2, 1fr);
     }
-    .big-title{
+    .big-title {
       font-size: 2rem;
     }
   }
@@ -190,13 +183,13 @@ const Wrapper = styled.div`
     .cards-container {
       grid-template-columns: repeat(3, 1fr);
     }
-    .big-title{
+    .big-title {
       text-align: left;
     }
   }
 
   @media (min-width: 1200px) {
-    .big-title{
+    .big-title {
       text-align: center;
     }
     .cards-container {
@@ -230,91 +223,103 @@ const Wrapper = styled.div`
   /* end thik big */
 
   /* social commitment */
-  .social-section{
+  .social-section {
     margin-bottom: 3rem;
   }
 
-  .social-section h1{
+  .social-section h1 {
     margin-bottom: 2rem;
   }
 
-  .info-block {
+  .commit-cards {
     display: grid;
     gap: 2rem;
-    max-width: var(--max-width-2);
-    margin: 0 auto;
+    justify-content: center;
+    margin-top: 5rem;
   }
 
-  .img-block {
-    display: grid;
-    gap: 2rem;
-    align-content: space-between;
-  }
-
-  .img-block h4 {
-    line-height: 1.5;
-  }
-
-  .commitment-cards-block {
-    display: grid;
-    gap: 3rem;
-    align-self: start;
-  }
-
-  .commitment-card {
+  .commit-card {
     display: grid;
     gap: 1rem;
-    width: 95%;
-    justify-self: right;
-    position: relative;
     align-content: start;
+    align-items: start;
   }
 
-  .commitment-card::before {
-    content: "";
-    height: 100%;
-    width: 1px;
-    background: var(--grey-100);
-    position: absolute;
-    top: 0;
-    left: -1rem;
-    margin-right: 1rem;
+  .commit-info {
+    display: grid;
+    gap: 1rem;
   }
 
-  .commitment-card h3 {
-    line-height: 1.5;
+  .commit-info h3 {
     color: var(--primary-500);
   }
 
-  .commitment-card p {
+  .commit-info p {
     line-height: 1.5;
+    position: relative;
+    padding-left: 1rem;
+  }
+
+  .commit-info p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--grey-100);
+    border-radius: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .commit-card {
+      max-width: 500px;
+    }
   }
 
   @media (min-width: 992px) {
-    .info-block {
-      grid-template-columns: 3fr 2fr;
-      margin-top: 5rem;
-      align-content: space-between;
-    }
-
-    .img-block {
-      width: 85%;
-    }
-
-    .img-block h4 {
-      font-size: 1.5rem;
-    }
-
-    .img-block .img {
-      height: 30rem;
-    }
-
-    .commitment-cards-block {
-      gap: 6rem;
+    .commit-card {
+      grid-template-columns: 1fr 1fr;
+      max-width: 800px;
+      gap: 3rem;
     }
   }
 
+  @media (min-width: 1200px) {
+    .commit-cards{
+      gap: 5rem;
+    }
+    .commit-card {
+      grid-template-columns: 2fr 3fr;
+      max-width: 950px;
+     
+    }
+  }
+  /* e
   /* end social commitment */
+
+  /* testimonials */
+  .testimonials-small-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .sliders {
+    max-width: 650px;
+  }
+  .section-title h3 span {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+  }
+  .testimonials-small-container .section-title {
+    max-width: 650px;
+  }
+  @media (min-width: 1200px) {
+    .testimonials-container {
+      padding-top: 3rem;
+    }
+    .desktop-img {
+      height: 30%;
+    }
+  }
 `;
 
 export default Wrapper;
