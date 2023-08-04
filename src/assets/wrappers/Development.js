@@ -69,12 +69,15 @@ const Wrapper = styled.section`
   .cards-container {
     display: grid;
     gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'one' 'two' 'three' 'four';
     /* border: 1px solid yellow */
   }
 
   @media (min-width: 768px) {
     .cards-container {
       grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'one two' 'three four';
     }
     .section-title {
       max-width: 100%;

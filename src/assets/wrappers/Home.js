@@ -3,6 +3,9 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+.heading-one{
+  margin-top: -1rem;
+}
 
   .hero-center {
     display: grid;

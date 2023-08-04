@@ -118,7 +118,7 @@ const Why17Oranges = () => {
               <img src={img} alt={title} className="commit-img img" />
               <div className="commit-info">
                 <h3>{title}</h3>
-                <p>{desc}</p>
+                {desc}
               </div>
              </div>
             })}
