@@ -25,12 +25,13 @@ const Why17Oranges = () => {
         <div className="section-center">
           <div className="section-title">
             <Animate>
+              <h1 className="heading-one-small">Why 17 Oranges?</h1>
               <span className="wiggle-lg"></span>
-              <h1>
+              <div className="heading-one">
                 We Help Clients
                 <br />
                 <span className="orange-bold"> FULL STOP.</span>
-              </h1>
+              </div>
             </Animate>
           </div>
         </div>
@@ -129,10 +130,10 @@ const Why17Oranges = () => {
           <div className="section-title">
             <Animate>
               <span className="wiggle-lg"></span>
-              <h1>
+              <div className="heading-one">
                 Our Commitment to do the{" "}
                 <span className="orange-bold">RIGHT THING</span>
-              </h1>
+              </div>
             </Animate>
           </div>
 

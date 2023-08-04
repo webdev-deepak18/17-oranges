@@ -3,6 +3,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
+  
   .hero {
     display: grid;
     gap: 2rem;
@@ -58,9 +59,17 @@ const Wrapper = styled.section`
   }
 
   /* cards */
+
+  .heading-two {
+    text-align: center;
+    margin-bottom: 3rem;
+    /* border: 1px solid red; */
+    line-height: 1.3;
+  }
   .cards-container {
     display: grid;
     gap: 2rem;
+    /* border: 1px solid yellow */
   }
 
   @media (min-width: 768px) {
@@ -90,27 +99,36 @@ const Wrapper = styled.section`
       margin-left: auto;
       margin-right: 5rem;
     }
+    .heading-two{
+      margin-left: auto;
+      margin-right: 5rem;
+      text-align: left;
+      max-width: 900px;;
+    }
+  }
 
-    @media (min-width: 1550px) {
-      .cards-container {
-        max-width: 1170px;
-        margin-right: 5rem;
-        gap: 2rem;
-      }
+  @media (min-width: 1550px) {
+    .cards-container {
+      max-width: 1170px;
+      margin-right: 5rem;
+      gap: 2rem;
     }
+    .heading-two{
+      max-width: 1170px;
+    }
+  }
 
-    .card-one {
-      grid-area: one;
-    }
-    .card-two {
-      grid-area: two;
-    }
-    .card-three {
-      grid-area: three;
-    }
-    .card-four {
-      grid-area: four;
-    }
+  .card-one {
+    grid-area: one;
+  }
+  .card-two {
+    grid-area: two;
+  }
+  .card-three {
+    grid-area: three;
+  }
+  .card-four {
+    grid-area: four;
   }
 
   /* end cards */

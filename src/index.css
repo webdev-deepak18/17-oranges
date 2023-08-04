@@ -311,6 +311,24 @@ SECTION AND TITLES
   position: relative;
 }
 
+.heading-one{
+  font-size: clamp(3rem, 6vw, 6rem);
+   position: relative;
+   line-height: 1.3;
+   /* border: 1px solid red; */
+}
+
+.heading-one-small{
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin-bottom: 2rem;
+}
+
+.heading-two{
+   font-size: clamp(2.5rem, 4vw, 5rem) !important;
+   line-height: 1.3;
+   /* color: red; */
+}
+
 .section-title h2,
 h3,
 h4,

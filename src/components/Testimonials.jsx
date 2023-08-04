@@ -32,9 +32,9 @@ const Testimonials = ({img}) => {
 
           <div className="section-center">
             <div className="section-title">
-              <h2>
+              <h3>
                 Why Clients Love <span className="orange-bold">17 Oranges</span>
-              </h2>
+              </h3>
             </div>
             <div className="sliders-container">
               <img src={img} alt="happy girl" className="img mobile-img" />

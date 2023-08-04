@@ -54,12 +54,13 @@ const Development = () => {
         <div className="section-center hero">
           <div className="section-title">
             <Animate>
-            <span className="wiggle-lg"></span>
-              <h1 className="title pos-rel">
+              <h1 className="heading-one-small">Software Development</h1>
+              <span className="wiggle-lg"></span>
+              <div className="heading-one pos-rel">
                 Real-World Solutions,
                 <br /> Out-of-This-World
                 <span className="orange-bold"> IMPACT</span>
-              </h1>
+              </div>
             </Animate>
           </div>
 
@@ -85,6 +86,7 @@ const Development = () => {
 
       <section className="section">
         <div className="section-center">
+          <h2 className="heading-two">Custom Solutions for Digital Transformation</h2>
           <div className="cards-container">
             <CardVertical {...dataOne} />
             <CardVertical {...dataTwo} />

@@ -46,12 +46,14 @@ const Consultancy = () => {
         <div className="section-center">
           <div className="section-title">
             <Animate>
+              <h1 className="heading-one-small">Technology Consultancy</h1>
               <span className="wiggle-lg"></span>
-              <h1 className="">
+
+              <div className="heading-one">
                 Technology Strategy{" "}
                 <span className="orange-bold">DONE RIGHT</span> &
                 <span className="orange-bold"> MADE SIMPLE</span>
-              </h1>
+              </div>
             </Animate>
             <Animate>
               <h4>
@@ -66,6 +68,10 @@ const Consultancy = () => {
 
       <section className="section">
         <div className="section-center">
+          {/* <h2 className="heading-two">
+            Align your technology with your business objectives
+          </h2> */}
+
           <div className="icons-cards-container">
             {consultancyCardsData.map((item) => {
               const { icon, title, desc } = item;
@@ -103,10 +109,10 @@ const Consultancy = () => {
             <div className="info">
               <Animate>
                 <span className="wiggle-lg"></span>
-                <h1 className="title pos-rel">
+                <div className="heading-one pos-rel">
                   We have <span className="orange-bold">ANSWERS</span> for your
                   “impossible” questions
-                </h1>
+                </div>
               </Animate>
               <Animate>
                 <h3>(because we’ve heard most of them before)</h3>

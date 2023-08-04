@@ -3,6 +3,14 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+
+  .heading-two{
+    text-align: center;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    margin-top: 5rem;
+    max-width: 1200px
+  }
   /* info section */
   .info-section {
     position: relative;
@@ -66,6 +74,7 @@ const Wrapper = styled.div`
     width: var(--view-width);
     max-width: var(--max-width-3);
     margin: 5rem auto;
+    margin-top: 2rem;
   }
   .card {
     max-width: 100% !important;

@@ -3,19 +3,21 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  /*Digital Transportation */
+
   .hero-center {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     align-items: stretch;
+    
   }
 
   .hero-info-container {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     align-content: center;
     max-width: 100%;
+    /* border: 1px solid yellow; */
   }
 
   .hero-info-container h1 {
@@ -51,20 +53,16 @@ const Wrapper = styled.div`
 
   .tag {
     display: grid;
-    grid-template-columns: 15px auto;
     align-items: center;
-    gap: 0.35rem;
+    grid-template-columns: 20px 1fr;
+    font-size: clamp(.7rem, 3vw, 1.3rem);
+    gap: .5rem
   }
 
-  .tag span {
-    fill: var(--primary-500);
-    display: block;
+  .tag svg{
+    fill: var(--primary-500)
   }
 
-  .tag p {
-    font-size: clamp(0.6rem, 3vw, 1.2rem);
-    text-transform: uppercase;
-  }
 
   @media (min-width: 768px) {
     .hero-center {
@@ -76,16 +74,11 @@ const Wrapper = styled.div`
   @media (min-width: 992px) {
     .hero-center {
       grid-template-columns: 4fr 2fr;
-      gap: 2rem;
+      gap: 2rem;     
+    }
 
-      .tags {
-        gap: 2rem;
-      }
-
-      .tag {
-        grid-template-columns: 20px auto;
-        gap: 1rem;
-      }
+    .tags{
+      gap: 1rem
     }
   }
 

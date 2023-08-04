@@ -10,6 +10,11 @@ const Wrapper = styled.div`
     margin-bottom: 2rem;
   }
 
+  .heading-two{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
   /* icon cards */
 
   .icons-cards-container {

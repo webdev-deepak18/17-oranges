@@ -30,7 +30,7 @@ const CardVertical = ({ id, title, desc, img, cardClass }) => {
           <div className={isHovering ? "overlay-hover" : "overlay"}></div>
 
           <div className="info">
-            <h2 className="card-title">{title}</h2>
+            <h3 className="card-title">{title}</h3>
             <p className={isHovering ? "desc show-desc" : "desc"}>{desc}</p>
             <Link className="card-btn ">
               {isHovering ? "Case Study " : "More"}

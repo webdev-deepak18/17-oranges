@@ -47,11 +47,12 @@ const Resources = () => {
         <div className="section-center">
           <div className="section-title">
             <Animate>
-            <span className="wiggle-lg"></span>
-              <h1 >
+              <h1 className="heading-one-small">Technology Resourcing </h1>
+              <span className="wiggle-lg"></span>
+              <div className="heading-one">
                 Welcome to Your Very Own{" "}
                 <span className="orange-bold"> TECH RESOURCING HUB</span>
-              </h1>
+              </div>
             </Animate>
           </div>
         </div>
@@ -87,6 +88,7 @@ const Resources = () => {
       </section>
 
       {/* cards */}
+      <h2 className="heading-two">Tech Staffing Solutions</h2>
       <section className="card-container">
         <CardVertical {...cardDataOne} />
         <CardVertical {...cardDataTwo} />
@@ -101,11 +103,11 @@ const Resources = () => {
           <div className="answers">
             <div className="info">
               <Animate>
-              <span className="wiggle-lg"></span>
-                <h1 className="title pos-rel">
+                <span className="wiggle-lg"></span>
+                <div className="heading-one pos-rel">
                   Flexible <span className="orange-bold">RESOURCING</span> for
                   Seamless Operations
-                </h1>
+                </div>
               </Animate>
               <Animate>
                 <h3>

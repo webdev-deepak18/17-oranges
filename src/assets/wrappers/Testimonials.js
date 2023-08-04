@@ -26,10 +26,10 @@ const Wrapper = styled.section`
     padding: 1rem 0 1rem 1rem;
     border-radius: var(--borderRadius);
   }
-  .section-title h2 {  
+  .section-title h3 {  
     font-size: 1.5rem;
   }
-  .section-title h2 span {
+  .section-title h3 span {
     display: block;
     font-size: 3rem;
   }
@@ -101,7 +101,7 @@ const Wrapper = styled.section`
 
   /* tablet css */
   @media (min-width: 768px) {
-    .section-title h2 span {
+    .section-title h3 span {
       display: inline;
       font-size: 4rem;
     }
@@ -149,7 +149,7 @@ const Wrapper = styled.section`
       padding-top: 5rem;
     }
 
-    .section-title h2 {
+    .section-title h3 {
       font-size: 2rem;
     }
     .slick-prev,
@@ -176,10 +176,10 @@ const Wrapper = styled.section`
     .section-title {
       max-width: 850px;
     }
-    .section-title h2 {
+    .section-title h3 {
       font-size: 2.5rem;
     }
-    .section-title h2 span {
+    .section-title h3 span {
       font-size: 5.5rem;
     }
   }
@@ -191,10 +191,10 @@ const Wrapper = styled.section`
     .section-title {
       max-width: 980px;
     }
-    .section-title h2 {
+    .section-title h3 {
       font-size: 2.5rem;
     }
-    .section-title h2 span {
+    .section-title h3 span {
       font-size: 7rem;
     }
   }

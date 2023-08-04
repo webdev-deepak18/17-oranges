@@ -25,31 +25,28 @@ const Home = () => {
           <Animate>
             <div className="section-title hero-info-container">
               <span className="wiggle-lg"></span>
-              <h1>
+              <div className="heading-one">
                 We Make Great Technology Happen{" "}
                 <span className="orange-bold">BEAUTIFULLY</span>
-              </h1>
-
-              <div className="tags">
-                <div className="tag">
-                  <span>
-                    <Development />
-                  </span>
-                  <p>Development</p>
-                </div>
-                <div className="tag">
-                  <span>
-                    <Consultancy />
-                  </span>
-                  <p>Consultancy</p>
-                </div>
-                <div className="tag">
-                  <span>
-                    <Resources />
-                  </span>
-                  <p>Resourcing</p>
-                </div>
+                <h1 className="heading-two">
+                  Digital Transformation Solutions
+                </h1>
               </div>
+
+              <h2 className="tags">
+                <span className="tag">
+                  <Development />
+                  Development
+                </span>
+                <span className="tag">
+                  <Consultancy />
+                  Consultancy
+                </span>
+                <span className="tag">
+                  <Resources />
+                  Resourcing
+                </span>
+              </h2>
             </div>
           </Animate>
           <div className="hero-img">
@@ -121,10 +118,10 @@ const Home = () => {
           <div className="section-title ">
             <Animate>
               <span className="wiggle-lg"></span>
-              <h1>
+              <div className="heading-one">
                 We Can Help Organisations From{" "}
                 <span className="orange-bold"> ANY INDUSTRY</span>
-              </h1>
+              </div>
             </Animate>
           </div>
           <div className="info">
@@ -140,7 +137,6 @@ const Home = () => {
         </div>
       </section>
       {/* end we can help an */}
-     
 
       {/* testimonials */}
       <Testimonials img={happyGirl} />
