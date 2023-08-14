@@ -117,6 +117,10 @@ const Wrapper = styled.article`
     color: var(--white);
   }
 
+  .card-btn a{
+    color: var(--white)
+  }
+
   .card-btn:hover {
     color: var(--primary-300);
   }

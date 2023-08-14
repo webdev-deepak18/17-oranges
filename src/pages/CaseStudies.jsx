@@ -21,6 +21,7 @@ const cardDataOne = {
   img: timeIsMoney,
   cardClass: "card-one",
   id: nanoid(),
+  link: "/about/case-studies/03",
 };
 const cardDataTwo = {
   title: "One In, One Out?",
@@ -28,6 +29,7 @@ const cardDataTwo = {
   img: oneInOneOut,
   cardClass: "card-two",
   id: nanoid(),
+  link: "/about/case-studies/01",
 };
 
 const cardDataThree = {
@@ -36,6 +38,7 @@ const cardDataThree = {
   cardClass: "card-three",
   img: constructingValue,
   id: nanoid(),
+  link: "/about/case-studies/04",
 };
 
 const cardDataFour = {

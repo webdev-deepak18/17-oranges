@@ -12,7 +12,7 @@ import TestimonialsData from "../utils/TestimonialsData";
 import { nanoid } from "nanoid";
 import Animate from "./Animate";
 
-const Testimonials = ({img}) => {
+const Testimonials = ({ img }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -54,19 +54,21 @@ const Testimonials = ({img}) => {
                         <div className="author-logo-container">
                           <div className="author-container">
                             <h5 className="author">
-                              {author},{" "}
+                              {author} 
                               <span className="author-title">
                                 {authorTitle}
                               </span>
                             </h5>
                           </div>
-                          <div className="logo-container">
-                            <img
-                              src={companyLogo}
-                              alt="Logo"
-                              className="img logo-img"
-                            />
-                          </div>
+                          {companyLogo && (
+                            <div className="logo-container">
+                              <img
+                                src={companyLogo}
+                                alt="Logo"
+                                className="img logo-img"
+                              />
+                            </div>
+                          )}
                         </div>
                       </div>
                     );
