@@ -34,9 +34,7 @@ const CardVertical = ({ id, title, desc, img, cardClass, link }) => {
             <p className={isHovering ? "desc show-desc" : "desc"}>{desc}</p>
             <Link className="card-btn ">
               {isHovering ? (
-                <Link to={link} >
-                  Case Study{" "}
-                </Link>
+                <Link to={link}>Case Study</Link>
               ) : (
                 "More"
               )}

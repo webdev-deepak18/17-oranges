@@ -47,6 +47,7 @@ const cardDataFour = {
   cardClass: "card-four",
   img: comingSoon,
   id: nanoid(),
+  link: '/'
 };
 
 const CaseStudies = () => {

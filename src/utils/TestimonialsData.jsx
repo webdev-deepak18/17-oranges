@@ -17,7 +17,7 @@ const TestimonialsData = [
     companyLogo: hrDotCom,
   },
   {
-    quote: `"17 Oranges do not feel like your typical technology house, they feel like a genuine partner who is there to help you succeed, regardless of what the challenge may be. We've worked with Adam and his team over the last few years to explore and deliver both operational efficiencies, supporting our growth whilst staying up to date and relevant. Adam's passion and eye for detail adds value across the board."`,
+    quote: `"17 Oranges do not feel like your typical technology house — they feel like a genuine partner who is there to help you succeed, regardless of what the challenge may be. We've worked with the 17 Oranges team over the last few years to explore and deliver operational efficiencies, supporting our growth whilst staying up to date and relevant. The team's passion and eye for detail add value across the board."`,
     author: "Jon Arnold",
     authorTitle: "Director - Arnold Ash",
     companyLogo: arnoldAsh,
