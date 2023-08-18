@@ -45,6 +45,7 @@ const dataFour = {
   cardClass: "card-four",
   img: dataManagement,
   id: nanoid(),
+  link: "/about/case-studies/data-management",
 };
 
 const Development = () => {

@@ -23,6 +23,7 @@ const cardDataOne = {
   img: austronautOne,
   cardClass: "",
   id: nanoid(),
+  link: "/about/case-studies/technology-resourcing",
 };
 const cardDataTwo = {
   title: "Build Your Team",
@@ -30,6 +31,7 @@ const cardDataTwo = {
   img: austronautTwo,
   cardClass: "",
   id: nanoid(),
+  link: "/about/case-studies/technology-resourcing",
 };
 
 const cardDataThree = {

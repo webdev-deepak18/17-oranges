@@ -37,6 +37,7 @@ const cardDataThree = {
   cardClass: "",
   img: processes,
   id: nanoid(),
+  link: "/about/case-studies/technology-consulting",
 };
 
 const Consultancy = () => {

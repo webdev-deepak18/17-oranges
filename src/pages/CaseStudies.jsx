@@ -21,7 +21,7 @@ const cardDataOne = {
   img: timeIsMoney,
   cardClass: "card-one",
   id: nanoid(),
-  link: "/about/case-studies/03",
+  link: "/about/case-studies/data-management",
 };
 const cardDataTwo = {
   title: "One In, One Out?",
@@ -29,7 +29,7 @@ const cardDataTwo = {
   img: oneInOneOut,
   cardClass: "card-two",
   id: nanoid(),
-  link: "/about/case-studies/01",
+  link: "/about/case-studies/technology-resourcing",
 };
 
 const cardDataThree = {
@@ -38,7 +38,7 @@ const cardDataThree = {
   cardClass: "card-three",
   img: constructingValue,
   id: nanoid(),
-  link: "/about/case-studies/04",
+  link: "/about/case-studies/technology-consulting",
 };
 
 const cardDataFour = {

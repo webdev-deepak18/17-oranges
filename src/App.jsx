@@ -51,15 +51,15 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "about/case-studies/01",
+        path: "about/case-studies/technology-resourcing",
         element: <CaseStudy01 />,
       },
       {
-        path: "about/case-studies/03",
+        path: "about/case-studies/data-management",
         element: <CaseStudy03 />,
       },
       {
-        path: "about/case-studies/04",
+        path: "about/case-studies/technology-consulting",
         element: <CaseStudy04 />,
       },
     ],
