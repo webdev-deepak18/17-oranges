@@ -1,7 +1,26 @@
 /** @format */
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Careers, CaseStudies, Consultancy, Contact, Development, Home, HomeLayout, Leadership, Resourcing, Why17Oranges, ErrorPage, CaseStudy01, CaseStudy03, CaseStudy04 } from "./pages/index";
+import {
+  Careers,
+  CaseStudies,
+  Consultancy,
+  Contact,
+  Development,
+  Home,
+  HomeLayout,
+  Leadership,
+  Resourcing,
+  Why17Oranges,
+  ErrorPage,
+  CaseStudy01,
+  CaseStudy03,
+  CaseStudy04,
+  BuccaneerCaseStudy,
+  EBCCaseStudy,
+  KloeberCaseStudy,
+  KwandoCaseStudy,
+} from "./pages/index";
 import Blog from "./pages/Blog";
 
 const router = createBrowserRouter([
@@ -61,6 +80,22 @@ const router = createBrowserRouter([
       {
         path: "about/case-studies/technology-consulting",
         element: <CaseStudy04 />,
+      },
+      {
+        path: "about/case-studies/buccaneer-case-study",
+        element: <BuccaneerCaseStudy/>,
+      },
+      {
+        path: "about/case-studies/ebc-case-study",
+        element: <EBCCaseStudy />,
+      },
+      {
+        path: "about/case-studies/kloeber-case-study",
+        element: <KloeberCaseStudy />,
+      },
+      {
+        path: "about/case-studies/kwando-case-study",
+        element: <KwandoCaseStudy />,
       },
     ],
   },

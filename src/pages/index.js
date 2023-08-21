@@ -12,4 +12,8 @@ export {default as ErrorPage} from './ErrorPage'
 export {default as CaseStudy01} from './CaseStudy01'
 export {default as CaseStudy03} from './CaseStudy03'
 export {default as CaseStudy04} from './CaseStudy04'
+export {default as BuccaneerCaseStudy} from './BuccaneerCaseStudy'
+export {default as EBCCaseStudy} from './EBCCaseStudy'
+export {default as KloeberCaseStudy} from './KloeberCaseStudy'
+export {default as KwandoCaseStudy} from './KwandoCaseStudy'
 

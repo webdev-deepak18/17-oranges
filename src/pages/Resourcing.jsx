@@ -23,7 +23,7 @@ const cardDataOne = {
   img: austronautOne,
   cardClass: "",
   id: nanoid(),
-  link: "/about/case-studies/technology-resourcing",
+  link: "/about/case-studies/ebc-case-study",
 };
 const cardDataTwo = {
   title: "Build Your Team",
@@ -31,7 +31,7 @@ const cardDataTwo = {
   img: austronautTwo,
   cardClass: "",
   id: nanoid(),
-  link: "/about/case-studies/technology-resourcing",
+  link: "/about/case-studies/ebc-case-study",
 };
 
 const cardDataThree = {
@@ -40,6 +40,7 @@ const cardDataThree = {
   cardClass: "",
   img: austronautThree,
   id: nanoid(),
+  link: "/about/case-studies/technology-consulting",
 };
 
 const Resources = () => {

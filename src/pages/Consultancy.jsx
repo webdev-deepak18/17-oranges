@@ -22,6 +22,7 @@ const cardDataOne = {
   img: audits,
   cardClass: "",
   id: nanoid(),
+  link: "/about/case-studies/technology-resourcing",
 };
 const cardDataTwo = {
   title: "Roadmaps",
@@ -29,6 +30,7 @@ const cardDataTwo = {
   img: roadmaps,
   cardClass: "",
   id: nanoid(),
+  link: "/about/case-studies/technology-resourcing",
 };
 
 const cardDataThree = {
