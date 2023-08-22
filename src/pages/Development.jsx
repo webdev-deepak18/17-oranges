@@ -22,7 +22,7 @@ const dataOne = {
   img: legacySoftwareManagement,
   cardClass: "card-one",
   id: nanoid(),
-  link: "/about/case-studies/kloeber-case-study",
+  link: "/about/case-studies/technology-development",
 };
 const dataTwo = {
   title: "Enhancements & Integrations",
@@ -30,7 +30,7 @@ const dataTwo = {
   img: enhancementsAndIntegrations,
   cardClass: "card-two",
   id: nanoid(),
-  link: "/about/case-studies/buccaneer-case-study",
+  link: "/about/case-studies/technology-enhancements",
 };
 
 const dataThree = {
@@ -39,7 +39,7 @@ const dataThree = {
   cardClass: "card-three",
   img: bespokeProductDesignAndBuild,
   id: nanoid(),
-  link: "/about/case-studies/kwando-case-study",
+  link: "/about/case-studies/app-development",
 };
 
 const dataFour = {

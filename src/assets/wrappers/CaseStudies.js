@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 768px) {
-    .section-title{
+    .section-title {
       max-width: 100%;
     }
     .cards-container {
@@ -26,6 +26,15 @@ const Wrapper = styled.div`
     .cards-container {
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
+        /* "one ."
+        "one two"
+        "one two"
+        "one two"
+        "three two"
+        "three four"
+        "three four"
+        "three four"
+        ". four"; */
         "one ."
         "one two"
         "one two"
@@ -34,7 +43,15 @@ const Wrapper = styled.div`
         "three four"
         "three four"
         "three four"
-        ". four";
+        "five four"
+        "five six"
+        "five six"
+        "five six"
+        "seven six"
+        "seven eight"
+        "seven eight"
+        "seven eight"
+        ". eight";
       max-width: 900px;
       justify-content: right;
       margin-left: auto;
@@ -60,6 +77,18 @@ const Wrapper = styled.div`
     }
     .card-four {
       grid-area: four;
+    }
+    .card-five {
+      grid-area: five;
+    }
+    .card-six {
+      grid-area: six;
+    }
+    .card-seven {
+      grid-area: seven;
+    }
+    .card-eight {
+      grid-area: eight;
     }
   }
 

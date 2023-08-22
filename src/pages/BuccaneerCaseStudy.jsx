@@ -14,7 +14,7 @@ const BuccaneerCaseStudy = () => {
           <div className="section-title">
             <Animate>
               <span className="wiggle-lg"></span>
-              <h1>Buccaneer Case Study</h1>
+              <h1>Exceeding Expectations</h1>
             </Animate>
           </div>
         </div>

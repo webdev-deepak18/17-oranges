@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   gap: 1rem;
   border-radius: 0 10px 10px 0;
   fill: var(--white);
+  z-index: 1000;
 
   .sticy-icon {
     width: 15px;

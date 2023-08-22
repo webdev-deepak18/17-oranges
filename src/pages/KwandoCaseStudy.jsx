@@ -14,7 +14,7 @@ const KwandoCaseStudy = () => {
           <div className="section-title">
             <Animate>
               <span className="wiggle-lg"></span>
-              <h1>Kwando Case Study</h1>
+              <h1>An App From Scratch</h1>
             </Animate>
           </div>
         </div>
@@ -86,7 +86,6 @@ const KwandoCaseStudy = () => {
               </p>
             </Animate>
           </div>
-         
         </div>
       </section>
 

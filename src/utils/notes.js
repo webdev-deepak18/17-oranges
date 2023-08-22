@@ -10,13 +10,13 @@
 // link: "/about/case-studies/data-management",
 
 // buccaneer
-// link: "/about/case-studies/buccaneer-case-study",
+// link: "/about/case-studies/technology-enhancements"",
 
 // ebc
-// link: "/about/case-studies/ebc-case-study",
+// link: "/about/case-studies/tech-resourcing-support"",
 
 // kloeber
-// link: "/about/case-studies/kloeber-case-study",
+// link: "/about/case-studies/technology-development",
 
 // kwando
-// link: "/about/case-studies/kwando-case-study",
+// link: "/about/case-studies/app-development",

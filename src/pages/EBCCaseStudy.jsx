@@ -15,7 +15,7 @@ const EBCCaseStudy = () => {
           <div className="section-title">
             <Animate>
               <span className="wiggle-lg"></span>
-              <h1>EBC Case Study</h1>
+              <h1>Mentoring For Success</h1>
             </Animate>
           </div>
         </div>

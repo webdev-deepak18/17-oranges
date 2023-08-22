@@ -82,19 +82,19 @@ const router = createBrowserRouter([
         element: <CaseStudy04 />,
       },
       {
-        path: "about/case-studies/buccaneer-case-study",
-        element: <BuccaneerCaseStudy/>,
+        path: "about/case-studies/technology-enhancements",
+        element: <BuccaneerCaseStudy />,
       },
       {
-        path: "about/case-studies/ebc-case-study",
+        path: "about/case-studies/tech-resourcing-support",
         element: <EBCCaseStudy />,
       },
       {
-        path: "about/case-studies/kloeber-case-study",
+        path: "about/case-studies/technology-development",
         element: <KloeberCaseStudy />,
       },
       {
-        path: "about/case-studies/kwando-case-study",
+        path: "about/case-studies/app-development",
         element: <KwandoCaseStudy />,
       },
     ],
