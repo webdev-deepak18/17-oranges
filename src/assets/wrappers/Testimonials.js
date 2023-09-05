@@ -154,7 +154,7 @@ const Wrapper = styled.section`
     }
     .slick-prev,
     .slick-next {
-      display: none !important;
+      /* display: none !important; */
     }
   }
 

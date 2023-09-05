@@ -52,11 +52,11 @@ const MobileFooter = () => {
 
       {/* follow */}
       <div className="follow-container">
-        <Link to="/">
+        <Link to="https://www.linkedin.com/company/17-oranges/" target="_blank">
           <LinkedIn />
           LinkedIn
         </Link>
-        <Link to="/">
+        <Link to="https://www.redbubble.com/people/17Oranges/explore?asc=u&page=1&sortOrder=recent" target="_blank">
           <Tshirt />
           Merchandise
         </Link>

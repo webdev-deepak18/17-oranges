@@ -62,6 +62,8 @@ const Sidebar = () => {
         className="sticy-icon"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        to="https://www.linkedin.com/company/17-oranges/"
+        target="_blank"
       >
         <AiOutlineLinkedin />
       </Link>

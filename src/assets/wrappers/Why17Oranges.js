@@ -298,28 +298,7 @@ const Wrapper = styled.div`
   /* e
   /* end social commitment */
 
-  /* testimonials */
-  .testimonials-small-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  .sliders {
-    max-width: 650px;
-  }
-  .section-title h3 span {
-    font-size: clamp(1.5rem, 3vw, 3rem);
-  }
-  .testimonials-small-container .section-title {
-    max-width: 650px;
-  }
-  @media (min-width: 1200px) {
-    .testimonials-container {
-      padding-top: 3rem;
-    }
-    .desktop-img {
-      height: 30%;
-    }
-  }
+  
 `;
 
 export default Wrapper;

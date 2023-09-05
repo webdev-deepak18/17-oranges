@@ -139,7 +139,9 @@ const Home = () => {
       {/* end we can help an */}
 
       {/* testimonials */}
-      <Testimonials img={happyGirl} />
+      <div className="testimonials-small-container">
+        <Testimonials img={happyGirl} />
+      </div>
       {/*end testimonials */}
 
       {/* call to action */}

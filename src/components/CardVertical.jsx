@@ -15,33 +15,31 @@ const CardVertical = ({ id, title, desc, img, cardClass, link }) => {
   return (
     <Wrapper className={cardClass}>
       <Animate>
-        <div
-          className={`card `}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className="card-img">
-            <img
-              src={img}
-              alt={title}
-              className={isHovering ? "img img-hover" : "img"}
-            />
-          </div>
-          <div className={isHovering ? "overlay-hover" : "overlay"}></div>
+        <Link to={link} target="_blank">
+          <div
+            className={`card `}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className="card-img">
+              <img
+                src={img}
+                alt={title}
+                className={isHovering ? "img img-hover" : "img"}
+              />
+            </div>
+            <div className={isHovering ? "overlay-hover" : "overlay"}></div>
 
-          <div className="info">
-            <h3 className="card-title">{title}</h3>
-            <p className={isHovering ? "desc show-desc" : "desc"}>{desc}</p>
-            <Link className="card-btn ">
-              {isHovering ? (
-                <Link to={link}>Case Study</Link>
-              ) : (
-                "More"
-              )}
-              {isHovering ? <MdKeyboardArrowRight /> : <MdKeyboardArrowUp />}
-            </Link>
+            <div className="info">
+              <h3 className="card-title">{title}</h3>
+              <p className={isHovering ? "desc show-desc" : "desc"}>{desc}</p>
+              <Link className="card-btn ">
+                {isHovering ? <Link to={link}>Case Study</Link> : "More"}
+                {isHovering ? <MdKeyboardArrowRight /> : <MdKeyboardArrowUp />}
+              </Link>
+            </div>
           </div>
-        </div>
+        </Link>
       </Animate>
     </Wrapper>
   );

@@ -1,12 +1,15 @@
 
 import hrDotCom from "../assets/images/hr-dot-com.jpg";
-import arnoldAsh from "../assets/images/arnold-ash-three.png";
+import arnoldAsh from "../assets/images/arnold-ash-three.jpg";
 import sapInsider from "../assets/images/sap-insider.jpg";
-import siteforum from "../assets/images/siteforum.png";
+import siteforum from "../assets/images/siteforum.jpg";
 import myFavorito from "../assets/images/myfavorito.png";
 import odgers from "../assets/images/odgers.jpg";
 import forj from "../assets/images/forj.png";
 import deploy from "../assets/images/drg.jpg";
+import buccaneer from "../assets/images/buccaneer.jpg";
+import ebc from "../assets/images/ebc.jpg";
+import kloeber from "../assets/images/kloeber.png";
 
 
 const TestimonialsData = [
@@ -63,14 +66,17 @@ const TestimonialsData = [
   {
     quote: `"Working with 17 Oranges has been a game changer for us. Initially engaged to evaluate and update our in-house systems, they have now begun to provide additional development resources.  17 Oranges' vision and creative thinking have allowed us to not only maintain our software, but also enhance and develop it, creating smart solutions and efficiencies within our business."`,
     author: "Kloeber",
+    companyLogo: kloeber
   },
   {
     quote: `“Love working with the guys at 17 Oranges. We are building something completely new, and they walked with us on the journey from conception to delivery. They worked closely with us, offering insight and wisdom at every junction, enabling us to always choose the right path while having fun along the way."`,
     author: "Kwando",
+    companyLogo: ebc,
   },
   {
     quote: `"I had the pleasure of working with 17 Oranges to create a web app for Buccaneer Sessions. The team took their time to accurately understand my needs and goals, and they delivered a site that exceeded my expectations. Most importantly, the team was in constant communication with me, allowing me to feel fully part of the process and ensuring that I wouldn't be given a product that would have to be tweaked. The result: a ready-to-go web app."`,
-    author: "KloeBuccaneer Sessionsber",
+    author: "Buccaneer Sessions",
+    companyLogo: buccaneer
   },
 ];
 
