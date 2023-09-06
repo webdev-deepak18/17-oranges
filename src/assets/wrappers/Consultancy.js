@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     margin-bottom: 2rem;
   }
 
-  .heading-two{
+  .heading-two {
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -19,30 +19,18 @@ const Wrapper = styled.div`
 
   .icons-cards-container {
     display: grid;
-    gap: 5rem 3rem;
+    gap: 5rem 8rem;
     margin: 0 auto;
     justify-items: center;
     /* max-width: 992px; */
     margin: 0 auto;
   }
 
-  @media (min-width: 728px) {
-    .icons-cards-container {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .icons-cards-container {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-
   .strategy-card {
     display: grid;
     justify-content: space-between;
     justify-items: center;
-    text-align: center;
+    text-align: left;
     max-width: 350px;
   }
 
@@ -73,6 +61,37 @@ const Wrapper = styled.div`
     color: var(--white);
   }
 
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+    line-height: 1.5;
+  }
+
+  li span {
+    color: var(--primary-500);
+    font-size: 1rem;
+  }
+
+  @media (min-width: 728px) {
+    .icons-cards-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .icons-cards-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
   /* end icon cards */
 
   .card-container {
@@ -98,7 +117,7 @@ const Wrapper = styled.div`
     .card-container {
       grid-template-columns: 1fr 1fr 1fr;
     }
-    .section-title{
+    .section-title {
       max-width: 100%;
     }
   }
@@ -107,13 +126,12 @@ const Wrapper = styled.div`
 
   /* answers */
 
-
   .answers {
     display: grid;
     gap: 2rem;
   }
 
-  .answers h1{
+  .answers h1 {
     font-size: clamp(2.5rem, 5vw, 6rem);
     line-height: 1.4;
   }

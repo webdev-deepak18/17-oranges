@@ -45,7 +45,7 @@ const Wrapper = styled.div`
 
   .hero-img img {
     height: 100%;
-    border-radius: var(--borderRadius);
+    border-radius: 1rem;
   }
 
   .tags {
@@ -76,8 +76,8 @@ const Wrapper = styled.div`
 
   @media (min-width: 992px) {
     .hero-center {
-      grid-template-columns: 4fr 2fr;
-      gap: 2rem;     
+      grid-template-columns: 4fr 3fr;
+      gap: 3rem;     
     }
 
     .tags{

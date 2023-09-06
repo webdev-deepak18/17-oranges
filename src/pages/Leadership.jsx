@@ -68,7 +68,7 @@ const Leadership = () => {
             <Animate>
               <span className="wiggle-lg"></span>
               <div  className="heading-one pos-rel">
-                Our <span className="orange-bold">CREATIVE</span> Team
+                Our <span className="orange-bold">Senior</span> Leadership Team
               </div>
             </Animate>
 

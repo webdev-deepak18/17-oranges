@@ -20,7 +20,7 @@ const Testimonials = ({ img }) => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 300,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 7000,
     adaptiveHeight: 1,
     cssEase: "linear",
   };

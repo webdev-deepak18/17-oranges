@@ -15,6 +15,7 @@ import Animate from "../components/Animate";
 import Cta from "../components/Cta";
 import CardVertical from "../components/CardVertical";
 import { nanoid } from "nanoid";
+import { FiChevronsRight } from "react-icons/fi";
 
 const cardDataOne = {
   title: "Audits",
@@ -85,7 +86,14 @@ const Consultancy = () => {
                       <span>{icon}</span>
                     </div>
                     <h3>{title}</h3>
-                    <p>{desc}</p>
+                    <ul>
+                      {desc.map((listItem)=>{
+                        return <li key={nanoid()}>
+                          <span><FiChevronsRight/></span>
+                          {listItem}
+                        </li>
+                      })}
+                    </ul>
                   </article>
                 </Animate>
               );

@@ -4,7 +4,7 @@ import arnoldAsh from "../assets/images/arnold-ash-three.jpg";
 import sapInsider from "../assets/images/sap-insider.jpg";
 import siteforum from "../assets/images/siteforum.jpg";
 import myFavorito from "../assets/images/myfavorito.png";
-import odgers from "../assets/images/odgers.jpg";
+import odgers from "../assets/images/ob-logo.jpg";
 import forj from "../assets/images/forj.png";
 import deploy from "../assets/images/drg.jpg";
 import buccaneer from "../assets/images/buccaneer.jpg";
@@ -47,8 +47,8 @@ const TestimonialsData = [
   {
     quote: `"We have a close relationship with the team at 17 oranges, having worked with us for many years previously. They've always demonstrated a significant depth of knowledge, passion for technology and business understanding which as always helped translating into the technical into the real world."
 `,
-    author: "David Peters",
-    authorTitle: "CFO - Odgers ",
+    author: "IRG Group",
+    // authorTitle: "CFO - Odgers ",
     companyLogo: odgers,
   },
   {
@@ -66,7 +66,7 @@ const TestimonialsData = [
   {
     quote: `"Working with 17 Oranges has been a game changer for us. Initially engaged to evaluate and update our in-house systems, they have now begun to provide additional development resources.  17 Oranges' vision and creative thinking have allowed us to not only maintain our software, but also enhance and develop it, creating smart solutions and efficiencies within our business."`,
     author: "Kloeber",
-    companyLogo: kloeber
+    companyLogo: kloeber,
   },
   {
     quote: `“Love working with the guys at 17 Oranges. We are building something completely new, and they walked with us on the journey from conception to delivery. They worked closely with us, offering insight and wisdom at every junction, enabling us to always choose the right path while having fun along the way."`,
@@ -76,7 +76,7 @@ const TestimonialsData = [
   {
     quote: `"I had the pleasure of working with 17 Oranges to create a web app for Buccaneer Sessions. The team took their time to accurately understand my needs and goals, and they delivered a site that exceeded my expectations. Most importantly, the team was in constant communication with me, allowing me to feel fully part of the process and ensuring that I wouldn't be given a product that would have to be tweaked. The result: a ready-to-go web app."`,
     author: "Buccaneer Sessions",
-    companyLogo: buccaneer
+    companyLogo: buccaneer,
   },
 ];
 
