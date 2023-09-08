@@ -7,11 +7,13 @@ const Wrapper = styled.article`
   background: var(--grey-100);
   border-radius: var(--borderRadius);
   transition: var(--transition);
+ width: 300px;
+ height: 300px;
   /* min-height: 450px; */
 }
 
 .card-img{
-transform: scale(.95);
+/* transform: scale(.95); */
 transform-origin: bottom center;
 transition: var(--transition);
 }
@@ -23,10 +25,13 @@ transition: var(--transition);
   background: var(--primary-500);
   padding: 1rem;
   display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
   gap: 1rem;
   color: var(--white);
   line-height: 1.5;
   transition: var(--transition);
+  width: 100%;
 }
 
 .divider-line{
@@ -44,12 +49,19 @@ h5 span{
   font-size: .8rem;
 }
 
+.icon{
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  color: var(--white)
+}
+
 /* hovering */
 .hovering{
   background: var(--primary-100)
 }
 .hovering .card-img{
-  transform: scale(1);
+  transform: scale(1.02);
 }
 .hovering .card-info{
   transform: translateY(0);

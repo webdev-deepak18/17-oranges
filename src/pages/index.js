@@ -16,4 +16,6 @@ export {default as BuccaneerCaseStudy} from './BuccaneerCaseStudy'
 export {default as EBCCaseStudy} from './EBCCaseStudy'
 export {default as KloeberCaseStudy} from './KloeberCaseStudy'
 export {default as KwandoCaseStudy} from './KwandoCaseStudy'
+export {default as Cookies} from './Cookies'
+export {default as PrivacyPolicy} from './PrivacyPolicy'
 

@@ -104,6 +104,7 @@ margin: 0 auto;
   }
   .desktop-img{
     display: block;
+    height: 100%;
   }
   .container{
     display: grid;

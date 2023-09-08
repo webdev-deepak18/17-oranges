@@ -20,6 +20,7 @@ export const AppProvider = ({ children }) => {
   const [showSmiley, setShowSmiley] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
   const localThemeMode = localStorage.setItem('themeMode', toggleTheme);
+  const [showCookies, setShowCookies] = useState(true)
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
   
@@ -43,7 +44,9 @@ export const AppProvider = ({ children }) => {
         showSmiley,
         setShowSmiley,
         isHovering,
-        setIsHovering
+        setIsHovering,
+        showCookies,
+        setShowCookies
       }}
     >
       {children}

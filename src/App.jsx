@@ -20,6 +20,8 @@ import {
   EBCCaseStudy,
   KloeberCaseStudy,
   KwandoCaseStudy,
+  Cookies, 
+  PrivacyPolicy
 } from "./pages/index";
 import Blog from "./pages/Blog";
 
@@ -96,6 +98,14 @@ const router = createBrowserRouter([
       {
         path: "about/case-studies/app-development",
         element: <KwandoCaseStudy />,
+      },
+      {
+        path: "/cookies-policy",
+        element: <Cookies />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
       },
     ],
   },

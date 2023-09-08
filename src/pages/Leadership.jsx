@@ -6,6 +6,7 @@ import professionalWoman from "../assets/images/professional-woman-smiling.webp"
 import { nanoid } from "nanoid";
 import TeamCard from "../components/TeamCard";
 import Animate from "../components/Animate";
+import TeamData from "../utils/TeamData";
 
 const letterContent = [
   `Often the second question people ask me about 17 Oranges is, “What makes us different from other companies that offer technology consulting and solutions?”`,
@@ -82,10 +83,10 @@ const Leadership = () => {
           </div>
 
           <div className="cards-container">
-            <TeamCard img={professionalWoman} />
-            <TeamCard img={professionalWoman} />
-            <TeamCard img={professionalWoman} />
-            <TeamCard img={professionalWoman} />
+           {TeamData.map((item)=>{
+            
+            return <TeamCard key={nanoid()} {...item}/>
+           })}
           </div>
         </div>
       </section>

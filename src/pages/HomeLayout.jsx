@@ -15,6 +15,7 @@ import {
 } from "../assets/wrappers/ToggleTheme";
 import StickySidebar from "../components/StickySidebar";
 import MayIHelp from "../components/MayIHelp";
+import CookiesBar from "../components/CookiesBar";
 
 const HomeLayout = () => {
   const { toggleTheme, setToggleTheme } = useGlobalContext();
@@ -30,6 +31,7 @@ const HomeLayout = () => {
         <StickySidebar />
         <MayIHelp />
         <Footer />
+        <CookiesBar/>
       </Container>
     </ThemeProvider>
   );

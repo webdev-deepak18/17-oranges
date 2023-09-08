@@ -84,6 +84,9 @@ import dataManagement from "./assets/images/data-management.webp";
 
 import happyAsianWoman from "./assets/images/happy-asian-woman.webp";
 
+
+
+
 // client logos
 import { ReactComponent as Siteforum } from "./assets/images/siteforum.svg";
 import { ReactComponent as Sql } from "./assets/images/sql.svg";
@@ -154,6 +157,14 @@ import superCoolMan from "./assets/images/man-posing-with-headphones.webp";
 // ================
 // import adamGibson from "./assets/images/adam-gibson.webp";
 import professionalWoman from "./assets/images/professional-woman-smiling.webp";
+import adamGibson from "./assets/images/adam_gibson.jpg";
+import joeMillet from "./assets/images/joe_millet.jpg";
+import kevinFell from "./assets/images/kevin_fell.jpg";
+import luisCasas from "./assets/images/luis_casas.jpg";
+import chrisFinlow from "./assets/images/chris_finlow.jpg";
+import timWatson from "./assets/images/tim_watson.jpg";
+import jamesMurray from "./assets/images/james_murray.png";
+
 
 // ================
 // Case Studies Page

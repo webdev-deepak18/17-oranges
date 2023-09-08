@@ -26,8 +26,8 @@ const Wrapper = styled.div`
   ul li {
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    font-size: clamp(.8rem, 3vw, 1.2rem);
-    letter-spacing: .15px;
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    letter-spacing: 0.15px;
   }
 
   ul {
@@ -64,7 +64,34 @@ const Wrapper = styled.div`
       grid-template-columns: 20% auto 10%;
       grid-template-areas: ". content .";
     }
+    li:before{
+      top: 12px;
+    }
+  }
 
+  /* cookies */
+  .cookies-content .content-center {
+    max-width: 900px;
+  }
+
+  .cookies-content small {
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .cookies-content h4 {
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    margin-bottom: 1rem;
+  }
+
+  .cookies-content li span, .point span {
+    font-weight: 500;
+    color: var(--primary-500);
+  }
+
+  .link {
+    color: var(--primary-500);
+    text-decoration: underline;
   }
 `;
 
