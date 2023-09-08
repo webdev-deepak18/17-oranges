@@ -73,13 +73,13 @@ const Leadership = () => {
               </div>
             </Animate>
 
-            <Animate>
+            {/* <Animate>
               <h4>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in
                 quidem voluptates ratione amet tempora velit quis laborum,
                 voluptatibus et.
               </h4>
-            </Animate>
+            </Animate> */}
           </div>
 
           <div className="cards-container">
