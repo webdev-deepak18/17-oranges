@@ -20,12 +20,14 @@ export const FooterWrapperMain = styled.footer`
   }
 
   .menu-container {
+    /* border: 1px solid rebeccapurple; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 70vw;
+    grid-template-columns:auto auto auto;
+    width: 90vw;
     gap: 2rem;
-    max-width: 400px;
-    justify-content: start;
+    max-width: 800px;
+    justify-content: center;
+    align-items: start;
   }
 
   .menu-container .links {
@@ -105,8 +107,9 @@ export const FooterWrapperMain = styled.footer`
     }
 
     .desktop-footer .menu-container {
-      align-content: center;
+      align-content: start;
       margin-right: 2rem;
+      justify-content: end;
     }
 
     .desktop-footer .follow-container {

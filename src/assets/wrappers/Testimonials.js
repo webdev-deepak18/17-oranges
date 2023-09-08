@@ -7,7 +7,10 @@ const Wrapper = styled.section`
   margin-bottom: 5rem;
   /* sliders */
   .testimonials-container {
+    /* border: 1px solid red; */
     position: relative;
+    /* max-width: 900px; */
+    margin: 0 auto;
   }
   .sliders-container {
     /* background: red; */
@@ -16,15 +19,19 @@ const Wrapper = styled.section`
 
   .section-center {
     position: relative;
+    max-width: 850px;
+    
   }
   .desktop-img {
     display: none;
   }
 
   .section-title {
+    margin: 0 auto;
     margin-bottom: 2rem;
     padding: 1rem 0 1rem 1rem;
     border-radius: var(--borderRadius);
+    text-align: center;
   }
   .section-title h3 {  
     font-size: 1.5rem;
@@ -127,31 +134,31 @@ const Wrapper = styled.section`
   }
 
   @media (min-width: 992px) {
-    .sliders {
+    /* .sliders {
       padding-top: 0;
       max-width: 850px;
       margin: 0 auto 0 0;
-    }
+    } */
   
     .mobile-img {
-      display: none;
+      /* display: none; */
     }
 
-    .desktop-img {
+    /* .desktop-img {
       display: block;
       position: absolute;
       top: 0;
       right: 0;
       width: 60%;
-    }
+    } */
 
-    .testimonials-container {
+    /* .testimonials-container {
       padding-top: 5rem;
-    }
+    } */
 
-    .section-title h3 {
+    /* .section-title h3 {
       font-size: 2rem;
-    }
+    } */
     .slick-prev,
     .slick-next {
       /* display: none !important; */
@@ -159,7 +166,7 @@ const Wrapper = styled.section`
   }
 
   @media (min-width: 1200px) {
-    .quote-icon {
+    /* .quote-icon {
       margin-bottom: 3rem;
       width: 70px;
     }
@@ -181,11 +188,11 @@ const Wrapper = styled.section`
     }
     .section-title h3 span {
       font-size: 5.5rem;
-    }
+    } */
   }
 
   @media (min-width: 1550px) {
-    .sliders {
+    /* .sliders {
       max-width: 1020px;
     }
     .section-title {
@@ -196,7 +203,7 @@ const Wrapper = styled.section`
     }
     .section-title h3 span {
       font-size: 7rem;
-    }
+    } */
   }
 
   /* end single slider css */
@@ -226,6 +233,10 @@ const Wrapper = styled.section`
   .slick-dots li button:before {
     font-size: 12px;
     color: var(--primary-500);
+  }
+
+  .slick-prev{
+    left: -30px;
   }
 
   /* end sliders */

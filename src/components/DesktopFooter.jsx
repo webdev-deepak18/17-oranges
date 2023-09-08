@@ -25,7 +25,7 @@ const DesktopFooter = () => {
         </Link>
 
         <div>
-          <div className="follow-container">
+          <div className="follow-container" style={{marginTop: '1rem'}}> 
             <Link
               to="https://www.linkedin.com/company/17-oranges/"
               target="_blank"
@@ -33,14 +33,24 @@ const DesktopFooter = () => {
               <LinkedIn />
               LinkedIn
             </Link>
-            <Link to="https://www.redbubble.com/people/17Oranges/explore?asc=u&page=1&sortOrder=recent" target="_blank">
+            <Link
+              to="https://www.redbubble.com/people/17Oranges/explore?asc=u&page=1&sortOrder=recent"
+              target="_blank"
+            >
               <Tshirt />
               Merchandise
             </Link>
           </div>
 
-          <small className="copyright">
-            17 Oranges Limited © {year.getFullYear()}
+          <small className="copyright" style={{lineHeight: '1.5'}}>
+            17 Oranges Limited © {year.getFullYear()} <br/> {' '}
+            <Link className="link" to="/privacy-policy">
+              Privacy Policy
+            </Link>{" "}
+            | {' '}
+            <Link className="link" to="/cookies-policy">
+              Cookies Policy
+            </Link>
           </small>
         </div>
       </div>

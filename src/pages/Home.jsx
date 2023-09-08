@@ -139,9 +139,9 @@ const Home = () => {
       {/* end we can help an */}
 
       {/* testimonials */}
-      <div className="testimonials-small-container">
+      {/* <div className="testimonials-small-container"> */}
         <Testimonials img={happyGirl} />
-      </div>
+      {/* </div> */}
       {/*end testimonials */}
 
       {/* call to action */}

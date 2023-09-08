@@ -253,12 +253,12 @@ const Cookies = () => {
                 </li>
               </Animate>
             </ul>
-              <Animate>
-                <p>
-                  For any other web browser, please visit your web browser's
-                  official web pages.
-                </p>
-              </Animate>
+            <Animate>
+              <p>
+                For any other web browser, please visit your web browser's
+                official web pages.
+              </p>
+            </Animate>
           </div>
           <div className="info-block">
             <Animate>
@@ -266,8 +266,14 @@ const Cookies = () => {
             </Animate>
             <Animate>
               <p>
-                You can learn more about cookies here:All About Cookies by
-                TermsFeed.
+                You can learn more about cookies here:{" "}
+                <Link
+                  to="https://www.termsfeed.com/blog/cookies/"
+                  target="_blank"
+                  className="link"
+                >
+                  All About Cookies by TermsFeed.
+                </Link>
               </p>
             </Animate>
           </div>

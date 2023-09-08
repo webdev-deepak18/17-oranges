@@ -127,9 +127,9 @@ const Why17Oranges = () => {
       </section>
 
       {/* end commitment */}
-      <div className="testimonials-small-container">
+      {/* <div className="testimonials-small-container"> */}
         <Testimonials img={butterfly} />
-      </div>
+      {/* </div> */}
       <Cta img={superCoolMan} />
     </Wrapper>
   );

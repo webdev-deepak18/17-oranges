@@ -28,7 +28,7 @@ const Testimonials = ({ img }) => {
     <Wrapper className="section">
       <Animate>
         <div className="testimonials-container">
-          <img src={img} alt="happy girl" className="img desktop-img" />
+          {/* <img src={img} alt="happy girl" className="img desktop-img" /> */}
 
           <div className="section-center">
             <div className="section-title">
