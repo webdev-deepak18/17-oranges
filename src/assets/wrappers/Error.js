@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   height: 100vh;
   background: red;
   background: linear-gradient(190deg, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 66%),
-    url("../images/sad-austronaut.webp");
+    url("../../src/assets/images/sad-austronaut.webp");
   background-size: cover;
   background-position: center;
   display: grid;
