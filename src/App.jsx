@@ -22,7 +22,10 @@ import {
   KwandoCaseStudy,
   Cookies, 
   PrivacyPolicy,
-  Bio
+  Bio,
+  Blog01,
+  Blog02,
+  Blog03,
 } from "./pages/index";
 import Blog from "./pages/Blog";
 
@@ -111,10 +114,22 @@ const router = createBrowserRouter([
         element: <PrivacyPolicy />,
       },
       {
-        path: 'about/leadership/:id',
-        element:<Bio/>,
+        path: "about/leadership/:id",
+        element: <Bio />,
         loader: BioLoader,
-      }
+      },
+      {
+        path: "/about/blog/recruitment-expo-2023",
+        element:<Blog01/>,
+      },
+      {
+        path: "/about/blog/looking-to-the-future",
+        element:<Blog02/>,
+      },
+      {
+        path: "/about/blog/stacks-of-potential",
+        element:<Blog03/>,
+      },
     ],
   },
 ]);

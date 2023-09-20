@@ -19,4 +19,7 @@ export {default as KwandoCaseStudy} from './KwandoCaseStudy'
 export {default as Cookies} from './Cookies'
 export {default as PrivacyPolicy} from './PrivacyPolicy'
 export {default as Bio} from './Bio'
+export {default as Blog01} from './Blog01'
+export {default as Blog02} from './Blog02'
+export {default as Blog03} from './Blog03'
 

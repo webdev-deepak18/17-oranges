@@ -42,7 +42,9 @@ const Bio = () => {
                 )}
               </Animate>
             </div>
-
+            <Animate>
+              <hr />
+            </Animate>
             <div className="info-block">
               {bio &&
                 bio.map((para) => {

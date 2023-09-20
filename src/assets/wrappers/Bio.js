@@ -36,6 +36,12 @@ const Wrapper = styled.div`
   .icon:hover{
     color: var(--primary-300)
   }
+
+  hr{
+    margin: 1.5rem 0 2rem 0;
+    color: var(--primary-500);
+    background-color: var(--primary-500)
+  }
   p,
   ul li {
     line-height: 1.8;

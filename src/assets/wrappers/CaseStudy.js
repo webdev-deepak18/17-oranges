@@ -93,6 +93,20 @@ const Wrapper = styled.div`
     color: var(--primary-500);
     text-decoration: underline;
   }
+
+  /* blogs */
+  .quote{
+    background: var(--primary-500);
+    display: grid;
+    place-items:center;
+    padding: 2rem ;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    text-align: center;
+    line-height: 1.5;
+    color: var(--white);
+    border-radius: 10px;
+    margin-bottom: 3rem;
+  }
 `;
 
 export default Wrapper

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Animate from "./Animate";
 
-const CardVertical = ({ id, title, desc, img, cardClass, link }) => {
+const CardVertical = ({ id, title, desc, img, cardClass, link, ctaText }) => {
   const [isHovering, setIsHovering] = useState(false);
   const handleMouseEnter = () => setIsHovering(!isHovering);
   const handleMouseLeave = () => setIsHovering(!isHovering);
@@ -34,7 +34,7 @@ const CardVertical = ({ id, title, desc, img, cardClass, link }) => {
               <h3 className="card-title">{title}</h3>
               <p className={isHovering ? "desc show-desc" : "desc"}>{desc}</p>
               <Link className="card-btn ">
-                {isHovering ? <Link to={link}>Case Study</Link> : "More"}
+                {isHovering ? <Link to={link}>{ctaText || 'Case Study'} </Link> : "More"}
                 {isHovering ? <MdKeyboardArrowRight /> : <MdKeyboardArrowUp />}
               </Link>
             </div>
