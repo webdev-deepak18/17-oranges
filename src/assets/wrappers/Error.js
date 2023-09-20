@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   height: 100vh;
   max-width: 1920px;
   margin: 0 auto;
-  background: blue;
+  background: black;
   position: relative;
   display: grid;
   justify-content: center;
