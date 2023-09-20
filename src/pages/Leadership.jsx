@@ -63,7 +63,7 @@ const Leadership = () => {
         </Animate>
       </section>
 
-      <section className="section ">
+      <section className="section " id="team">
         <div className="section-center creative-section">
           <div className="title">
             <Animate>

@@ -21,9 +21,12 @@ import {
   KloeberCaseStudy,
   KwandoCaseStudy,
   Cookies, 
-  PrivacyPolicy
+  PrivacyPolicy,
+  Bio
 } from "./pages/index";
 import Blog from "./pages/Blog";
+
+import {loader as BioLoader} from './pages/Bio'
 
 const router = createBrowserRouter([
   {
@@ -107,6 +110,11 @@ const router = createBrowserRouter([
         path: "/privacy-policy",
         element: <PrivacyPolicy />,
       },
+      {
+        path: 'about/leadership/:id',
+        element:<Bio/>,
+        loader: BioLoader,
+      }
     ],
   },
 ]);

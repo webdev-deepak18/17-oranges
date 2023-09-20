@@ -18,4 +18,5 @@ export {default as KloeberCaseStudy} from './KloeberCaseStudy'
 export {default as KwandoCaseStudy} from './KwandoCaseStudy'
 export {default as Cookies} from './Cookies'
 export {default as PrivacyPolicy} from './PrivacyPolicy'
+export {default as Bio} from './Bio'
 
