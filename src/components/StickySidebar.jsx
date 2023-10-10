@@ -67,13 +67,13 @@ const Sidebar = () => {
       >
         <AiOutlineLinkedin />
       </Link>
-      <Link
+      {/* <Link
         className="sticy-icon"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         <FaRegLightbulb />
-      </Link>
+      </Link> */}
     </Wrapper>
   );
 };
