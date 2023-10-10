@@ -78,6 +78,7 @@ const Wrapper = styled.div`
   li span {
     color: var(--primary-500);
     font-size: 1rem;
+    max-width: 1rem;
   }
 
   @media (min-width: 728px) {
