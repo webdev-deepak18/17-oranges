@@ -2,7 +2,12 @@
 
 import styled from "styled-components";
 
+
 const Wrapper = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   background: var(--primary-500);
   display: grid;
   align-items: center;
@@ -24,15 +29,14 @@ const Wrapper = styled.div`
     cursor: pointer;
   }
 
-  .sticky-icon a{
-    padding: .25rem;
+  .sticky-icon a {
+    padding: 0.25rem;
   }
-
 
   @media (min-width: 992px) {
     width: 60px;
 
-    .sticy-icon{
+    .sticy-icon {
       width: 20px;
     }
   }
